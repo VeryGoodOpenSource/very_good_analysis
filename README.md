@@ -1,5 +1,6 @@
 # Very Good Analysis
 
+[![ci](https://github.com/VGVentures/very_good_analysis/workflows/ci/badge.svg)](https://github.com/VGVentures/very_good_analysis/actions)
 [![pub package](https://img.shields.io/pub/v/very_good_analysis.svg)](https://pub.dartlang.org/packages/very_good_analysis)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![style: very good analysis][badge]][badge_link]
