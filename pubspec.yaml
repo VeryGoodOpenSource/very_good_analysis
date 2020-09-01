@@ -2,7 +2,10 @@ name: very_good_analysis
 version: 1.0.0
 description: >-
   Very Good Dart analyzer settings and best practices used internally at Very Good Ventures.
-homepage: https://github.com/VGVentures/very_good_code/very_good_analysis
+repository: https://github.com/VGVentures/very_good_analysis
+issue_tracker: https://github.com/VGVentures/very_good_analysis/issues
+homepage: https://github.com/VGVentures/very_good_analysis
+documentation: https://github.com/VGVentures/very_good_analysis
 
 environment:
   sdk: ">=2.0.0 <3.0.0"
