@@ -1,0 +1,24 @@
+name: ci
+
+on:
+  push:
+    paths:
+      - ".github/workflows/main.yaml"
+
+  pull_request:
+    paths:
+      - ".github/workflows/main.yaml"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    container:
+      image: google/dart:2.8.4
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install Dependencies
+        run: pub get
+      - name: Format
+        run: dartfmt --dry-run --set-exit-if-changed .
+      - name: Analyze
+        run: dartanalyzer --fatal-infos --fatal-warnings lib example
