@@ -1,6 +1,7 @@
 # 1.0.1
 
 - docs: README improvements
+- docs: inline documentation improvements
 
 # 1.0.0
 
