@@ -1,13 +1,6 @@
 name: ci
 
-on:
-  push:
-    paths:
-      - ".github/workflows/main.yaml"
-
-  pull_request:
-    paths:
-      - ".github/workflows/main.yaml"
+on: pull_request
 
 jobs:
   build:

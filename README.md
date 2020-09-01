@@ -1,5 +1,9 @@
 # Very Good Analysis
 
+[![pub package](https://img.shields.io/pub/v/very_good_analysis.svg)](https://pub.dartlang.org/packages/very_good_analysis)
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+[![style: very good analysis][badge]][badge_link]
+
 This package provides Dart linter rules which are used at [Very Good Ventures](https://verygood.ventures).
 
 **Note**: This package is heavily inspired by and has a dependency on [pedantic](https://github.com/dart-lang/pedantic).
@@ -34,7 +38,7 @@ include: package:very_good_analysis/analysis_options.1.0.0.yaml
 
 There may be cases where specific lint rules are undesirable. Lint rules can be surpressed at the line, file, or project level.
 
-An example use case for suppressing lint rules at the file level is suppressing the `prefer_const_constructors` in order to achieve 100% code coverage. This is due to the fact that const constructors are executed before the tests are run, resulting in no coverage collection. 
+An example use case for suppressing lint rules at the file level is suppressing the `prefer_const_constructors` in order to achieve 100% code coverage. This is due to the fact that const constructors are executed before the tests are run, resulting in no coverage collection.
 
 Suppressing lint rules should be done only in a handful of circumstances when absolutely necessary. **They should be justified to the project lead beforehand.**
 
@@ -69,3 +73,16 @@ linter:
   rules:
     public_member_api_docs: false
 ```
+
+## Badge
+
+To indicate your project is using `very_good_analysis` →
+[![style: very good analysis][badge]][badge_link]
+
+```md
+[![style: very good analysis](https://img.shields.io/badge/style-very_good_analysis-B22C89.svg)](https://pub.dev/packages/very_good_analysis)
+```
+
+[very good analysis]: https://github.com/VGVentures/very_good_analysis
+[badge]: https://img.shields.io/badge/style-very_good_analysis-B22C89.svg
+[badge_link]: https://pub.dev/packages/very_good_analysis
