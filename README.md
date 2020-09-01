@@ -1,11 +1,17 @@
 # Very Good Analysis
 
+[![Very Good Ventures](https://raw.githubusercontent.com/VGVentures/very_good_analysis/main/assets/vgv_logo.png)](https://verygood.ventures)
+
+Developed with 💙 by [Very Good Ventures](https://verygood.ventures) 🦄
+
 [![ci](https://github.com/VGVentures/very_good_analysis/workflows/ci/badge.svg)](https://github.com/VGVentures/very_good_analysis/actions)
 [![pub package](https://img.shields.io/pub/v/very_good_analysis.svg)](https://pub.dartlang.org/packages/very_good_analysis)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![style: very good analysis][badge]][badge_link]
 
-This package provides Dart linter rules which are used at [Very Good Ventures](https://verygood.ventures).
+---
+
+This package provides Dart linter rules which are used at [Very Good Ventures](https://verygood.ventures). For more information, see the [complete list of options](https://github.com/VGVentures/very_good_analysis/blob/main/analysis_options.yaml).
 
 **Note**: This package is heavily inspired by and has a dependency on [pedantic](https://github.com/dart-lang/pedantic).
 
