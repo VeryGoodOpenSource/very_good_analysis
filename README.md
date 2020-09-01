@@ -82,3 +82,7 @@ To indicate your project is using `very_good_analysis` →
 ```md
 [![style: very good analysis](https://img.shields.io/badge/style-very_good_analysis-B22C89.svg)](https://pub.dev/packages/very_good_analysis)
 ```
+
+[very good analysis]: https://github.com/VGVentures/very_good_analysis
+[badge]: https://img.shields.io/badge/very_good_analysis-B22C89.svg
+[badge_link]: https://pub.dev/packages/very_good_analysis
