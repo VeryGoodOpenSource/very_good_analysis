@@ -47,8 +47,6 @@ There may be cases where specific lint rules are undesirable. Lint rules can be 
 
 An example use case for suppressing lint rules at the file level is suppressing the `prefer_const_constructors` in order to achieve 100% code coverage. This is due to the fact that const constructors are executed before the tests are run, resulting in no coverage collection.
 
-Suppressing lint rules should be done only in a handful of circumstances when absolutely necessary. **They should be justified to the project lead beforehand.**
-
 ### Line Level
 
 To surpress a specific lint rule for a specific line of code, use an `ignore` comment directly above the line:
