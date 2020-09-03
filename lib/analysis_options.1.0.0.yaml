@@ -1,3 +1,7 @@
+analyzer:
+  exclude:
+    - "test/.test_coverage.dart"
+
 linter:
   rules:
     - always_declare_return_types
