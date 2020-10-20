@@ -1,3 +1,13 @@
+# 1.0.3
+
+- feat: additional linter rules
+  - `avoid_print`
+  - `avoid_unnecessary_containers`
+  - `prefer_final_in_for_each`
+  - `prefer_final_locals`
+  - `prefer_const_declarations`
+  - `sized_box_for_whitespace`
+
 # 1.0.2
 
 - feat: add test/.test_coverage.dart to the list of ignored files
