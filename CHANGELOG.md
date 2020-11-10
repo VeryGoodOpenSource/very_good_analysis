@@ -1,3 +1,7 @@
+# 1.0.4
+
+- docs: README and metadata updates
+
 # 1.0.3
 
 - feat: additional linter rules
