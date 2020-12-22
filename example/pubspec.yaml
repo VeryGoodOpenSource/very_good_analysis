@@ -1,5 +1,6 @@
 name: very_good_analysis_example
 version: 0.0.1
+publish_to: none
 
 dependencies:
   very_good_analysis:
