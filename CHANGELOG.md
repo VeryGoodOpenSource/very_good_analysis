@@ -1,3 +1,7 @@
+# 2.0.0
+
+- feat: stable null safe release
+
 # 2.0.0-nullsafety.0
 
 - chore: migrate to null safety

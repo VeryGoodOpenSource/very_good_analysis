@@ -2,6 +2,9 @@ name: very_good_analysis_example
 version: 0.0.1
 publish_to: none
 
+environment:
+  sdk: ">=2.12.0-0 <3.0.0"
+
 dependencies:
   very_good_analysis:
     path: ../
