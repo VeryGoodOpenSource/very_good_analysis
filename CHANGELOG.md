@@ -1,3 +1,8 @@
+# 2.0.1
+
+- feat: additional linter rule:
+  - `avoid_dynamic_calls`
+
 # 2.0.0
 
 - feat: stable null safe release
