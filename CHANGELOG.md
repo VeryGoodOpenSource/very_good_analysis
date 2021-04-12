@@ -1,3 +1,8 @@
+# 2.0.2
+
+- feat: additional linter rule:
+  - `use_key_in_widget_constructors`
+
 # 2.0.1
 
 - feat: additional linter rule:
