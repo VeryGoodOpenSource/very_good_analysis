@@ -1,3 +1,8 @@
+# 2.0.3
+
+- feat: additional linter rule:
+  - `sort_child_properties_last`
+
 # 2.0.2
 
 - feat: additional linter rule:
