@@ -1,3 +1,32 @@
+# 2.1.0
+
+- feat: update sdk constraint to v2.12.0 stable
+- feat: additional lint rules:
+  - `avoid_print`
+  - `avoid_returning_null_for_void`
+  - `avoid_single_cascade_in_expression_statements`
+  - `avoid_unnecessary_containers`
+  - `avoid_web_libraries_in_flutter`
+  - `curly_braces_in_flow_control_structures`
+  - `exhaustive_cases`
+  - `file_names`
+  - `no_logic_in_create_state`
+  - `prefer_const_constructors_in_immutables`
+  - `prefer_const_declarations`
+  - `prefer_const_literals_to_create_immutables`
+  - `prefer_function_declarations_over_variables`
+  - `prefer_inlined_adds`
+  - `prefer_is_not_operator`
+  - `prefer_null_aware_operators`
+  - `prefer_void_to_null`
+  - `provide_deprecation_message`
+  - `sized_box_for_whitespace`
+  - `unnecessary_overrides`
+  - `unnecessary_string_escapes`
+  - `unnecessary_string_interpolations`
+  - `use_full_hex_values_for_flutter_colors`
+  - `void_checks`
+
 # 2.0.3
 
 - feat: additional linter rule:
