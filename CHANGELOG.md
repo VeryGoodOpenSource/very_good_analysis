@@ -1,3 +1,9 @@
+# 2.1.1
+
+- docs: update `README` to include latest version
+- docs: reword package description
+- docs: consolidate `README` links
+
 # 2.1.0
 
 - feat: update sdk constraint to v2.12.0 stable
