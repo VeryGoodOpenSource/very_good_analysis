@@ -2,7 +2,6 @@
 /// used internally at [Very Good Ventures](https://verygood.ventures).
 library very_good_analysis;
 
-/// Exported from [package:pedantic](https://pub.dev/packages/pedantic)
 /// Indicates to tools that `Future` is intentionally not `await`-ed.
 ///
 /// In an `async` context, it is normally expected that all `Future`s are
@@ -10,4 +9,4 @@ library very_good_analysis;
 /// there are times where one or more futures are intentionally not awaited.
 /// This function may be used to ignore a particular future. It silences the
 /// `unawaited_futures` lint.
-export 'package:pedantic/pedantic.dart' show unawaited;
+void unawaited(Future<void>? future) {}
