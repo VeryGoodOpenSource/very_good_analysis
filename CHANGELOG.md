@@ -1,3 +1,9 @@
+# 2.1.2
+
+- refactor: remove deprecated `pedantic` dependency
+- ci: improvements to ensure max pub score
+- docs: minor documentation and package description updates
+
 # 2.1.1
 
 - docs: update `README` to include latest version
