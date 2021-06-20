@@ -13,7 +13,7 @@ Developed with 💙 by [Very Good Ventures][very_good_ventures_link] 🦄
 
 This package provides lint rules for Dart and Flutter which are used at [Very Good Ventures][very_good_ventures_link]. For more information, see the [complete list of options][analysis_options_yaml].
 
-**Note**: This package is heavily inspired by and has a dependency on [pedantic][pedantic_link].
+**Note**: This package was heavily inspired by [pedantic][pedantic_link].
 
 ## Usage
 
