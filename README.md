@@ -38,7 +38,7 @@ include: package:very_good_analysis/analysis_options.yaml
 This will ensure you always use the latest version of the lints. If you wish to restrict the lint version, specify a version of `analysis_options.yaml` instead:
 
 ```yaml
-include: package:very_good_analysis/analysis_options.2.1.1.yaml
+include: package:very_good_analysis/analysis_options.2.1.2.yaml
 ```
 
 ## Suppressing Lints
