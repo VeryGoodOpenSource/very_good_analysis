@@ -22,11 +22,11 @@ To use the lints, add a dependency in your `pubspec.yaml`:
 ```yaml
 # If you use `package:very_good_analysis/very_good_analysis.dart`, add a normal dependency.
 dependencies:
-  very_good_analysis: ^2.1.1
+  very_good_analysis: ^2.1.2
 
 # Or, if you just want `analysis_options.yaml`, it can be a dev dependency.
 dev_dependencies:
-  very_good_analysis: ^2.1.1
+  very_good_analysis: ^2.1.2
 ```
 
 Then, add an include in `analysis_options.yaml`:
