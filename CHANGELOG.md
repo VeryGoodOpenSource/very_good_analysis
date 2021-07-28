@@ -1,3 +1,11 @@
+# 2.2.0
+
+- feat: additional lint rules:
+  - `always_use_package_imports`
+  - `avoid_returning_null_for_future`
+  - `avoid_slow_async_io`
+  - `avoid_type_to_string`
+
 # 2.1.2
 
 - refactor: remove deprecated `pedantic` dependency
