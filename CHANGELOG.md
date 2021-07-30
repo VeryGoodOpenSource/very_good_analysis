@@ -1,8 +1,8 @@
 # 2.3.0
 
 - feat: additional analysis errors:
-  - [`missing_required_param`](https://dart-lang.github.io/linter/lints/missing_required_param.html)
-  - [`missing_return`](https://dart-lang.github.io/linter/lints/missing_return.html)
+  - `missing_required_param`
+  - `missing_return`
 - feat: additional lint rules:
   - [`use_named_constants`](https://dart-lang.github.io/linter/lints/use_named_constants.html)
   - [`use_raw_strings`](https://dart-lang.github.io/linter/lints/use_raw_strings.html)
