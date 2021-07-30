@@ -58,7 +58,6 @@ linter:
     - constant_identifier_names
     - control_flow_in_finally
     - curly_braces_in_flow_control_structures
-    - depend_on_referenced_packages
     - deprecated_consistency
     - directives_ordering
     - empty_catches
@@ -74,7 +73,6 @@ linter:
     - leading_newlines_in_multiline_strings
     - library_names
     - library_prefixes
-    - library_private_types_in_public_api
     - lines_longer_than_80_chars
     - list_remove_unrelated_type
     - literal_only_boolean_expressions
@@ -84,7 +82,6 @@ linter:
     - no_logic_in_create_state
     - no_runtimeType_toString
     - non_constant_identifier_names
-    - noop_primitive_operations
     - null_check_on_nullable_type_parameter
     - null_closures
     - omit_local_variable_types
@@ -119,7 +116,6 @@ linter:
     - prefer_is_not_empty
     - prefer_is_not_operator
     - prefer_iterable_whereType
-    - prefer_null_aware_method_calls
     - prefer_null_aware_operators
     - prefer_single_quotes
     - prefer_spread_collections
@@ -128,7 +124,6 @@ linter:
     - provide_deprecation_message
     - public_member_api_docs
     - recursive_getters
-    - require_trailing_commas
     - sized_box_for_whitespace
     - slash_for_doc_comments
     - sort_child_properties_last
@@ -169,7 +164,6 @@ linter:
     - use_rethrow_when_possible
     - use_setters_to_change_properties
     - use_string_buffers
-    - use_test_throws_matchers
     - use_to_and_as_if_applicable
     - valid_regexps
     - void_checks
