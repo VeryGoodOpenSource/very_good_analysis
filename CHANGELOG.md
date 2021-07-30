@@ -1,3 +1,55 @@
+# 2.3.0
+
+- feat: additional analysis errors:
+  - `missing_required_param`
+  - `missing_return`
+- feat: additional lint rules:
+  - `use_named_constants`
+  - `use_raw_strings`
+  - `use_late_for_private_fields_and_variables`
+  - `use_setters_to_change_properties`
+  - `use_string_buffers`
+  - `use_test_throws_matchers`
+  - `use_to_and_as_if_applicable`
+  - `depend_on_referenced_packages`
+  - `sort_pub_dependencies`
+  - `literal_only_boolean_expressions`
+  - `use_build_context_synchronously`
+  - `avoid_bool_literals_in_conditional_expressions`
+  - `avoid_catching_errors`
+  - `avoid_double_and_int_checks`
+  - `avoid_equals_and_hash_code_on_mutable_classes`
+  - `avoid_escaping_inner_quotes`
+  - `avoid_field_initializers_in_const_classes`
+  - `avoid_redundant_argument_values`
+  - `avoid_returning_this`
+  - `avoid_setters_without_getters`
+  - `avoid_void_async`
+  - `cast_nullable_to_non_nullable`
+  - `deprecated_consistency`
+  - `join_return_with_assignment`
+  - `leading_newlines_in_multiline_strings`
+  - `library_private_types_in_public_api`
+  - `missing_whitespace_between_adjacent_strings`
+  - `no_runtimeType_toString`
+  - `noop_primitive_operations`
+  - `null_check_on_nullable_type_parameter`
+  - `prefer_asserts_in_initializer_lists`
+  - `prefer_final_in_for_each`
+  - `prefer_final_locals`
+  - `prefer_if_elements_to_conditional_expressions`
+  - `prefer_int_literals`
+  - `prefer_null_aware_method_calls`
+  - `require_trailing_commas`
+  - `sort_unnamed_constructors_first`
+  - `tighten_type_of_initializing_formals`
+  - `type_annotate_public_apis`
+  - `unnecessary_await_in_return`
+  - `unnecessary_null_checks`
+  - `unnecessary_nullable_for_final_variable_declarations`
+  - `unnecessary_parenthesis`
+  - `unnecessary_raw_strings`
+
 # 2.2.0
 
 - feat: additional lint rules:
