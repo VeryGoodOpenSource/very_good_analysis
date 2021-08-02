@@ -1,6 +1,6 @@
 import 'package:very_good_analysis/very_good_analysis.dart';
 
-void main() async {
+Future<void> main() async {
   /// Await async functions.
   await asyncFunction();
 

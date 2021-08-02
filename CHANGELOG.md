@@ -1,3 +1,49 @@
+# 2.3.0
+
+- feat: additional analysis errors:
+  - `missing_required_param`
+  - `missing_return`
+- feat: additional lint rules:
+  - [`use_named_constants`](https://dart-lang.github.io/linter/lints/use_named_constants.html)
+  - [`use_raw_strings`](https://dart-lang.github.io/linter/lints/use_raw_strings.html)
+  - [`use_late_for_private_fields_and_variables`](https://dart-lang.github.io/linter/lints/use_late_for_private_fields_and_variables.html)
+  - [`use_setters_to_change_properties`](https://dart-lang.github.io/linter/lints/use_setters_to_change_properties.html)
+  - [`use_string_buffers`](https://dart-lang.github.io/linter/lints/use_string_buffers.html)
+  - [`use_to_and_as_if_applicable`](https://dart-lang.github.io/linter/lints/use_to_and_as_if_applicable.html)
+  - [`sort_pub_dependencies`](https://dart-lang.github.io/linter/lints/sort_pub_dependencies.html)
+  - [`literal_only_boolean_expressions`](https://dart-lang.github.io/linter/lints/literal_only_boolean_expressions.html)
+  - [`use_build_context_synchronously`](https://dart-lang.github.io/linter/lints/use_build_context_synchronously.html)
+  - [`avoid_bool_literals_in_conditional_expressions`](https://dart-lang.github.io/linter/lints/avoid_bool_literals_in_conditional_expressions.html)
+  - [`avoid_catching_errors`](https://dart-lang.github.io/linter/lints/avoid_catching_errors.html)
+  - [`avoid_double_and_int_checks`](https://dart-lang.github.io/linter/lints/avoid_double_and_int_checks.html)
+  - [`avoid_equals_and_hash_code_on_mutable_classes`](https://dart-lang.github.io/linter/lints/avoid_equals_and_hash_code_on_mutable_classes.html)
+  - [`avoid_escaping_inner_quotes`](https://dart-lang.github.io/linter/lints/avoid_escaping_inner_quotes.html)
+  - [`avoid_field_initializers_in_const_classes`](https://dart-lang.github.io/linter/lints/avoid_field_initializers_in_const_classes.html)
+  - [`avoid_redundant_argument_values`](https://dart-lang.github.io/linter/lints/avoid_redundant_argument_values.html)
+  - [`avoid_returning_this`](https://dart-lang.github.io/linter/lints/avoid_returning_this.html)
+  - [`avoid_setters_without_getters`](https://dart-lang.github.io/linter/lints/avoid_setters_without_getters.html)
+  - [`avoid_void_async`](https://dart-lang.github.io/linter/lints/avoid_void_async.html)
+  - [`cast_nullable_to_non_nullable`](https://dart-lang.github.io/linter/lints/cast_nullable_to_non_nullable.html)
+  - [`deprecated_consistency`](https://dart-lang.github.io/linter/lints/deprecated_consistency.html)
+  - [`join_return_with_assignment`](https://dart-lang.github.io/linter/lints/join_return_with_assignment.html)
+  - [`leading_newlines_in_multiline_strings`](https://dart-lang.github.io/linter/lints/leading_newlines_in_multiline_strings.html)
+  - [`missing_whitespace_between_adjacent_strings`](https://dart-lang.github.io/linter/lints/missing_whitespace_between_adjacent_strings.html)
+  - [`no_runtimeType_toString`](https://dart-lang.github.io/linter/lints/no_runtimeType_toString.html)
+  - [`null_check_on_nullable_type_parameter`](https://dart-lang.github.io/linter/lints/null_check_on_nullable_type_parameter.html)
+  - [`prefer_asserts_in_initializer_lists`](https://dart-lang.github.io/linter/lints/prefer_asserts_in_initializer_lists.html)
+  - [`prefer_final_in_for_each`](https://dart-lang.github.io/linter/lints/prefer_final_in_for_each.html)
+  - [`prefer_final_locals`](https://dart-lang.github.io/linter/lints/prefer_final_locals.html)
+  - [`prefer_if_elements_to_conditional_expressions`](https://dart-lang.github.io/linter/lints/prefer_if_elements_to_conditional_expressions.html)
+  - [`prefer_int_literals`](https://dart-lang.github.io/linter/lints/prefer_int_literals.html)
+  - [`sort_unnamed_constructors_first`](https://dart-lang.github.io/linter/lints/sort_unnamed_constructors_first.html)
+  - [`tighten_type_of_initializing_formals`](https://dart-lang.github.io/linter/lints/tighten_type_of_initializing_formals.html)
+  - [`type_annotate_public_apis`](https://dart-lang.github.io/linter/lints/type_annotate_public_apis.html)
+  - [`unnecessary_await_in_return`](https://dart-lang.github.io/linter/lints/unnecessary_await_in_return.html)
+  - [`unnecessary_null_checks`](https://dart-lang.github.io/linter/lints/unnecessary_null_checks.html)
+  - [`unnecessary_nullable_for_final_variable_declarations`](https://dart-lang.github.io/linter/lints/unnecessary_nullable_for_final_variable_declarations.html)
+  - [`unnecessary_parenthesis`](https://dart-lang.github.io/linter/lints/unnecessary_parenthesis.html)
+  - [`unnecessary_raw_strings`](https://dart-lang.github.io/linter/lints/unnecessary_raw_strings.html)
+
 # 2.2.0
 
 - feat: additional lint rules:
