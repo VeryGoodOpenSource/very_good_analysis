@@ -1,3 +1,22 @@
+# 2.4.0
+
+- feat: additional lint rules:
+  - [`avoid_js_rounded_ints`](https://dart-lang.github.io/linter/lints/avoid_js_rounded_ints.html)
+  - [`avoid_positional_boolean_parameters`](https://dart-lang.github.io/linter/lints/avoid_positional_boolean_parameters.html)
+  - [`avoid_private_typedef_functions`](https://dart-lang.github.io/linter/lints/avoid_private_typedef_functions.html)
+  - [`eol_at_end_of_file`](https://dart-lang.github.io/linter/lints/eol_at_end_of_file.html)
+  - [`flutter_style_todos`](https://dart-lang.github.io/linter/lints/flutter_style_todos.html)
+  - [`library_private_types_in_public_api`](https://dart-lang.github.io/linter/lints/library_private_types_in_public_api.html)
+  - [`no_default_cases`](https://dart-lang.github.io/linter/lints/no_default_cases.html)
+  - [`noop_primitive_operations`](https://dart-lang.github.io/linter/lints/noop_primitive_operations.html)
+  - [`one_member_abstracts`](https://dart-lang.github.io/linter/lints/one_member_abstracts.html)
+  - [`parameter_assignments`](https://dart-lang.github.io/linter/lints/parameter_assignments.html)
+  - [`prefer_asserts_with_message`](https://dart-lang.github.io/linter/lints/prefer_asserts_with_message.html)
+  - [`prefer_constructors_over_static_methods`](https://dart-lang.github.io/linter/lints/prefer_constructors_over_static_methods.html)
+  - [`prefer_null_aware_method_calls`](https://dart-lang.github.io/linter/lints/prefer_null_aware_method_calls.html)
+  - [`require_trailing_commas`](https://dart-lang.github.io/linter/lints/require_trailing_commas.html)
+  - [`use_is_even_rather_than_modulo`](https://dart-lang.github.io/linter/lints/use_is_even_rather_than_modulo.html)
+
 # 2.3.0
 
 - feat: additional analysis errors:

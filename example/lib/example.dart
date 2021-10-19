@@ -9,6 +9,4 @@ Future<void> main() async {
   unawaited(asyncFunction());
 }
 
-Future<String> asyncFunction() {
-  return Future.value('hello world!');
-}
+Future<String> asyncFunction() => Future.value('hello world!');
