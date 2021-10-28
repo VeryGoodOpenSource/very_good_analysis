@@ -58,7 +58,7 @@ class A {}
 
 ### File Level
 
-To surpress a specific lint rule of a specific file, use an `ignore_for_file` comment at the top of the file:
+To suppress a specific lint rule of a specific file, use an `ignore_for_file` comment at the top of the file:
 
 ```dart
 // ignore_for_file: public_member_api_docs
@@ -70,7 +70,7 @@ class B {}
 
 ### Project Level
 
-To surpress a specific lint rule for an entire project, modify `analysis_options.yaml`:
+To suppress a specific lint rule for an entire project, modify `analysis_options.yaml`:
 
 ```yaml
 include: package:very_good_analysis/analysis_options.yaml
