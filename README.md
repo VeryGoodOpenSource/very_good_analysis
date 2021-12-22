@@ -1,6 +1,7 @@
 # Very Good Analysis
 
-[![Very Good Ventures](https://raw.githubusercontent.com/VeryGoodOpenSource/very_good_analysis/main/assets/vgv_logo.png)][very_good_ventures_link]
+[![Very Good Ventures][logo_white]][very_good_ventures_link_dark]
+[![Very Good Ventures][logo_black]][very_good_ventures_link_light]
 
 Developed with 💙 by [Very Good Ventures][very_good_ventures_link] 🦄
 
@@ -95,7 +96,11 @@ To indicate your project is using `very_good_analysis` →
 [badge_link]: https://pub.dev/packages/very_good_analysis
 [license_badge]: https://img.shields.io/badge/license-MIT-blue.svg
 [license_badge_link]: https://opensource.org/licenses/MIT
+[logo_black]: https://raw.githubusercontent.com/VeryGoodOpenSource/very_good_analysis/main/assets/vgv_logo_black.png#gh-light-mode-only
+[logo_white]: https://raw.githubusercontent.com/VeryGoodOpenSource/very_good_analysis/main/assets/vgv_logo_white.png#gh-dark-mode-only
 [pedantic_link]: https://github.com/dart-lang/pedantic
 [pub_badge]: https://img.shields.io/pub/v/very_good_analysis.svg
 [pub_badge_link]: https://pub.dartlang.org/packages/very_good_analysis
 [very_good_ventures_link]: https://verygood.ventures
+[very_good_ventures_link_dark]: https://verygood.ventures#gh-dark-mode-only
+[very_good_ventures_link_light]: https://verygood.ventures#gh-light-mode-only
