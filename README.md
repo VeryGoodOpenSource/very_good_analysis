@@ -96,8 +96,8 @@ To indicate your project is using `very_good_analysis` →
 [badge_link]: https://pub.dev/packages/very_good_analysis
 [license_badge]: https://img.shields.io/badge/license-MIT-blue.svg
 [license_badge_link]: https://opensource.org/licenses/MIT
-[logo_black]: https://raw.githubusercontent.com/VeryGoodOpenSource/very_good_analysis/main/assets/vgv_logo_black.png#gh-light-mode-only
-[logo_white]: https://raw.githubusercontent.com/VeryGoodOpenSource/very_good_analysis/main/assets/vgv_logo_white.png#gh-dark-mode-only
+[logo_black]: https://raw.githubusercontent.com/VGVentures/very_good_brand/main/styles/README/vgv_logo_black.png#gh-light-mode-only
+[logo_white]: https://raw.githubusercontent.com/VGVentures/very_good_brand/main/styles/README/vgv_logo_white.png#gh-dark-mode-only
 [pedantic_link]: https://github.com/dart-lang/pedantic
 [pub_badge]: https://img.shields.io/pub/v/very_good_analysis.svg
 [pub_badge_link]: https://pub.dartlang.org/packages/very_good_analysis
