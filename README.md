@@ -23,11 +23,11 @@ To use the lints, add a dependency in your `pubspec.yaml`:
 ```yaml
 # If you use `package:very_good_analysis/very_good_analysis.dart`, add a normal dependency.
 dependencies:
-  very_good_analysis: ^2.4.0
+  very_good_analysis: ^3.0.0
 
 # Or, if you just want `analysis_options.yaml`, it can be a dev dependency.
 dev_dependencies:
-  very_good_analysis: ^2.4.0
+  very_good_analysis: ^3.0.0
 ```
 
 Then, add an include in `analysis_options.yaml`:
@@ -39,7 +39,7 @@ include: package:very_good_analysis/analysis_options.yaml
 This will ensure you always use the latest version of the lints. If you wish to restrict the lint version, specify a version of `analysis_options.yaml` instead:
 
 ```yaml
-include: package:very_good_analysis/analysis_options.2.4.0.yaml
+include: package:very_good_analysis/analysis_options.3.0.0.yaml
 ```
 
 ## Suppressing Lints
