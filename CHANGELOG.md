@@ -1,3 +1,13 @@
+# 3.0.1
+
+- feat: use analyzer language modes instead of deprecated `strong-mode`
+  ```yaml
+  language:
+    strict-casts: true
+    strict-inference: true
+    strict-raw-types: true
+  ```
+
 # 3.0.0
 
 - feat!: upgrade to support Dart `^2.17.0`
