@@ -3,6 +3,9 @@ name: ci
 on: pull_request
 
 jobs:
+  semantic-pull-request:
+    uses: VeryGoodOpenSource/very_good_workflows/.github/workflows/semantic_pull_request.yml@v1
+
   build:
     runs-on: ubuntu-latest
     steps:
