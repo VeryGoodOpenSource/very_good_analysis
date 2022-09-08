@@ -63,6 +63,7 @@ linter:
     - constant_identifier_names
     - control_flow_in_finally
     - curly_braces_in_flow_control_structures
+    - depend_on_referenced_packages
     - deprecated_consistency
     - directives_ordering
     - empty_catches
@@ -74,7 +75,6 @@ linter:
     - flutter_style_todos
     - hash_and_equals
     - implementation_imports
-    - invariant_booleans
     - iterable_contains_unrelated_type
     - join_return_with_assignment
     - leading_newlines_in_multiline_strings
@@ -88,6 +88,8 @@ linter:
     - no_adjacent_strings_in_list
     - no_default_cases
     - no_duplicate_case_values
+    - no_leading_underscores_for_library_prefixes
+    - no_leading_underscores_for_local_identifiers
     - no_logic_in_create_state
     - no_runtimeType_toString
     - non_constant_identifier_names
