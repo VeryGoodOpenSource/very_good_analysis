@@ -9,4 +9,5 @@ library very_good_analysis;
 /// there are times where one or more futures are intentionally not awaited.
 /// This function may be used to ignore a particular future. It silences the
 /// `unawaited_futures` lint.
+@Deprecated('Please use unawaited from dart:async.')
 void unawaited(Future<void>? future) {}
