@@ -1,3 +1,8 @@
+# 3.0.2
+
+- fix: remove deprecated `invariant_booleans` lint
+- fix: deprecate `unawaited` (use `unawaited` from `dart:async` instead).
+
 # 3.0.1
 
 - feat: use analyzer language modes instead of deprecated `strong-mode`
