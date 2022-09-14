@@ -27,9 +27,12 @@ linter:
     - avoid_equals_and_hash_code_on_mutable_classes
     - avoid_escaping_inner_quotes
     - avoid_field_initializers_in_const_classes
+    - avoid_final_parameters # NEW
     - avoid_function_literals_in_foreach_calls
+    - avoid_implementing_value_types # NEW
     - avoid_init_to_null
     - avoid_js_rounded_ints
+    - avoid_multiple_declarations_per_line # NEW
     - avoid_null_checks_in_equality_operators
     - avoid_positional_boolean_parameters
     - avoid_print
@@ -48,6 +51,7 @@ linter:
     - avoid_slow_async_io
     - avoid_type_to_string
     - avoid_types_as_parameter_names
+    - avoid_types_on_closure_parameters # NEW
     - avoid_unnecessary_containers
     - avoid_unused_constructor_parameters
     - avoid_void_async
@@ -58,13 +62,16 @@ linter:
     - cancel_subscriptions
     - cascade_invocations
     - cast_nullable_to_non_nullable
+    - combinators_ordering # NEW
     - comment_references
     - conditional_uri_does_not_exist
     - constant_identifier_names
     - control_flow_in_finally
     - curly_braces_in_flow_control_structures
+    - depend_on_referenced_packages
     - deprecated_consistency
     - directives_ordering
+    - discarded_futures # NEW
     - empty_catches
     - empty_constructor_bodies
     - empty_statements
@@ -87,6 +94,8 @@ linter:
     - no_adjacent_strings_in_list
     - no_default_cases
     - no_duplicate_case_values
+    - no_leading_underscores_for_library_prefixes
+    - no_leading_underscores_for_local_identifiers
     - no_logic_in_create_state
     - no_runtimeType_toString
     - non_constant_identifier_names
@@ -172,13 +181,16 @@ linter:
     - unnecessary_string_escapes
     - unnecessary_string_interpolations
     - unnecessary_this
+    - unnecessary_to_list_in_spreads # NEW
     - unrelated_type_equality_checks
+    - unsafe_html # NEW
     - use_build_context_synchronously
     - use_colored_box
     - use_decorated_box
     - use_enums
     - use_full_hex_values_for_flutter_colors
     - use_function_type_syntax_for_parameters
+    - use_if_null_to_convert_nulls_to_bools # NEW
     - use_is_even_rather_than_modulo
     - use_key_in_widget_constructors
     - use_late_for_private_fields_and_variables
@@ -187,7 +199,9 @@ linter:
     - use_rethrow_when_possible
     - use_setters_to_change_properties
     - use_string_buffers
+    - use_string_in_part_of_directives # NEW
     - use_super_parameters
+    - use_test_throws_matchers # NEW
     - use_to_and_as_if_applicable
     - valid_regexps
     - void_checks
