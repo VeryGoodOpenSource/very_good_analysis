@@ -4,11 +4,9 @@
   - [avoid_final_parameters](https://dart-lang.github.io/linter/lints/avoid_final_parameters.html)
   - [avoid_multiple_declarations_per_line](https://dart-lang.github.io/linter/lints/avoid_multiple_declarations_per_line.html)
   - [depend_on_referenced_packages](https://dart-lang.github.io/linter/lints/depend_on_referenced_packages.html)
-  - [discarded_futures](https://dart-lang.github.io/linter/lints/discarded_futures.html)
   - [no_leading_underscores_for_library_prefixes](https://dart-lang.github.io/linter/lints/no_leading_underscores_for_library_prefixes.html)
   - [no_leading_underscores_for_local_identifiers](https://dart-lang.github.io/linter/lints/no_leading_underscores_for_local_identifiers.html)
   - [unnecessary_to_list_in_spreads](https://dart-lang.github.io/linter/lints/unnecessary_to_list_in_spreads.html)
-  - [unsafe_html](https://dart-lang.github.io/linter/lints/unsafe_html.html)
   - [use_if_null_to_convert_nulls_to_bools](https://dart-lang.github.io/linter/lints/use_if_null_to_convert_nulls_to_bools.html)
   - [use_test_throws_matchers](https://dart-lang.github.io/linter/lints/use_test_throws_matchers.html)
 
