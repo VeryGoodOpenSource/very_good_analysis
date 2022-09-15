@@ -2,9 +2,7 @@
 
 - feat: additional lint rules:
   - [avoid_final_parameters](https://dart-lang.github.io/linter/lints/avoid_final_parameters.html)
-  - [avoid_implementing_value_types](https://dart-lang.github.io/linter/lints/avoid_implementing_value_types.html)
   - [avoid_multiple_declarations_per_line](https://dart-lang.github.io/linter/lints/avoid_multiple_declarations_per_line.html)
-  - [avoid_types_on_closure_parameters](https://dart-lang.github.io/linter/lints/avoid_types_on_closure_parameters.html)
   - [depend_on_referenced_packages](https://dart-lang.github.io/linter/lints/depend_on_referenced_packages.html)
   - [discarded_futures](https://dart-lang.github.io/linter/lints/discarded_futures.html)
   - [no_leading_underscores_for_library_prefixes](https://dart-lang.github.io/linter/lints/no_leading_underscores_for_library_prefixes.html)
