@@ -1,5 +1,6 @@
 # 3.1.0
 
+- **BREAKING** refactor: remove deprecated `unawaited` (use `unawaited` from `dart:async` instead).
 - feat: additional lint rules:
   - [avoid_final_parameters](https://dart-lang.github.io/linter/lints/avoid_final_parameters.html)
   - [avoid_multiple_declarations_per_line](https://dart-lang.github.io/linter/lints/avoid_multiple_declarations_per_line.html)
