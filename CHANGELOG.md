@@ -1,3 +1,22 @@
+# 4.0.0
+
+- feat!: upgrade to support Dart `^2.19.0`
+- feat: additional lint rules:
+  - [always_put_required_named_parameters_first](https://dart-lang.github.io/linter/lints/always_put_required_named_parameters_first.html)
+  - [collection_methods_unrelated_type](https://dart-lang.github.io/linter/lints/collection_methods_unrelated_type.html)
+  - [combinators_ordering](https://dart-lang.github.io/linter/lints/combinators_ordering.html)
+  - [dangling_library_doc_comments](https://dart-lang.github.io/linter/lints/dangling_library_doc_comments.html)
+  - [enable_null_safety](https://dart-lang.github.io/linter/lints/enable_null_safety.html)
+  - [implicit_call_tearoffs](https://dart-lang.github.io/linter/lints/implicit_call_tearoffs.html)
+  - [library_annotations](https://dart-lang.github.io/linter/lints/library_annotations.html)
+  - [unnecessary_library_directive](https://dart-lang.github.io/linter/lints/unnecessary_library_directive.html)
+  - [use_string_in_part_of_directives](https://dart-lang.github.io/linter/lints/use_string_in_part_of_directives.html)
+
+- refactor: remove deprecated lint rules:
+  - [always_require_non_null_named_parameters](https://dart-lang.github.io/linter/lints/always_require_non_null_named_parameters.html)
+  - [avoid_returning_null](https://dart-lang.github.io/linter/lints/avoid_returning_null.html)
+  - [avoid_returning_null_for_future](https://dart-lang.github.io/linter/lints/avoid_returning_null_for_future.html)
+
 # 3.1.0
 
 - **BREAKING** refactor: remove deprecated `unawaited` (use `unawaited` from `dart:async` instead).
