@@ -1,7 +1,12 @@
+# 4.0.0+1
+
+- docs: minor updates to documentation in `README.md`
+
 # 4.0.0
 
 - feat!: upgrade to support Dart `^2.19.0`
 - feat: additional lint rules:
+
   - [always_put_required_named_parameters_first](https://dart-lang.github.io/linter/lints/always_put_required_named_parameters_first.html)
   - [collection_methods_unrelated_type](https://dart-lang.github.io/linter/lints/collection_methods_unrelated_type.html)
   - [combinators_ordering](https://dart-lang.github.io/linter/lints/combinators_ordering.html)
