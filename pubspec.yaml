@@ -7,4 +7,4 @@ homepage: https://github.com/VeryGoodOpenSource/very_good_analysis
 documentation: https://github.com/VeryGoodOpenSource/very_good_analysis
 
 environment:
-  sdk: ">=2.19.0 <3.0.0"
+  sdk: ^3.0.0-416
