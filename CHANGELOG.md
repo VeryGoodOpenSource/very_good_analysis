@@ -1,3 +1,7 @@
+# 5.0.0+1
+
+- docs: minor updates to documentation in `README.md`
+
 # 5.0.0
 
 - feat!: upgrade to support Dart `^3.0.0`

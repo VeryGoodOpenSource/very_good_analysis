@@ -21,8 +21,9 @@ This package provides lint rules for Dart and Flutter which are used at [Very Go
 To use the lints, add as a dev dependency in your `pubspec.yaml`:
 
 ```yaml
-dev_dependencies:
-  very_good_analysis: ^5.0.0
+dart pub add dev:very_good_analysis
+# or
+flutter pub add dev:very_good_analysis
 ```
 
 Then, add an include in `analysis_options.yaml`:
