@@ -22,7 +22,7 @@ To use the lints, add as a dev dependency in your `pubspec.yaml`:
 
 ```yaml
 dev_dependencies:
-  very_good_analysis: ^4.0.0
+  very_good_analysis: ^5.0.0
 ```
 
 Then, add an include in `analysis_options.yaml`:
@@ -34,7 +34,7 @@ include: package:very_good_analysis/analysis_options.yaml
 This will ensure you always use the latest version of the lints. If you wish to restrict the lint version, specify a version of `analysis_options.yaml` instead:
 
 ```yaml
-include: package:very_good_analysis/analysis_options.4.0.0.yaml
+include: package:very_good_analysis/analysis_options.5.0.0.yaml
 ```
 
 ## Suppressing Lints
