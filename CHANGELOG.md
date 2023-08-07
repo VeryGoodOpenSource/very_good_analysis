@@ -1,3 +1,8 @@
+# 5.1.0
+
+- fix(docs): full list of rules
+- feat: type equality checks should be warnings/errors
+
 # 5.0.0+1
 
 - docs: minor updates to documentation in `README.md`
