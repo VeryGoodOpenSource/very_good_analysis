@@ -1,3 +1,10 @@
+# 5.1.0
+
+- fix: remove deprecated `iterable_contains_unrelated_type` lint
+- fix: remove deprecated `list_remove_unrelated_type` lint
+- fix(docs): full list of rules
+- feat: type equality checks should be warnings/errors
+
 # 5.0.0+1
 
 - docs: minor updates to documentation in `README.md`
