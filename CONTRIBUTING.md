@@ -37,3 +37,14 @@ While the prerequisites above must be satisfied prior to having your
 pull request reviewed, the reviewer(s) may ask you to complete additional
 design work, tests, or other changes before your pull request can be ultimately
 accepted.
+
+## Releasing new versions
+
+Every snapshot of a version is saved on its own yaml file under the name pattern: `lib/analysis_options.<version>.yaml`.
+
+To release a new version:
+
+1. Copy the most recent yaml to a new one with the new desired version.
+1. Include that file on the main yaml file `lib/analysis_options.yaml`.
+1. Open a pull request with the proposed changes.
+
