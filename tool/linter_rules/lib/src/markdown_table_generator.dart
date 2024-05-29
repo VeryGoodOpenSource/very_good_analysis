@@ -15,11 +15,11 @@
 /// The above example will generate the following markdown:
 ///
 /// ```md
-/// | Header 1      | Header 2      |
-/// | ------------- | ------------- |
+/// | Header 1 | Header 2 |
+/// | --- | --- |
 /// | Row 1, Cell 1 | Row 1, Cell 2 |
+/// | Row 2, Cell 1 | Row 2, Cell 2 |
 /// ```
-///
 String generateMarkdownTable(List<List<String>> rows) {
   final buffer = StringBuffer()
     ..writeln('| ${rows.first.join(' | ')} |')

@@ -7,7 +7,7 @@ import 'package:path/path.dart' as path;
 ///
 /// It assumes that the current directory is the root of the `linter_rules`
 /// package (tool/linter_rules).
-final _reasonsFilePath = path.join('reasons.json');
+final _reasonsFilePath = path.join('exclusion_reasons.json');
 
 /// The reasons for disabling a rule.
 ///
