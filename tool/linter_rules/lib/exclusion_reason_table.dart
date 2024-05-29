@@ -43,11 +43,11 @@ Future<void> main(
       (await allVeryGoodAnalysisRules(version: version)).toSet();
   log('Found ${veryGoodAnalysisRules.length} Very Good Analysis rules');
 
-  final disabledRules = linterRules.difference(veryGoodAnalysisRules);
-  log('Found ${disabledRules.length} disabled rules');
+  final excludedRules = linterRules.difference(veryGoodAnalysisRules);
+  log('Found ${excludedRules.length} excluded rules');
 
   final exclusionReasons = {
-    for (final rule in disabledRules) rule: _noReasonFallback,
+    for (final rule in excludedRules) rule: _noReasonFallback,
     ...await readExclusionReasons(),
   };
   await writeExclusionReasons(exclusionReasons);
@@ -55,7 +55,7 @@ Future<void> main(
   final markdownTable = generateMarkdownTable(
     [
       ['Rule', 'Reason'],
-      ...disabledRules.map((rule) {
+      ...excludedRules.map((rule) {
         final ruleMarkdownLink = '[`$rule`](${_linterRuleLink(rule)})';
         return [ruleMarkdownLink, exclusionReasons[rule]!];
       }),

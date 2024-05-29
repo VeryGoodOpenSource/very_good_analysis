@@ -91,9 +91,9 @@ To indicate your project is using `very_good_analysis` →
 
 To see all the rules that are enabled, check the [analysis_options.yaml][analysis_options_yaml].
 
-### Disabled rules
+### Excluded rules
 
-Below is a list of rules that are disabled by default together with the reason why they have been disabled:
+Below is a list of rules that are excluded by default together with the reason why they have been excluded:
 
 | Rule                                                                                                                                                       | Reason        |
 | ---------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------- |
