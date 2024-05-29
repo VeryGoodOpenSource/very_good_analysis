@@ -1,5 +1,4 @@
-/// Tooling to help analyze Dart linter rules against the latest Very Good
-/// Analysis rules.
+/// Tools that help maintain Very Good Analysis rules.
 library;
 
 export 'src/all_linter_rules.dart';
