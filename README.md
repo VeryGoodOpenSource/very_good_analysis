@@ -93,7 +93,7 @@ To see all the rules that are enabled, check the [analysis_options.yaml][analysi
 
 ### Excluded rules
 
-Below is a list of rules that are excluded by default together with the reason why they have been excluded:
+Below is a list of rules that are not enabled by default together with the reason on why they have been excluded:
 
 | Rule                                                                                                                                                       | Reason        |
 | ---------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------- |
