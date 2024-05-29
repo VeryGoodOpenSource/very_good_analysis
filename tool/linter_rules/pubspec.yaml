@@ -1,5 +1,5 @@
 name: linter_rules
-description: A Very Good Project created by Very Good CLI.
+description: Tools that help maintain Very Good Analysis rules.
 version: 0.1.0+1
 publish_to: none
 
@@ -13,7 +13,5 @@ dependencies:
   yaml: ^3.1.2
 
 dev_dependencies:
-  mocktail: ^1.0.3
-  test: ^1.25.2
   very_good_analysis:
     path: ../../
