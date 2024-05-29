@@ -4,6 +4,11 @@ import 'package:linter_rules/linter_rules.dart';
 /// file.
 const _noReasonFallback = 'Not specified';
 
+/// The link to the documentation for the given linter [rule].
+String _linterRuleLink(String rule) {
+  return 'https://dart.dev/tools/linter-rules/$rule';
+}
+
 /// Logs a table with all those rules that are not enabled by Very Good Analysis
 /// in the given version, together with the reason for disabling them.
 ///
@@ -51,7 +56,8 @@ Future<void> main(
     [
       ['Rule', 'Reason'],
       ...disabledRules.map((rule) {
-        return [rule, exclusionReasons[rule]!];
+        final ruleMarkdownLink = '[`$rule`](${_linterRuleLink(rule)})';
+        return [ruleMarkdownLink, exclusionReasons[rule]!];
       }),
     ],
   );
