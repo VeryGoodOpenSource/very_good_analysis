@@ -1,0 +1,1 @@
+# Lint Rules Table Generator

@@ -85,6 +85,50 @@ To indicate your project is using `very_good_analysis` →
 [![style: very good analysis](https://img.shields.io/badge/style-very_good_analysis-B22C89.svg)](https://pub.dev/packages/very_good_analysis)
 ```
 
+## Linter rules
+
+### Enabled rules
+
+To see all the rules that are enabled, check the [analysis_options.yaml][analysis_options_yaml].
+
+### Disabled rules
+
+Below is a list of rules that are disabled by default together with the reason why they have been disabled:
+
+| Rule                                                     | Reason        |
+| -------------------------------------------------------- | ------------- |
+| always_put_control_body_on_new_line                      | Not specified |
+| always_specify_types                                     | Not specified |
+| annotate_redeclares                                      | Not specified |
+| avoid_annotating_with_dynamic                            | Not specified |
+| avoid_catches_without_on_clauses                         | Not specified |
+| avoid_classes_with_only_static_members                   | Not specified |
+| avoid_implementing_value_types                           | Not specified |
+| avoid_types_on_closure_parameters                        | Not specified |
+| close_sinks                                              | Not specified |
+| deprecated_member_use_from_same_package                  | Not specified |
+| diagnostic_describe_all_properties                       | Not specified |
+| discarded_futures                                        | Not specified |
+| do_not_use_environment                                   | Not specified |
+| matching_super_parameters                                | Not specified |
+| missing_code_block_language_in_doc_comment               | Not specified |
+| no_literal_bool_comparisons                              | Not specified |
+| no_self_assignments                                      | Not specified |
+| no_wildcard_variable_uses                                | Not specified |
+| prefer_double_quotes                                     | Not specified |
+| prefer_expression_function_bodies                        | Not specified |
+| prefer_final_parameters                                  | Not specified |
+| prefer_foreach                                           | Not specified |
+| prefer_mixin                                             | Not specified |
+| prefer_relative_imports                                  | Not specified |
+| type_literal_in_constant_pattern                         | Not specified |
+| unnecessary_final                                        | Not specified |
+| unnecessary_library_name                                 | Not specified |
+| unnecessary_null_aware_operator_on_extension_on_nullable | Not specified |
+| unreachable_from_main                                    | Not specified |
+| unsafe_html                                              | Not specified |
+| use_decorated_box                                        | Not specified |
+
 [analysis_options_yaml]: https://github.com/VeryGoodOpenSource/very_good_analysis/blob/main/lib/analysis_options.5.1.0.yaml
 [ci_badge]: https://github.com/VeryGoodOpenSource/very_good_analysis/workflows/ci/badge.svg
 [ci_badge_link]: https://github.com/VeryGoodOpenSource/very_good_analysis/actions

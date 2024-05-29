@@ -1,0 +1,19 @@
+name: linter_rules
+description: A Very Good Project created by Very Good CLI.
+version: 0.1.0+1
+publish_to: none
+
+environment:
+  sdk: ^3.4.0
+
+dependencies:
+  html: ^0.15.4
+  http: ^1.2.1
+  path: ^1.9.0
+  yaml: ^3.1.2
+
+dev_dependencies:
+  mocktail: ^1.0.3
+  test: ^1.25.2
+  very_good_analysis:
+    path: ../../
