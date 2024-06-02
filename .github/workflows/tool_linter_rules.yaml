@@ -7,3 +7,4 @@ jobs:
     uses: VeryGoodOpenSource/very_good_workflows/.github/workflows/dart_package.yml@v1
     with:
       working_directory: "tool/linter_rules"
+      analyze_directories: "lib"
