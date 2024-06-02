@@ -12,7 +12,7 @@ For each rule that is not enabled by default by Very Good Analysis, we create a 
 | rule1     | Reason1 |
 ```
 
-The reasons are defined in the [`exclusion_reasons.json`](exclusion_reasons.json) file, where each rule that is not enabled by default has an entry with the rule name and the reason why it is not enabled by default.
+The reasons are defined in the [`exclusion_reasons.json`](exclusion_reasons.json) file, where each rule that is not enabled by default has an entry with its rule name and the reason why it is not enabled by default.
 
 ### Usage
 
