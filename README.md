@@ -85,13 +85,7 @@ To indicate your project is using `very_good_analysis` →
 [![style: very good analysis](https://img.shields.io/badge/style-very_good_analysis-B22C89.svg)](https://pub.dev/packages/very_good_analysis)
 ```
 
-## Linter rules
-
-### Enabled rules
-
-To see all the rules that are enabled check the [analysis_options.yaml][analysis_options_yaml].
-
-### Excluded rules
+## Excluded rules
 
 Below is a list of rules that are not enabled by default together with the reason on why they have been excluded:
 | Rule | Reason |
