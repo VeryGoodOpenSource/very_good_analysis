@@ -17,7 +17,7 @@
   "no_literal_bool_comparisons": "Not specified",
   "no_self_assignments": "Not specified",
   "no_wildcard_variable_uses": "Not specified",
-  "prefer_double_quotes": "Not specified",
+  "prefer_double_quotes": "Incompatible with [prefer_single_quotes](https://dart.dev/tools/linter-rules/prefer_single_quotes)",
   "prefer_expression_function_bodies": "Not specified",
   "prefer_final_parameters": "Not specified",
   "prefer_foreach": "Not specified",
