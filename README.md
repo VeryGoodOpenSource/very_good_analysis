@@ -89,7 +89,7 @@ To indicate your project is using `very_good_analysis` →
 
 ### Enabled rules
 
-To see all the rules that are enabled, check the [analysis_options.yaml][analysis_options_yaml].
+To see all the rules that are enabled check the [analysis_options.yaml][analysis_options_yaml].
 
 ### Excluded rules
 
