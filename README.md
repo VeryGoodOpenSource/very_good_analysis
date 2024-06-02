@@ -94,40 +94,39 @@ To see all the rules that are enabled check the [analysis_options.yaml][analysis
 ### Excluded rules
 
 Below is a list of rules that are not enabled by default together with the reason on why they have been excluded:
-
-| Rule                                                                                                                                                       | Reason                                                                                             |
-| ---------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------- |
-| [`always_put_control_body_on_new_line`](https://dart.dev/tools/linter-rules/always_put_control_body_on_new_line)                                           | Not specified                                                                                      |
-| [`always_specify_types`](https://dart.dev/tools/linter-rules/always_specify_types)                                                                         | Not specified                                                                                      |
-| [`annotate_redeclares`](https://dart.dev/tools/linter-rules/annotate_redeclares)                                                                           | Not specified                                                                                      |
-| [`avoid_annotating_with_dynamic`](https://dart.dev/tools/linter-rules/avoid_annotating_with_dynamic)                                                       | Not specified                                                                                      |
-| [`avoid_catches_without_on_clauses`](https://dart.dev/tools/linter-rules/avoid_catches_without_on_clauses)                                                 | Not specified                                                                                      |
-| [`avoid_classes_with_only_static_members`](https://dart.dev/tools/linter-rules/avoid_classes_with_only_static_members)                                     | Not specified                                                                                      |
-| [`avoid_implementing_value_types`](https://dart.dev/tools/linter-rules/avoid_implementing_value_types)                                                     | Not specified                                                                                      |
-| [`avoid_types_on_closure_parameters`](https://dart.dev/tools/linter-rules/avoid_types_on_closure_parameters)                                               | Not specified                                                                                      |
-| [`close_sinks`](https://dart.dev/tools/linter-rules/close_sinks)                                                                                           | Not specified                                                                                      |
-| [`deprecated_member_use_from_same_package`](https://dart.dev/tools/linter-rules/deprecated_member_use_from_same_package)                                   | Not specified                                                                                      |
-| [`diagnostic_describe_all_properties`](https://dart.dev/tools/linter-rules/diagnostic_describe_all_properties)                                             | Not specified                                                                                      |
-| [`discarded_futures`](https://dart.dev/tools/linter-rules/discarded_futures)                                                                               | Not specified                                                                                      |
-| [`do_not_use_environment`](https://dart.dev/tools/linter-rules/do_not_use_environment)                                                                     | Not specified                                                                                      |
-| [`matching_super_parameters`](https://dart.dev/tools/linter-rules/matching_super_parameters)                                                               | Not specified                                                                                      |
-| [`missing_code_block_language_in_doc_comment`](https://dart.dev/tools/linter-rules/missing_code_block_language_in_doc_comment)                             | Not specified                                                                                      |
-| [`no_literal_bool_comparisons`](https://dart.dev/tools/linter-rules/no_literal_bool_comparisons)                                                           | Not specified                                                                                      |
-| [`no_self_assignments`](https://dart.dev/tools/linter-rules/no_self_assignments)                                                                           | Not specified                                                                                      |
-| [`no_wildcard_variable_uses`](https://dart.dev/tools/linter-rules/no_wildcard_variable_uses)                                                               | Not specified                                                                                      |
-| [`prefer_double_quotes`](https://dart.dev/tools/linter-rules/prefer_double_quotes)                                                                         | Incompatible with [prefer_single_quotes](https://dart.dev/tools/linter-rules/prefer_single_quotes) |
-| [`prefer_expression_function_bodies`](https://dart.dev/tools/linter-rules/prefer_expression_function_bodies)                                               | Not specified                                                                                      |
-| [`prefer_final_parameters`](https://dart.dev/tools/linter-rules/prefer_final_parameters)                                                                   | Not specified                                                                                      |
-| [`prefer_foreach`](https://dart.dev/tools/linter-rules/prefer_foreach)                                                                                     | Not specified                                                                                      |
-| [`prefer_mixin`](https://dart.dev/tools/linter-rules/prefer_mixin)                                                                                         | Not specified                                                                                      |
-| [`prefer_relative_imports`](https://dart.dev/tools/linter-rules/prefer_relative_imports)                                                                   | Not specified                                                                                      |
-| [`type_literal_in_constant_pattern`](https://dart.dev/tools/linter-rules/type_literal_in_constant_pattern)                                                 | Not specified                                                                                      |
-| [`unnecessary_final`](https://dart.dev/tools/linter-rules/unnecessary_final)                                                                               | Not specified                                                                                      |
-| [`unnecessary_library_name`](https://dart.dev/tools/linter-rules/unnecessary_library_name)                                                                 | Not specified                                                                                      |
-| [`unnecessary_null_aware_operator_on_extension_on_nullable`](https://dart.dev/tools/linter-rules/unnecessary_null_aware_operator_on_extension_on_nullable) | Not specified                                                                                      |
-| [`unreachable_from_main`](https://dart.dev/tools/linter-rules/unreachable_from_main)                                                                       | Not specified                                                                                      |
-| [`unsafe_html`](https://dart.dev/tools/linter-rules/unsafe_html)                                                                                           | Not specified                                                                                      |
-| [`use_decorated_box`](https://dart.dev/tools/linter-rules/use_decorated_box)                                                                               | Not specified                                                                                      |
+| Rule | Reason |
+| --- | --- |
+| [`always_put_control_body_on_new_line`](https://dart.dev/tools/linter-rules/always_put_control_body_on_new_line) | Not specified |
+| [`always_specify_types`](https://dart.dev/tools/linter-rules/always_specify_types) | Not specified |
+| [`annotate_redeclares`](https://dart.dev/tools/linter-rules/annotate_redeclares) | Not specified |
+| [`avoid_annotating_with_dynamic`](https://dart.dev/tools/linter-rules/avoid_annotating_with_dynamic) | Not specified |
+| [`avoid_catches_without_on_clauses`](https://dart.dev/tools/linter-rules/avoid_catches_without_on_clauses) | Not specified |
+| [`avoid_classes_with_only_static_members`](https://dart.dev/tools/linter-rules/avoid_classes_with_only_static_members) | Not specified |
+| [`avoid_implementing_value_types`](https://dart.dev/tools/linter-rules/avoid_implementing_value_types) | Not specified |
+| [`avoid_types_on_closure_parameters`](https://dart.dev/tools/linter-rules/avoid_types_on_closure_parameters) | Not specified |
+| [`close_sinks`](https://dart.dev/tools/linter-rules/close_sinks) | Not specified |
+| [`deprecated_member_use_from_same_package`](https://dart.dev/tools/linter-rules/deprecated_member_use_from_same_package) | Not specified |
+| [`diagnostic_describe_all_properties`](https://dart.dev/tools/linter-rules/diagnostic_describe_all_properties) | Not specified |
+| [`discarded_futures`](https://dart.dev/tools/linter-rules/discarded_futures) | Not specified |
+| [`do_not_use_environment`](https://dart.dev/tools/linter-rules/do_not_use_environment) | Not specified |
+| [`matching_super_parameters`](https://dart.dev/tools/linter-rules/matching_super_parameters) | Not specified |
+| [`missing_code_block_language_in_doc_comment`](https://dart.dev/tools/linter-rules/missing_code_block_language_in_doc_comment) | Not specified |
+| [`no_literal_bool_comparisons`](https://dart.dev/tools/linter-rules/no_literal_bool_comparisons) | Not specified |
+| [`no_self_assignments`](https://dart.dev/tools/linter-rules/no_self_assignments) | Not specified |
+| [`no_wildcard_variable_uses`](https://dart.dev/tools/linter-rules/no_wildcard_variable_uses) | Not specified |
+| [`prefer_double_quotes`](https://dart.dev/tools/linter-rules/prefer_double_quotes) | Incompatible with [prefer_single_quotes](https://dart.dev/tools/linter-rules/prefer_single_quotes) |
+| [`prefer_expression_function_bodies`](https://dart.dev/tools/linter-rules/prefer_expression_function_bodies) | Not specified |
+| [`prefer_final_parameters`](https://dart.dev/tools/linter-rules/prefer_final_parameters) | Not specified |
+| [`prefer_foreach`](https://dart.dev/tools/linter-rules/prefer_foreach) | Not specified |
+| [`prefer_mixin`](https://dart.dev/tools/linter-rules/prefer_mixin) | Not specified |
+| [`prefer_relative_imports`](https://dart.dev/tools/linter-rules/prefer_relative_imports) | Incompatible with [always_use_package_imports](https://dart.dev/tools/linter-rules/always_use_package_imports) |
+| [`type_literal_in_constant_pattern`](https://dart.dev/tools/linter-rules/type_literal_in_constant_pattern) | Not specified |
+| [`unnecessary_final`](https://dart.dev/tools/linter-rules/unnecessary_final) | Not specified |
+| [`unnecessary_library_name`](https://dart.dev/tools/linter-rules/unnecessary_library_name) | Not specified |
+| [`unnecessary_null_aware_operator_on_extension_on_nullable`](https://dart.dev/tools/linter-rules/unnecessary_null_aware_operator_on_extension_on_nullable) | Not specified |
+| [`unreachable_from_main`](https://dart.dev/tools/linter-rules/unreachable_from_main) | Not specified |
+| [`unsafe_html`](https://dart.dev/tools/linter-rules/unsafe_html) | Not specified |
+| [`use_decorated_box`](https://dart.dev/tools/linter-rules/use_decorated_box) | Not specified |
 
 [analysis_options_yaml]: https://github.com/VeryGoodOpenSource/very_good_analysis/blob/main/lib/analysis_options.5.1.0.yaml
 [ci_badge]: https://github.com/VeryGoodOpenSource/very_good_analysis/workflows/ci/badge.svg

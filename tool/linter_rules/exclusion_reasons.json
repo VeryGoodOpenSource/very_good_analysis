@@ -22,7 +22,7 @@
   "prefer_final_parameters": "Not specified",
   "prefer_foreach": "Not specified",
   "prefer_mixin": "Not specified",
-  "prefer_relative_imports": "Not specified",
+  "prefer_relative_imports": "Incompatible with [always_use_package_imports](https://dart.dev/tools/linter-rules/always_use_package_imports)",
   "type_literal_in_constant_pattern": "Not specified",
   "unnecessary_final": "Not specified",
   "unnecessary_library_name": "Not specified",
