@@ -15,9 +15,9 @@ String _linterRuleLink(String rule) {
 /// If no reason is found in the exclusion reasons file, it will default to
 /// [_noReasonFallback]. Those rules that are not found in the exclusion reasons
 /// will then be written to the exclusion reasons file with the default reason.
-/// The exclusion reasons file will not be formatted, hence, for it to be 
-/// readable a JSON formatter should be run after running this tool to format
-/// the exclusion reasons file.
+/// The exclusion reasons file will not be formatted after it is updated by the
+/// tool hence, for it to be a readable JSON, a JSON formatter should be run
+/// after running this tool to format it.
 ///
 /// Should be run from the root of the `linter_rules` package (tool/linter_rules),
 /// with the version of the Very Good Analysis to update the documentation for
