@@ -4,7 +4,7 @@ Tools that help maintain Very Good Analysis rules.
 
 ## Exclusion Reason Table 🗞️👨‍⚖️
 
-For each rule that is not enabled by default by Very Good Analysis, we create a table with the rule name and the reason why it is not enabled by default, in the following format:
+For each rule that is not enabled by default by Very Good Analysis, we create a table with the rule name and the reason on why it is not enabled by default, in the following format:
 
 ```md
 | Rule Name | Reason  |
