@@ -121,7 +121,7 @@ Below is a list of rules that are not enabled by default together with the reaso
 | [`unnecessary_null_aware_operator_on_extension_on_nullable`](https://dart.dev/tools/linter-rules/unnecessary_null_aware_operator_on_extension_on_nullable) | Not specified                                                                                                                |
 | [`unreachable_from_main`](https://dart.dev/tools/linter-rules/unreachable_from_main)                                                                       | Not specified                                                                                                                |
 | [`unsafe_html`](https://dart.dev/tools/linter-rules/unsafe_html)                                                                                           | Not specified                                                                                                                |
-| [`use_decorated_box`](https://dart.dev/tools/linter-rules/use_decorated_box)                                                                               | Not specified                                                                                                                |
+| [`use_decorated_box`](https://dart.dev/tools/linter-rules/use_decorated_box)                                                                               | [Has unresolved malfunctions](https://github.com/VeryGoodOpenSource/very_good_analysis/issues/65)                            |
 
 [analysis_options_yaml]: https://github.com/VeryGoodOpenSource/very_good_analysis/blob/main/lib/analysis_options.5.1.0.yaml
 [ci_badge]: https://github.com/VeryGoodOpenSource/very_good_analysis/workflows/ci/badge.svg

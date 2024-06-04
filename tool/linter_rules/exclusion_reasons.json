@@ -29,5 +29,5 @@
   "unnecessary_null_aware_operator_on_extension_on_nullable": "Not specified",
   "unreachable_from_main": "Not specified",
   "unsafe_html": "Not specified",
-  "use_decorated_box": "Not specified"
+  "use_decorated_box": "[Has unresolved malfunctions](https://github.com/VeryGoodOpenSource/very_good_analysis/issues/65)"
 }
