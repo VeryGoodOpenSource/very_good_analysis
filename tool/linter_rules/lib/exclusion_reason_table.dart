@@ -4,7 +4,8 @@ import 'package:linter_rules/linter_rules.dart';
 /// file.
 const _noReasonFallback = 'Not specified';
 
-/// The tag for the excluded rules table in the README.md file.
+/// The tag delimiting the star and end of the excluded rules table in the
+/// README.md file.
 const ReadmeTag _excludedRulesTableTag = (
   '<!-- start:excluded_rules_table -->',
   '<!-- end:excluded_rules_table -->',
