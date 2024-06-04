@@ -1,3 +1,12 @@
+# 6.0.0 (Unreleased)
+
+- feat!: upgrade to support Dart `^3.4.0`
+
+- feat: additional lint rules:
+  - [missing_code_block_language_in_doc_comment](https://dart.dev/tools/linter-rules/missing_code_block_language_in_doc_comment)
+  - [unnecessary_library_name](https://dart.dev/tools/linter-rules/unnecessary_library_name)
+  - [no_self_assignments](https://dart.dev/tools/linter-rules/no_self_assignments)
+
 # 5.1.0
 
 - fix: remove deprecated `iterable_contains_unrelated_type` lint
