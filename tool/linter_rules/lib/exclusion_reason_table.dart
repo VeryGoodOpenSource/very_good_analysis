@@ -4,13 +4,20 @@ import 'package:linter_rules/linter_rules.dart';
 /// file.
 const _noReasonFallback = 'Not specified';
 
+/// The tag for the excluded rules table in the README.md file.
+const ReadmeTag _excludedRulesTableTag = (
+  '<!-- start:excluded_rules_table -->',
+  '<!-- end:excluded_rules_table -->',
+);
+
 /// The link to the documentation for the given linter [rule].
 String _linterRuleLink(String rule) {
   return 'https://dart.dev/tools/linter-rules/$rule';
 }
 
-/// Logs a table with all those rules that are not enabled by Very Good Analysis
-/// in the given version, together with the reason for disabling them.
+/// Updates the README table with all those rules that are not enabled by
+/// Very Good Analysis in the given version, together with the reason for
+/// disabling them.
 ///
 /// If no reason is found in the exclusion reasons file, it will default to
 /// [_noReasonFallback]. Those rules that are not found in the exclusion reasons
@@ -33,6 +40,10 @@ String _linterRuleLink(String rule) {
 ///
 /// Where `$version` is the version of the Very Good Analysis to log the table
 /// for.
+///
+/// The new table will be written to the README.md file. However, it might not
+/// follow the same formatting as the rest of the file, so it is recommended to
+/// manually format it after running the tool.
 Future<void> main(
   List<String> args, {
   void Function(String) log = print,
@@ -65,5 +76,8 @@ Future<void> main(
     ],
   );
 
-  log(markdownTable);
+  final readme = Readme();
+  await readme.updateTagContent(_excludedRulesTableTag, '\n$markdownTable');
+
+  log('''Updated the README.md file with the excluded rules table.''');
 }

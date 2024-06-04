@@ -3,11 +3,13 @@ import 'dart:io';
 import 'package:path/path.dart' as path;
 import 'package:yaml/yaml.dart';
 
-/// The directory containing the Very Good Analysis options.
+/// The directory path containing the Very Good Analysis options.
 ///
 /// It assumes that the current directory is the root of the `linter_rules`
 /// package (tool/linter_rules).
-final _allVeryGoodAnalysisOptionsDirectory = path.joinAll(['..', '..', 'lib']);
+final _allVeryGoodAnalysisOptionsDirectoryPath = path.joinAll(
+  ['..', '..', 'lib'],
+);
 
 /// The name of the analysis options file.
 ///
@@ -28,7 +30,7 @@ Future<Iterable<String>> allVeryGoodAnalysisRules({
 }) async {
   final analysisOptionsFile = File(
     path.join(
-      _allVeryGoodAnalysisOptionsDirectory,
+      _allVeryGoodAnalysisOptionsDirectoryPath,
       _analysisOptionsFileName(version: version),
     ),
   );
