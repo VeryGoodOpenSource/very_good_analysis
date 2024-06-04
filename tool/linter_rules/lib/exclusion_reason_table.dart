@@ -27,6 +27,10 @@ String _linterRuleLink(String rule) {
 /// tool, hence, for it to be a readable JSON, a JSON formatter should be run
 /// after running this tool to format it.
 ///
+/// Those rules that were previously excluded but are now enabled by Very Good
+/// Analysis will not be included in the table, and their exclusion reason will
+/// be removed from the exclusion reasons file.
+///
 /// Should be run from the root of the `linter_rules` package (tool/linter_rules),
 /// with the version of the Very Good Analysis to update the documentation for
 /// as the first argument.
