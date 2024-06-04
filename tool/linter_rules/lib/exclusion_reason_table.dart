@@ -61,9 +61,10 @@ Future<void> main(
   final excludedRules = linterRules.difference(veryGoodAnalysisRules);
   log('Found ${excludedRules.length} excluded rules');
 
+  final previousExclusionReasons = await readExclusionReasons();
   final exclusionReasons = {
-    for (final rule in excludedRules) rule: _noReasonFallback,
-    ...await readExclusionReasons(),
+    for (final rule in excludedRules)
+      rule: previousExclusionReasons[rule] ?? _noReasonFallback,
   };
   await writeExclusionReasons(exclusionReasons);
 
