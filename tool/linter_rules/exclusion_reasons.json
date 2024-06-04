@@ -1,7 +1,7 @@
 {
   "always_put_control_body_on_new_line": "Not specified",
   "always_specify_types": "Not specified",
-  "annotate_redeclares": "Not specified",
+  "annotate_redeclares": "Experimental",
   "avoid_annotating_with_dynamic": "Not specified",
   "avoid_catches_without_on_clauses": "Not specified",
   "avoid_classes_with_only_static_members": "Not specified",
