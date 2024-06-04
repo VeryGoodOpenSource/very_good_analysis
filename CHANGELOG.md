@@ -4,9 +4,9 @@
 
 - feat: additional lint rules:
   - [missing_code_block_language_in_doc_comment](https://dart.dev/tools/linter-rules/missing_code_block_language_in_doc_comment)
-  - [unnecessary_library_name](https://dart.dev/tools/linter-rules/unnecessary_library_name)
   - [no_self_assignments](https://dart.dev/tools/linter-rules/no_self_assignments)
   - [no_wildcard_variable_uses](https://dart.dev/tools/linter-rules/no_wildcard_variable_uses)
+  - [unnecessary_library_name](https://dart.dev/tools/linter-rules/unnecessary_library_name)
 
 # 5.1.0
 
