@@ -82,8 +82,7 @@ Future<void> main(
     ],
   );
 
-  final readme = Readme();
-  await readme.updateTagContent(_excludedRulesTableTag, '\n$markdownTable');
+  await Readme().updateTagContent(_excludedRulesTableTag, '\n$markdownTable');
 
   log('''Updated the README.md file with the excluded rules table.''');
 }
