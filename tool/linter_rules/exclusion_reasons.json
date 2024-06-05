@@ -1,5 +1,5 @@
 {
-  "always_put_control_body_on_new_line": "Not specified",
+  "always_put_control_body_on_new_line": "[Can conflict with the Dart formatter](https://dart.dev/tools/linter-rules/always_put_control_body_on_new_line)",
   "always_specify_types": "Not specified",
   "annotate_redeclares": "Experimental",
   "avoid_annotating_with_dynamic": "Not specified",
