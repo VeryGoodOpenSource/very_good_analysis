@@ -1,6 +1,6 @@
 {
   "always_put_control_body_on_new_line": "[Can conflict with the Dart formatter](https://dart.dev/tools/linter-rules/always_put_control_body_on_new_line)",
-  "always_specify_types": "Not specified",
+  "always_specify_types": "Incompatible with [omit_local_variable_types](https://dart.dev/tools/linter-rules/omit_local_variable_types)",
   "annotate_redeclares": "Experimental",
   "avoid_annotating_with_dynamic": "Not specified",
   "avoid_catches_without_on_clauses": "Not specified",
