@@ -46,5 +46,5 @@ To release a new version:
 
 1. Copy the most recent yaml to a new one with the new desired version.
 1. Include that file on the main yaml file `lib/analysis_options.yaml`.
+1. Update the `README.md` exclusion table, refer to the ["Exclusion Reason Table 🗞️👨‍⚖️"](tool/linter_rules/README.md#exclusion-reason-table-️️) documentation for more information.
 1. Open a pull request with the proposed changes.
-

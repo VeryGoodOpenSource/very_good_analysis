@@ -1,0 +1,16 @@
+name: linter_rules
+description: Tools that help maintain Very Good Analysis rules.
+version: 0.1.0+1
+publish_to: none
+
+environment:
+  sdk: ^3.4.0
+
+dependencies:
+  http: ^1.2.1
+  path: ^1.9.0
+  yaml: ^3.1.2
+
+dev_dependencies:
+  very_good_analysis:
+    path: ../../
