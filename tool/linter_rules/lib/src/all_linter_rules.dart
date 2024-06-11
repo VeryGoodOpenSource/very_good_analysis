@@ -1,26 +1,36 @@
-import 'package:html/parser.dart' show parse;
+import 'dart:convert';
 
 import 'package:http/http.dart';
 
 /// The [Uri] to fetch all linter rules from.
-final _allLinterRulesUri = Uri.parse('https://dart.dev/tools/linter-rules/all');
+final _allLinterRulesUri = Uri.parse(
+  'https://raw.githubusercontent.com/dart-lang/sdk/main/pkg/linter/tool/machine/rules.json',
+);
 
-/// Fetches all linter rules currently available in the Dart Language.
+/// Fetches all linter rules names currently available in the Dart Language.
 ///
-/// It reads and scrapes from the auto-generated file at [_allLinterRulesUri].
+/// It reads and parses from a JSON file at [_allLinterRulesUri].
 ///
-/// All linter rules are expected to be lowercased and snake_cased, see the
-/// document at [_allLinterRulesUri] for reference.
+/// Those linter rules that have been removed are not included in the list.
+/// In addition, those linter rules that are related to a Dart SDK that is
+/// working in progress are also not included.
 Future<Iterable<String>> allLinterRules() async {
   final response = await get(_allLinterRulesUri);
 
-  final document = parse(response.body);
+  final data = (jsonDecode(response.body) as List<dynamic>)
+    ..removeWhere((data) {
+      final rule = data as Map<String, dynamic>;
+      final state = rule['state'] as String;
+      return state == 'removed';
+    })
+    ..removeWhere((data) {
+      final rule = data as Map<String, dynamic>;
+      final sdk = rule['sinceDartSdk'] as String;
+      return sdk.contains('wip');
+    });
 
-  final lines = document.querySelectorAll('.line');
-  return lines.where((element) {
-    return element.children.length == 2 &&
-        element.children[0].text.trim() == '-';
-  }).map((element) {
-    return element.children[1].text;
+  return data.map((data) {
+    final rule = data as Map<String, dynamic>;
+    return rule['name'] as String;
   });
 }

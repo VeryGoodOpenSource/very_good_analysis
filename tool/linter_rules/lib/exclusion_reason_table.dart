@@ -62,7 +62,8 @@ Future<void> main(
       (await allVeryGoodAnalysisRules(version: version)).toSet();
   log('Found ${veryGoodAnalysisRules.length} Very Good Analysis rules');
 
-  final excludedRules = linterRules.difference(veryGoodAnalysisRules);
+  final excludedRules = linterRules.difference(veryGoodAnalysisRules).toList()
+    ..sort();
   log('Found ${excludedRules.length} excluded rules');
 
   final previousExclusionReasons = await readExclusionReasons();

@@ -7,7 +7,6 @@ environment:
   sdk: ^3.4.0
 
 dependencies:
-  html: ^0.15.4
   http: ^1.2.1
   path: ^1.9.0
   yaml: ^3.1.2
