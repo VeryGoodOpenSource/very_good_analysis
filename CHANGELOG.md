@@ -1,12 +1,10 @@
 # 6.0.0 (Unreleased)
 
 - feat!: upgrade to support Dart `^3.4.0`
-
 - feat: additional lint rules:
   - [missing_code_block_language_in_doc_comment](https://dart.dev/tools/linter-rules/missing_code_block_language_in_doc_comment)
   - [no_self_assignments](https://dart.dev/tools/linter-rules/no_self_assignments)
   - [no_wildcard_variable_uses](https://dart.dev/tools/linter-rules/no_wildcard_variable_uses)
-  - [unnecessary_library_name](https://dart.dev/tools/linter-rules/unnecessary_library_name)
 
 # 5.1.0
 
@@ -24,14 +22,17 @@
 - feat!: upgrade to support Dart `^3.0.0`
 
 - feat: added analysis warning as error:
+
   - [record_literal_one_positional_no_trailing_comma](https://dart.dev/tools/diagnostic-messages#record_literal_one_positional_no_trailing_comma)
 
 - feat: additional lint rules:
+
   - [implicit_reopen](https://dart.dev/tools/linter-rules#implicit_reopen)
   - [unnecessary_breaks](https://dart.dev/tools/linter-rules#unnecessary_breaks)
   - [invalid_case_patterns](https://github.com/dart-lang/linter/issues/4044)
 
 - refactor: remove deprecated lint rules:
+
   - [prefer_equal_for_default_values](https://dart-lang.github.io/linter/lints/prefer_equal_for_default_values.html)
   - [enable_null_safety](https://dart-lang.github.io/linter/lints/enable_null_safety.html)
 
