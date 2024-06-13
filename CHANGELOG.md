@@ -1,10 +1,11 @@
-# 6.0.0 (Unreleased)
+# 6.0.0-dev.1
 
 - feat!: upgrade to support Dart `^3.4.0`
 - feat: additional lint rules:
   - [missing_code_block_language_in_doc_comment](https://dart.dev/tools/linter-rules/missing_code_block_language_in_doc_comment)
   - [no_self_assignments](https://dart.dev/tools/linter-rules/no_self_assignments)
   - [no_wildcard_variable_uses](https://dart.dev/tools/linter-rules/no_wildcard_variable_uses)
+- docs: include exclusion reason table ([100](https://github.com/VeryGoodOpenSource/very_good_analysis/pull/100), [102](https://github.com/VeryGoodOpenSource/very_good_analysis/pull/102))
 
 # 5.1.0
 
