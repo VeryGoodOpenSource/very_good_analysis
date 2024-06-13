@@ -7,7 +7,7 @@
   "avoid_classes_with_only_static_members": "Not specified",
   "avoid_implementing_value_types": "Not specified",
   "avoid_types_on_closure_parameters": "Not specified",
-  "close_sinks": "Not specified",
+  "close_sinks": "[Has unresolved false positives](https://github.com/dart-lang/linter/issues/1381)",
   "deprecated_member_use_from_same_package": "Not specified",
   "diagnostic_describe_all_properties": "Not specified",
   "discarded_futures": "[Has unresolved false positives](https://github.com/VeryGoodOpenSource/very_good_analysis/issues/74#issuecomment-1668425410)",
