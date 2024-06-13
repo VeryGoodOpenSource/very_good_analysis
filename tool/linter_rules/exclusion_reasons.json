@@ -3,7 +3,7 @@
   "always_specify_types": "Incompatible with [omit_local_variable_types](https://dart.dev/tools/linter-rules/omit_local_variable_types)",
   "annotate_redeclares": "Experimental",
   "avoid_annotating_with_dynamic": "Not specified",
-  "avoid_catches_without_on_clauses": "Not specified",
+  "avoid_catches_without_on_clauses": "[Has unresolved false positives](https://github.com/dart-lang/linter/issues/3023)",
   "avoid_classes_with_only_static_members": "Not specified",
   "avoid_implementing_value_types": "Not specified",
   "avoid_types_on_closure_parameters": "Not specified",
