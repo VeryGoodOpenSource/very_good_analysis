@@ -1,3 +1,5 @@
+# 6.0.0
+
 # 6.0.0-dev.1
 
 - feat!: upgrade to support Dart `^3.4.0`
