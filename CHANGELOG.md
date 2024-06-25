@@ -1,3 +1,7 @@
+# 6.0.0
+
+- chore: release 6.0.0-dev.1
+
 # 6.0.0-dev.1
 
 - feat!: upgrade to support Dart `^3.4.0`
