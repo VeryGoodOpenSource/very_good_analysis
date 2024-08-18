@@ -24,6 +24,7 @@
   "prefer_foreach": "Not specified",
   "prefer_mixin": "Not specified",
   "prefer_relative_imports": "Incompatible with [always_use_package_imports](https://dart.dev/tools/linter-rules/always_use_package_imports)",
+  "prefer_void_to_null": "[Has unresolved false positives](https://github.com/dart-lang/linter/issues/4758)",
   "unintended_html_in_doc_comment": "[Pending recommendation](https://github.com/dart-lang/lints/issues/192)",
   "unnecessary_final": "Incompatible with [prefer_final_locals](https://dart.dev/tools/linter-rules/prefer_final_locals)",
   "unnecessary_null_aware_operator_on_extension_on_nullable": "Not specified",

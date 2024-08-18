@@ -145,7 +145,6 @@ linter:
     - prefer_single_quotes
     - prefer_spread_collections
     - prefer_typing_uninitialized_variables
-    - prefer_void_to_null
     - provide_deprecation_message
     - public_member_api_docs
     - recursive_getters
