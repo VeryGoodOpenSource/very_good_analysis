@@ -87,7 +87,6 @@ linter:
     - join_return_with_assignment
     - leading_newlines_in_multiline_strings
     - library_annotations
-    - library_names
     - library_prefixes
     - library_private_types_in_public_api
     - lines_longer_than_80_chars
@@ -113,7 +112,6 @@ linter:
     - overridden_fields
     - package_api_docs
     - package_names
-    - package_prefixed_library_names
     - parameter_assignments
     - prefer_adjacent_string_concatenation
     - prefer_asserts_in_initializer_lists
