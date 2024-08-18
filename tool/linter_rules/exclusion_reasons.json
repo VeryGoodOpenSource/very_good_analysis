@@ -25,7 +25,6 @@
   "type_literal_in_constant_pattern": "Not specified",
   "unintended_html_in_doc_comment": "[Pending recommendation](https://github.com/dart-lang/lints/issues/192)",
   "unnecessary_final": "Incompatible with [prefer_final_locals](https://dart.dev/tools/linter-rules/prefer_final_locals)",
-  "unnecessary_library_name": "[Pending recommendation](https://github.com/dart-lang/lints/issues/181)",
   "unnecessary_null_aware_operator_on_extension_on_nullable": "Not specified",
   "unreachable_from_main": "Not specified",
   "unsafe_html": "Not specified",
