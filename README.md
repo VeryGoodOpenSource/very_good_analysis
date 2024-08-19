@@ -35,7 +35,7 @@ include: package:very_good_analysis/analysis_options.yaml
 This will ensure you always use the latest version of the lints. If you wish to restrict the lint version, specify a version of `analysis_options.yaml` instead:
 
 ```yaml
-include: package:very_good_analysis/analysis_options.6.0.0.yaml
+include: package:very_good_analysis/analysis_options.7.0.0.yaml
 ```
 
 ## Suppressing Lints
@@ -106,16 +106,19 @@ Below is a list of rules that are not enabled by default together with the reaso
 | [`diagnostic_describe_all_properties`](https://dart.dev/tools/linter-rules/diagnostic_describe_all_properties)                                             | Not specified                                                                                                                |
 | [`discarded_futures`](https://dart.dev/tools/linter-rules/discarded_futures)                                                                               | [Has unresolved false positives](https://github.com/VeryGoodOpenSource/very_good_analysis/issues/74#issuecomment-1668425410) |
 | [`do_not_use_environment`](https://dart.dev/tools/linter-rules/do_not_use_environment)                                                                     | Not specified                                                                                                                |
+| [`document_ignores`](https://dart.dev/tools/linter-rules/document_ignores)                                                                                 | Not specified                                                                                                                |
+| [`invalid_runtime_check_with_js_interop_types`](https://dart.dev/tools/linter-rules/invalid_runtime_check_with_js_interop_types)                           | [Pending recommendation](https://github.com/dart-lang/lints/issues/188)                                                      |
 | [`matching_super_parameters`](https://dart.dev/tools/linter-rules/matching_super_parameters)                                                               | Not specified                                                                                                                |
 | [`no_literal_bool_comparisons`](https://dart.dev/tools/linter-rules/no_literal_bool_comparisons)                                                           | Not specified                                                                                                                |
 | [`prefer_double_quotes`](https://dart.dev/tools/linter-rules/prefer_double_quotes)                                                                         | Incompatible with [prefer_single_quotes](https://dart.dev/tools/linter-rules/prefer_single_quotes)                           |
 | [`prefer_expression_function_bodies`](https://dart.dev/tools/linter-rules/prefer_expression_function_bodies)                                               | Not specified                                                                                                                |
-| [`prefer_final_parameters`](https://dart.dev/tools/linter-rules/prefer_final_parameters)                                                                   | Not specified                                                                                                                |
+| [`prefer_final_parameters`](https://dart.dev/tools/linter-rules/prefer_final_parameters)                                                                   | Incompatible with [avoid_final_parameters](https://dart.dev/tools/linter-rules/avoid_final_parameters)                       |
 | [`prefer_foreach`](https://dart.dev/tools/linter-rules/prefer_foreach)                                                                                     | Not specified                                                                                                                |
 | [`prefer_mixin`](https://dart.dev/tools/linter-rules/prefer_mixin)                                                                                         | Not specified                                                                                                                |
 | [`prefer_relative_imports`](https://dart.dev/tools/linter-rules/prefer_relative_imports)                                                                   | Incompatible with [always_use_package_imports](https://dart.dev/tools/linter-rules/always_use_package_imports)               |
 | [`type_literal_in_constant_pattern`](https://dart.dev/tools/linter-rules/type_literal_in_constant_pattern)                                                 | Not specified                                                                                                                |
-| [`unnecessary_final`](https://dart.dev/tools/linter-rules/unnecessary_final)                                                                               | Not specified                                                                                                                |
+| [`unintended_html_in_doc_comment`](https://dart.dev/tools/linter-rules/unintended_html_in_doc_comment)                                                     | [Pending recommendation](https://github.com/dart-lang/lints/issues/192)                                                      |
+| [`unnecessary_final`](https://dart.dev/tools/linter-rules/unnecessary_final)                                                                               | Incompatible with [prefer_final_locals](https://dart.dev/tools/linter-rules/prefer_final_locals)                             |
 | [`unnecessary_library_name`](https://dart.dev/tools/linter-rules/unnecessary_library_name)                                                                 | [Pending recommendation](https://github.com/dart-lang/lints/issues/181)                                                      |
 | [`unnecessary_null_aware_operator_on_extension_on_nullable`](https://dart.dev/tools/linter-rules/unnecessary_null_aware_operator_on_extension_on_nullable) | Not specified                                                                                                                |
 | [`unreachable_from_main`](https://dart.dev/tools/linter-rules/unreachable_from_main)                                                                       | Not specified                                                                                                                |
@@ -124,7 +127,7 @@ Below is a list of rules that are not enabled by default together with the reaso
 
 <!-- end:excluded_rules_table -->
 
-[analysis_options_yaml]: https://github.com/VeryGoodOpenSource/very_good_analysis/blob/main/lib/analysis_options.6.0.0.yaml
+[analysis_options_yaml]: https://github.com/VeryGoodOpenSource/very_good_analysis/blob/main/lib/analysis_options.7.0.0.yaml
 [ci_badge]: https://github.com/VeryGoodOpenSource/very_good_analysis/workflows/ci/badge.svg
 [ci_badge_link]: https://github.com/VeryGoodOpenSource/very_good_analysis/actions
 [badge]: https://img.shields.io/badge/style-very_good_analysis-B22C89.svg
