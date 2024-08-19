@@ -42,9 +42,20 @@ accepted.
 
 Every snapshot of a version is saved on its own yaml file under the name pattern: `lib/analysis_options.<version>.yaml`.
 
-To release a new version:
+### Release a new version
 
-1. Copy the most recent yaml to a new one with the new desired version.
-1. Include that file on the main yaml file `lib/analysis_options.yaml`.
+1. Run the `bump_version` script with the desired new version as an argument:
+
+```sh
+dart tool/bump_version/main.dart <version>
+```
+
+Where `<version>` is the new version to be released in the format `x.y.z`.
+
+This script will:
+
+- Copy the most recent yaml to a new one with the new desired version.
+- Include that file on the main yaml file `lib/analysis_options.yaml`.
+
 1. Update the `README.md` exclusion table, refer to the ["Exclusion Reason Table 🗞️👨‍⚖️"](tool/linter_rules/README.md#exclusion-reason-table-️️) documentation for more information.
 1. Open a pull request with the proposed changes.
