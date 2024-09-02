@@ -87,7 +87,6 @@ linter:
     - join_return_with_assignment
     - leading_newlines_in_multiline_strings
     - library_annotations
-    - library_names
     - library_prefixes
     - library_private_types_in_public_api
     - lines_longer_than_80_chars
@@ -113,7 +112,6 @@ linter:
     - overridden_fields
     - package_api_docs
     - package_names
-    - package_prefixed_library_names
     - parameter_assignments
     - prefer_adjacent_string_concatenation
     - prefer_asserts_in_initializer_lists
@@ -147,7 +145,6 @@ linter:
     - prefer_single_quotes
     - prefer_spread_collections
     - prefer_typing_uninitialized_variables
-    - prefer_void_to_null
     - provide_deprecation_message
     - public_member_api_docs
     - recursive_getters
@@ -165,6 +162,7 @@ linter:
     - tighten_type_of_initializing_formals
     - type_annotate_public_apis
     - type_init_formals
+    - type_literal_in_constant_pattern
     - unawaited_futures
     - unnecessary_await_in_return
     - unnecessary_breaks
@@ -175,6 +173,7 @@ linter:
     - unnecessary_lambdas
     - unnecessary_late
     - unnecessary_library_directive
+    - unnecessary_library_name
     - unnecessary_new
     - unnecessary_null_aware_assignments
     - unnecessary_null_checks
