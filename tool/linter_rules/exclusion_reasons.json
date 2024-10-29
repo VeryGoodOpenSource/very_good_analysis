@@ -30,5 +30,6 @@
   "unnecessary_null_aware_operator_on_extension_on_nullable": "Not specified",
   "unreachable_from_main": "Not specified",
   "unsafe_html": "Not specified",
-  "use_decorated_box": "[Has unresolved malfunctions](https://github.com/dart-lang/linter/issues/3286)"
+  "use_decorated_box": "[Has unresolved malfunctions](https://github.com/dart-lang/linter/issues/3286)",
+  "package_api_docs": "Has been deprecated and [will be removed](https://github.com/dart-lang/linter/issues/5107)"
 }
