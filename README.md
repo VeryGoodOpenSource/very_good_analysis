@@ -125,6 +125,7 @@ Below is a list of rules that are not enabled by default together with the reaso
 | [`unreachable_from_main`](https://dart.dev/tools/linter-rules/unreachable_from_main)                                                                       | Not specified                                                                                                                |
 | [`unsafe_html`](https://dart.dev/tools/linter-rules/unsafe_html)                                                                                           | Not specified                                                                                                                |
 | [`use_decorated_box`](https://dart.dev/tools/linter-rules/use_decorated_box)                                                                               | [Has unresolved malfunctions](https://github.com/dart-lang/linter/issues/3286)                                               |
+| [`package_api_docs`](https://dart.dev/tools/linter-rules/package_api_docs)                                                                                 | Has been deprecated and [will be removed](https://github.com/dart-lang/linter/issues/5107)                                   |
 
 <!-- end:excluded_rules_table -->
 
