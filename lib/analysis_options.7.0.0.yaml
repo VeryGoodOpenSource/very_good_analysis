@@ -23,6 +23,7 @@ linter:
     - always_use_package_imports
     - annotate_overrides
     - avoid_bool_literals_in_conditional_expressions
+    - avoid_catches_without_on_clauses
     - avoid_catching_errors
     - avoid_double_and_int_checks
     - avoid_dynamic_calls
@@ -83,6 +84,7 @@ linter:
     - implementation_imports
     - implicit_reopen
     - invalid_case_patterns
+    - invalid_runtime_check_with_js_interop_types
     - join_return_with_assignment
     - leading_newlines_in_multiline_strings
     - library_annotations
@@ -162,6 +164,7 @@ linter:
     - type_init_formals
     - type_literal_in_constant_pattern
     - unawaited_futures
+    - unintended_html_in_doc_comment
     - unnecessary_await_in_return
     - unnecessary_breaks
     - unnecessary_brace_in_string_interps
