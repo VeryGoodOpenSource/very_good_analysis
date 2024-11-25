@@ -27,6 +27,6 @@ Future<LinterRulesReasons> readExclusionReasons() async {
 /// Writes all the reasons for disabling a rule.
 Future<void> writeExclusionReasons(LinterRulesReasons reasons) async {
   final file = File(_reasonsFilePath);
-  final json = jsonEncode(reasons);
+  final json = const JsonEncoder.withIndent('  ').convert(reasons);
   await file.writeAsString(json);
 }
