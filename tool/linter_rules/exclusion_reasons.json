@@ -7,7 +7,7 @@
   "avoid_classes_with_only_static_members": "Not specified",
   "avoid_futureor_void": "Not specified",
   "avoid_implementing_value_types": "Not specified",
-  "avoid_null_checks_in_equality_operators": "Not specified",
+  "avoid_null_checks_in_equality_operators": "Has been deprecated and [will be removed](https://github.com/dart-lang/sdk/issues/59514)",
   "avoid_types_on_closure_parameters": "Not specified",
   "close_sinks": "[Has unresolved false positives](https://github.com/dart-lang/linter/issues/1381)",
   "deprecated_member_use_from_same_package": "Not specified",
