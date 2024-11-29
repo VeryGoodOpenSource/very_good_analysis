@@ -72,6 +72,7 @@ linter:
     - depend_on_referenced_packages
     - deprecated_consistency
     - directives_ordering
+    - document_ignores
     - empty_catches
     - empty_constructor_bodies
     - empty_statements
