@@ -1,3 +1,15 @@
+# 7.0.0-dev.1
+
+- feat: add `document_ignores` [125](https://github.com/VeryGoodOpenSource/very_good_analysis/pull/125)
+- feat: remove `avoid_null_checks_in_equality_operators` [124](https://github.com/VeryGoodOpenSource/very_good_analysis/pull/124)
+- feat: add avoid_catches_without_on_clauses [123](https://github.com/VeryGoodOpenSource/very_good_analysis/pull/123)
+- feat: add invalid_runtime_check_with_js_interop_types [122](https://github.com/VeryGoodOpenSource/very_good_analysis/pull/122)
+- feat: add unintended_html_in_doc_comment [121](https://github.com/VeryGoodOpenSource/very_good_analysis/pull/121)
+- chore: Remove the package_api_docs lint in next release [118](https://github.com/VeryGoodOpenSource/very_good_analysis/pull/118)
+- feat: update lints for Dart 3.5 [111](https://github.com/VeryGoodOpenSource/very_good_analysis/pull/111)
+- docs: update exclusion reasons [109](https://github.com/VeryGoodOpenSource/very_good_analysis/pull/109)
+- docs: update commands in contributing [110](https://github.com/VeryGoodOpenSource/very_good_analysis/pull/110)
+
 # 6.0.0
 
 - chore: release 6.0.0-dev.1
