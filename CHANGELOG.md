@@ -1,3 +1,7 @@
+# 7.0.0
+
+- chore: release 7.0.0-dev.1
+
 # 7.0.0-dev.1
 
 - feat: add `document_ignores` [125](https://github.com/VeryGoodOpenSource/very_good_analysis/pull/125)
