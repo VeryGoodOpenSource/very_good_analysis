@@ -1,0 +1,56 @@
+name: bot_update_exclusions
+
+on:
+  # This should ideally trigger whenever there is a commit to the [Dart Linter rules](https://raw.githubusercontent.com/dart-lang/sdk/main/pkg/linter/tool/machine/rules.json).
+  # However, this is not yet possible see: https://github.com/orgs/community/discussions/26323
+  schedule:
+    # At 08:06 on every day-of-week from Monday through Friday.
+    - cron: "6 8 * * 1-5"
+  workflow_dispatch:
+
+jobs:
+  build:
+    defaults:
+      run:
+        working-directory: tool/linter_rules
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 📚 Git Checkout
+        uses: actions/checkout@v4
+
+      - name: 🎯 Setup Dart
+        uses: dart-lang/setup-dart@v1
+
+      - name: 📦 Install Dependencies
+        run: dart pub get
+
+      - name: 🔍 Check for changes
+        id: make
+        run: if dart lib/exclusion_reason_table.dart --set-exit-if-changed; then echo "did_change=false"; else echo "did_change=true"; fi >> $GITHUB_ENV
+
+      - name: 🔑 Config Git User
+        if: ${{ env.did_change == 'true' }}
+        run: |
+          git config user.name VGV Bot
+          git config user.email vgvbot@users.noreply.github.com
+
+      - name: ✍️ Make changes
+        if: ${{ env.did_change == 'true' }}
+        run: dart lib/exclusion_reason_table.dart
+
+      - name: 📝 Create Pull Request
+        if: ${{ env.did_change == 'true' }}
+        uses: peter-evans/create-pull-request@v7.0.5
+        with:
+          base: main
+          branch: chore/update-spdx-license
+          commit-message: "docs: update exclusion table"
+          title: "docs: update exclusion table"
+          body: |
+            There are rules that require an update to their exclusion reasons.
+          labels: bot
+          author: VGV Bot <vgvbot@users.noreply.github.com>
+          assignees: vgvbot
+          committer: VGV Bot <vgvbot@users.noreply.github.com>

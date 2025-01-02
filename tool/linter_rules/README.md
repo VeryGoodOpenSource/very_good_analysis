@@ -19,9 +19,18 @@ The reasons are defined in the [`exclusion_reasons.json`](exclusion_reasons.json
 To generate the exclusion reason table, run the following command (from `tool/linter_rules`, and don't forget to `dart pub get`):
 
 ```sh
-dart lib/exclusion_reason_table.dart $version
+dart lib/exclusion_reason_table.dart
 ```
 
-This command will update the README table for the rules that are not enabled by default in the specified `$version` of Very Good Analysis. The `$version` is a user specified argument and it should be in the format `x.y.z`. In addition, no longer excluded rules will be removed from the `exclusion_reasons.json` file. The command does not format the output, so it is recommended to format both files with your preferred formatter after running the command.
+This command will update the README table for the rules that are not enabled by default in the specified `$version` of Very Good Analysis.
+
+In addition, no longer excluded rules will be removed from the `exclusion_reasons.json` file. The command does not format the output, so it is recommended to format both files with your preferred formatter after running the command.
 
 Rules that are missing a reason in the `exclusion_reasons.json` file will be given the reason `Not specified`.
+
+### Options
+
+| Option              | Description                                                           | Default                                 |
+| ------------------- | --------------------------------------------------------------------- | --------------------------------------- |
+| version             | The Very Good Analysis version to use.                                | latest (from lib/analysis_options.yaml) |
+| set-exit-if-changed | Set the exit code to 2 if there are changes to the exclusion reasons. | false                                   |
