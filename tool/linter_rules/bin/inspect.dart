@@ -37,7 +37,7 @@ Future<void> main(
   final deprecatedVgaRules =
       vgaRules.where(deprecatedDartRules.contains).toList();
   final deprecationMessage = StringBuffer(
-    '''Found ${deprecatedVgaRules.length} deprecated Dart rules (out of ${deprecatedDartRules.length} deprecated rules) in Very Good Analysis ($version)${deprecatedVgaRules.isEmpty ? '.' : ':'}''',
+    '''Found ${deprecatedVgaRules.length} deprecated Dart rules (out of ${deprecatedDartRules.length} deprecated Dart rules) in Very Good Analysis ($version)${deprecatedVgaRules.isEmpty ? '.' : ':'}''',
   );
   for (final rule in deprecatedVgaRules) {
     deprecationMessage.write('\n  - $rule');
