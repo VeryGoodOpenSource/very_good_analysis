@@ -9,7 +9,32 @@ final _allLinterRulesUri = Uri.parse(
   'https://raw.githubusercontent.com/dart-lang/site-www/refs/heads/main/src/_data/linter_rules.json',
 );
 
-// TODO(alestiago): Document usage.
+/// Compares Very Good Analysis with the all available Dart linter rules.
+///
+/// Should be run from the root of the `linter_rules` package (tool/linter_rules),
+/// with the version of the Very Good Analysis to inspect.
+///
+/// The version argument should be in the format of `x.y.z`. For example,
+/// `5.1.0`.
+///
+/// To use the tool run (from tool/linter_rules):
+/// ```sh
+/// dart bin/inspect.dart $version
+/// ```
+///
+/// Where `$version` is the version of the Very Good Analysis to log the table
+/// for. For example:
+///
+/// ```sh
+/// dart bin/inspect.dart 5.1.0
+/// ```
+///
+/// It will log information about:
+/// - The number of Dart linter rules fetched.
+/// - The number of rules being declared in the given Very Good Analysis
+/// with the given version.
+/// - The number of deprecated rules Dart rules being used in Very Good
+/// Analysis with the given version.
 Future<void> main(
   List<String> args, {
   void Function(String) log = print,
