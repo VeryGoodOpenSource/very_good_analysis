@@ -26,9 +26,9 @@ jobs:
       - name: 📦 Install Dependencies
         run: dart pub get
 
-      - name: 🔍 Check for changes
+      - name: 🔍 Check for exclusions changes
         id: make
-        run: if dart lib/exclusion_reason_table.dart --set-exit-if-changed; then echo "did_change=false"; else echo "did_change=true"; fi >> $GITHUB_ENV
+        run: (dart lib/exclusion_reason_table.dart --set-exit-if-changed && echo "did_change=false" >> $GITHUB_ENV) || echo "did_change=true" >> $GITHUB_ENV
 
       - name: 🔑 Config Git User
         if: ${{ env.did_change == 'true' }}
