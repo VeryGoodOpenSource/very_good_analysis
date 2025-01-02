@@ -1,3 +1,7 @@
+import 'dart:io';
+
+import 'package:args/args.dart';
+import 'package:collection/collection.dart';
 import 'package:linter_rules/linter_rules.dart';
 
 /// The reason to fallback to if no reason is found in the exclusion reasons
@@ -35,25 +39,41 @@ String _linterRuleLink(String rule) {
 /// with the version of the Very Good Analysis to update the documentation for
 /// as the first argument.
 ///
-/// The version argument should be in the format of `x.y.z`. For example,
-/// `5.1.0`.
-///
-/// To use the tool run (from tool/linter_rules):
-/// ```sh
-/// dart lib/exclusion_reason_table.dart $version
-/// ```
-///
-/// Where `$version` is the version of the Very Good Analysis to log the table
-/// for.
-///
 /// The new table will be written to the README.md file. However, it might not
 /// follow the same formatting as the rest of the file, so it is recommended to
 /// manually format it after running the tool.
+///
+/// ## Usage
+///
+/// To use the tool run (from tool/linter_rules):
+/// ```sh
+/// dart lib/exclusion_reason_table.dart
+/// ```
+///
+/// ## Options
+///
+/// * `--version`: The version of the Very Good Analysis to update the table
+/// for, defaults to the latest version found in the lib analysis options file.
+/// * `--set-exit-if-changed`: Set the exit code to 2 if there are changes to
+/// the exclusion reasons.
 Future<void> main(
   List<String> args, {
   void Function(String) log = print,
 }) async {
-  final version = args[0];
+  final argsParser = ArgParser()
+    ..addOption(
+      'version',
+      help: 'The version of the Very Good Analysis to update the table for.',
+    )
+    ..addFlag(
+      'set-exit-if-changed',
+      help:
+          '''Set the exit code to 2 if there are changes to the exclusion reasons.''',
+    );
+  final parsedArgs = argsParser.parse(args);
+
+  final version = parsedArgs['version'] as String? ?? latestVgaVersion();
+  final setExitIfChanged = parsedArgs['set-exit-if-changed'] as bool;
 
   final linterRules = (await allLinterRules()).toSet();
   log('Found ${linterRules.length} available linter rules');
@@ -71,6 +91,14 @@ Future<void> main(
     for (final rule in excludedRules)
       rule: previousExclusionReasons[rule] ?? _noReasonFallback,
   };
+
+  final hasChanged = !const DeepCollectionEquality()
+      .equals(previousExclusionReasons, exclusionReasons);
+  if (!hasChanged) {
+    log('No changes to the exclusion reasons');
+    return;
+  }
+
   await writeExclusionReasons(exclusionReasons);
 
   final markdownTable = generateMarkdownTable(
@@ -86,4 +114,8 @@ Future<void> main(
   await Readme().updateTagContent(_excludedRulesTableTag, '\n$markdownTable');
 
   log('''Updated the README.md file with the excluded rules table.''');
+
+  if (hasChanged && setExitIfChanged) {
+    exit(2);
+  }
 }
