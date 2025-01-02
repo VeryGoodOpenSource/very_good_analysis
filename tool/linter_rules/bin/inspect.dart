@@ -2,7 +2,6 @@ import 'dart:convert';
 
 import 'package:http/http.dart';
 import 'package:linter_rules/linter_rules.dart';
-import 'package:linter_rules/src/models/linter_rule.dart';
 
 /// The [Uri] to fetch all linter rules from.
 final _allLinterRulesUri = Uri.parse(
