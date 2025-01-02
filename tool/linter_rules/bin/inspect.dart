@@ -9,10 +9,12 @@ final _allLinterRulesUri = Uri.parse(
   'https://raw.githubusercontent.com/dart-lang/site-www/refs/heads/main/src/_data/linter_rules.json',
 );
 
-Future<void> main({
+// TODO(alestiago): Document usage.
+Future<void> main(
+  List<String> args, {
   void Function(String) log = print,
 }) async {
-  const version = '7.0.0';
+  final version = args[0];
 
   final response = await get(_allLinterRulesUri);
   final json = jsonDecode(response.body) as List<dynamic>;
