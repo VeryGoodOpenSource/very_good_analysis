@@ -34,3 +34,24 @@ Rules that are missing a reason in the `exclusion_reasons.json` file will be giv
 | ------------------- | --------------------------------------------------------------------- | --------------------------------------- |
 | version             | The Very Good Analysis version to use.                                | latest (from lib/analysis_options.yaml) |
 | set-exit-if-changed | Set the exit code to 2 if there are changes to the exclusion reasons. | false                                   |
+
+
+## Inspection 🔍
+
+If you're looking to update Very Good Analysis you might want to inspect the health of the latest rule set. You can use the script at `bin/inspect.dart` to do exactly that.
+
+It will log information about:
+
+- The number of Dart linter rules fetched.
+- The number of rules being declared in the given Very Good Analysis with the given version.
+- The number of deprecated rules Dart rules being used in Very Good Analysis with the given version.
+
+### Usage
+
+To run the `inspect` script, run the following command (from `tool/linter_rules`, and don't forget to `dart pub get`):
+
+```sh
+dart bin/inspect.dart $version
+```
+
+Where version is the existing Very Good Analysis version you would like to inspect, for example `7.0.0`.
