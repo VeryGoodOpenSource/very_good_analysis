@@ -38,7 +38,7 @@ It will log information about:
 
 ### Usage
 
-To genreate the `inspect` script, run the following command (from `tool/linter_rules`, and don't forget to `dart pub get`):
+To run the `inspect` script, run the following command (from `tool/linter_rules`, and don't forget to `dart pub get`):
 
 ```sh
 dart bin/inspect.dart $version
