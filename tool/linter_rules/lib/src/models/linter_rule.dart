@@ -72,6 +72,7 @@ enum FixStatus {
 /// A linter rule within the Dart language.
 ///
 /// See also:
+///
 /// * [Available linter rules](https://raw.githubusercontent.com/dart-lang/sdk/main/pkg/linter/tool/machine/rules.json)
 /// * [All linter rules](https://github.com/dart-lang/site-www/blob/main/src/_data/linter_rules.json)
 /// {@endtemplate}
