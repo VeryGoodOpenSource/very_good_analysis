@@ -73,7 +73,7 @@ enum FixStatus {
 ///
 /// See also:
 /// * [Available linter rules](https://raw.githubusercontent.com/dart-lang/sdk/main/pkg/linter/tool/machine/rules.json)
-/// * [All linter ruels]https://github.com/dart-lang/site-www/blob/17ccab9e54d0166753c088651a98a5b6e78c1078/src/_data/linter_rules.json#L1764).
+/// * [All linter rules](https://github.com/dart-lang/site-www/blob/main/src/_data/linter_rules.json)
 /// {@endtemplate}
 @immutable
 class LinterRule {
