@@ -10,7 +10,7 @@ const _noReasonFallback = 'Not specified';
 
 /// The tag delimiting the start and end of the excluded rules table in the
 /// README.md file.
-const ReadmeTag _excludedRulesTableTag = (
+const _excludedRulesTableTag = (
   '<!-- start:excluded_rules_table -->',
   '<!-- end:excluded_rules_table -->',
 );

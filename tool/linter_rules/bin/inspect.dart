@@ -4,7 +4,7 @@ import 'package:http/http.dart';
 import 'package:linter_rules/linter_rules.dart';
 
 /// The [Uri] to fetch all linter rules from.
-final _allLinterRulesUri = Uri.parse(
+final Uri _allLinterRulesUri = Uri.parse(
   'https://raw.githubusercontent.com/dart-lang/site-www/refs/heads/main/src/_data/linter_rules.json',
 );
 

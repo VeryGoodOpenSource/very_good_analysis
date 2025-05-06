@@ -3,7 +3,7 @@ import 'dart:convert';
 import 'package:http/http.dart';
 
 /// The [Uri] to fetch all linter rules from.
-final _allLinterRulesUri = Uri.parse(
+final Uri _allLinterRulesUri = Uri.parse(
   'https://raw.githubusercontent.com/dart-lang/sdk/main/pkg/linter/tool/machine/rules.json',
 );
 

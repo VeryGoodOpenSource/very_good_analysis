@@ -16,7 +16,7 @@ class Readme {
   ///
   /// It assumes that the current directory is the root of the `linter_rules`
   /// package (tool/linter_rules).
-  static final _readmePath = path.joinAll(['..', '..', 'README.md']);
+  static final String _readmePath = path.joinAll(['..', '..', 'README.md']);
 
   late final _readmeFile = File(_readmePath);
 

@@ -6,7 +6,7 @@ import 'package:path/path.dart' as path;
 ///
 /// It assumes that the current directory is the root of the `linter_rules`
 /// package (tool/linter_rules).
-final _latestVeryGoodAnalaysisFilePath = path.joinAll([
+final String _latestVeryGoodAnalaysisFilePath = path.joinAll([
   '..',
   '..',
   'lib',
