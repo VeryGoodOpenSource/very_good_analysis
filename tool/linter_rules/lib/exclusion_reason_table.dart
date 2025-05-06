@@ -60,16 +60,18 @@ Future<void> main(
   List<String> args, {
   void Function(String) log = print,
 }) async {
-  final argsParser = ArgParser()
-    ..addOption(
-      'version',
-      help: 'The version of the Very Good Analysis to update the table for.',
-    )
-    ..addFlag(
-      'set-exit-if-changed',
-      help:
-          '''Set the exit code to 2 if there are changes to the exclusion reasons.''',
-    );
+  final argsParser =
+      ArgParser()
+        ..addOption(
+          'version',
+          help:
+              'The version of the Very Good Analysis to update the table for.',
+        )
+        ..addFlag(
+          'set-exit-if-changed',
+          help:
+              '''Set the exit code to 2 if there are changes to the exclusion reasons.''',
+        );
   final parsedArgs = argsParser.parse(args);
 
   final version = parsedArgs['version'] as String? ?? latestVgaVersion();
@@ -82,8 +84,8 @@ Future<void> main(
       (await allVeryGoodAnalysisRules(version: version)).toSet();
   log('Found ${veryGoodAnalysisRules.length} Very Good Analysis rules');
 
-  final excludedRules = linterRules.difference(veryGoodAnalysisRules).toList()
-    ..sort();
+  final excludedRules =
+      linterRules.difference(veryGoodAnalysisRules).toList()..sort();
   log('Found ${excludedRules.length} excluded rules');
 
   final previousExclusionReasons = await readExclusionReasons();
@@ -92,8 +94,11 @@ Future<void> main(
       rule: previousExclusionReasons[rule] ?? _noReasonFallback,
   };
 
-  final hasChanged = !const DeepCollectionEquality()
-      .equals(previousExclusionReasons, exclusionReasons);
+  final hasChanged =
+      !const DeepCollectionEquality().equals(
+        previousExclusionReasons,
+        exclusionReasons,
+      );
   if (!hasChanged) {
     log('No changes to the exclusion reasons');
     return;
@@ -101,15 +106,13 @@ Future<void> main(
 
   await writeExclusionReasons(exclusionReasons);
 
-  final markdownTable = generateMarkdownTable(
-    [
-      ['Rule', 'Reason'],
-      ...excludedRules.map((rule) {
-        final ruleMarkdownLink = '[`$rule`](${_linterRuleLink(rule)})';
-        return [ruleMarkdownLink, exclusionReasons[rule]!];
-      }),
-    ],
-  );
+  final markdownTable = generateMarkdownTable([
+    ['Rule', 'Reason'],
+    ...excludedRules.map((rule) {
+      final ruleMarkdownLink = '[`$rule`](${_linterRuleLink(rule)})';
+      return [ruleMarkdownLink, exclusionReasons[rule]!];
+    }),
+  ]);
 
   await Readme().updateTagContent(_excludedRulesTableTag, '\n$markdownTable');
 
