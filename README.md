@@ -110,7 +110,6 @@ Below is a list of rules that are not enabled by default together with the reaso
 | [`matching_super_parameters`](https://dart.dev/tools/linter-rules/matching_super_parameters) | Not specified |
 | [`no_literal_bool_comparisons`](https://dart.dev/tools/linter-rules/no_literal_bool_comparisons) | Not specified |
 | [`omit_obvious_local_variable_types`](https://dart.dev/tools/linter-rules/omit_obvious_local_variable_types) | Not specified |
-| [`omit_obvious_property_types`](https://dart.dev/tools/linter-rules/omit_obvious_property_types) | Not specified |
 | [`package_prefixed_library_names`](https://dart.dev/tools/linter-rules/package_prefixed_library_names) | [Broken; superseded by `unnecessary_library_name`](https://github.com/dart-lang/lints/issues/172) |
 | [`prefer_double_quotes`](https://dart.dev/tools/linter-rules/prefer_double_quotes) | Incompatible with [prefer_single_quotes](https://dart.dev/tools/linter-rules/prefer_single_quotes) |
 | [`prefer_expression_function_bodies`](https://dart.dev/tools/linter-rules/prefer_expression_function_bodies) | Not specified |
@@ -119,14 +118,12 @@ Below is a list of rules that are not enabled by default together with the reaso
 | [`prefer_mixin`](https://dart.dev/tools/linter-rules/prefer_mixin) | Not specified |
 | [`prefer_relative_imports`](https://dart.dev/tools/linter-rules/prefer_relative_imports) | Incompatible with [always_use_package_imports](https://dart.dev/tools/linter-rules/always_use_package_imports) |
 | [`prefer_void_to_null`](https://dart.dev/tools/linter-rules/prefer_void_to_null) | [Has unresolved false positives](https://github.com/dart-lang/linter/issues/4758) |
+| [`require_trailing_commas`](https://dart.dev/tools/linter-rules/require_trailing_commas) | Not specified |
 | [`specify_nonobvious_local_variable_types`](https://dart.dev/tools/linter-rules/specify_nonobvious_local_variable_types) | Not specified |
-| [`specify_nonobvious_property_types`](https://dart.dev/tools/linter-rules/specify_nonobvious_property_types) | Not specified |
-| [`strict_top_level_inference`](https://dart.dev/tools/linter-rules/strict_top_level_inference) | Not specified |
 | [`unnecessary_async`](https://dart.dev/tools/linter-rules/unnecessary_async) | Not specified |
 | [`unnecessary_final`](https://dart.dev/tools/linter-rules/unnecessary_final) | Incompatible with [prefer_final_locals](https://dart.dev/tools/linter-rules/prefer_final_locals) |
 | [`unnecessary_ignore`](https://dart.dev/tools/linter-rules/unnecessary_ignore) | Not specified |
 | [`unnecessary_null_aware_operator_on_extension_on_nullable`](https://dart.dev/tools/linter-rules/unnecessary_null_aware_operator_on_extension_on_nullable) | Not specified |
-| [`unnecessary_underscores`](https://dart.dev/tools/linter-rules/unnecessary_underscores) | Not specified |
 | [`unreachable_from_main`](https://dart.dev/tools/linter-rules/unreachable_from_main) | Not specified |
 | [`unsafe_variance`](https://dart.dev/tools/linter-rules/unsafe_variance) | Not specified |
 | [`use_decorated_box`](https://dart.dev/tools/linter-rules/use_decorated_box) | [Has unresolved malfunctions](https://github.com/dart-lang/linter/issues/3286) |

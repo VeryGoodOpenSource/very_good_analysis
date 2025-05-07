@@ -6,9 +6,12 @@ import 'package:path/path.dart' as path;
 ///
 /// It assumes that the current directory is the root of the `linter_rules`
 /// package (tool/linter_rules).
-final _latestVeryGoodAnalaysisFilePath = path.joinAll(
-  ['..', '..', 'lib', 'analysis_options.yaml'],
-);
+final String _latestVeryGoodAnalaysisFilePath = path.joinAll([
+  '..',
+  '..',
+  'lib',
+  'analysis_options.yaml',
+]);
 
 /// Returns the latest Very Good Analysis version from the analysis options
 /// file.

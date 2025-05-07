@@ -8,4 +8,4 @@ documentation: https://github.com/VeryGoodOpenSource/very_good_analysis
 topics: [lints, analyzer, analysis]
 
 environment:
-  sdk: ^3.5.0
+  sdk: ^3.7.0

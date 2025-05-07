@@ -7,9 +7,11 @@ import 'package:yaml/yaml.dart';
 ///
 /// It assumes that the current directory is the root of the `linter_rules`
 /// package (tool/linter_rules).
-final _allVeryGoodAnalysisOptionsDirectoryPath = path.joinAll(
-  ['..', '..', 'lib'],
-);
+final String _allVeryGoodAnalysisOptionsDirectoryPath = path.joinAll([
+  '..',
+  '..',
+  'lib',
+]);
 
 /// The name of the analysis options file.
 ///

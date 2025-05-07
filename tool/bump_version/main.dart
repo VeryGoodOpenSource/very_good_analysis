@@ -27,17 +27,20 @@ import 'dart:io';
 /// ```
 ///
 /// It is expected that the first matched group will be `6.0.0`.
-final _latestAnalysisVersionRegExp =
-    RegExp(r'analysis_options\.(\d+\.\d+\.\d+)\.yaml');
+final _latestAnalysisVersionRegExp = RegExp(
+  r'analysis_options\.(\d+\.\d+\.\d+)\.yaml',
+);
 
 void main(List<String> args) {
   final analysisOptionsFile = File('lib/analysis_options.yaml');
   final content = analysisOptionsFile.readAsStringSync();
-  final latestVersion =
-      _latestAnalysisVersionRegExp.firstMatch(content)?.group(1);
+  final latestVersion = _latestAnalysisVersionRegExp
+      .firstMatch(content)
+      ?.group(1);
 
-  final latestAnalysisOptionsFile =
-      File('lib/analysis_options.$latestVersion.yaml');
+  final latestAnalysisOptionsFile = File(
+    'lib/analysis_options.$latestVersion.yaml',
+  );
 
   final newVersion = args[0];
   final newAnalysisOptionsFile = File('lib/analysis_options.$newVersion.yaml');
