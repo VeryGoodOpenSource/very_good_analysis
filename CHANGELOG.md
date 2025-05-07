@@ -1,3 +1,11 @@
+# 8.0.0-rc.1
+
+- feat: add `omit_obvious_property_types` [143](https://github.com/VeryGoodOpenSource/very_good_analysis/pull/143)
+- feat: add `specify_nonobvious_property_types` [143](https://github.com/VeryGoodOpenSource/very_good_analysis/pull/143)
+- feat: add `strict_top_level_inference` [143](https://github.com/VeryGoodOpenSource/very_good_analysis/pull/143)
+- feat: add `unnecessary_underscores` [143](https://github.com/VeryGoodOpenSource/very_good_analysis/pull/143)
+- feat: remove `require_trailing_commas` [143](https://github.com/VeryGoodOpenSource/very_good_analysis/pull/143)
+
 # 7.0.0
 
 - chore: release 7.0.0-dev.1
