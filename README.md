@@ -110,7 +110,7 @@ Below is a list of rules that are not enabled by default together with the reaso
 | [`matching_super_parameters`](https://dart.dev/tools/linter-rules/matching_super_parameters) | Not specified |
 | [`no_literal_bool_comparisons`](https://dart.dev/tools/linter-rules/no_literal_bool_comparisons) | Not specified |
 | [`omit_obvious_local_variable_types`](https://dart.dev/tools/linter-rules/omit_obvious_local_variable_types) | Not specified |
-| [`omit_obvious_property_types`](https://dart.dev/tools/linter-rules/omit_obvious_property_types) | Not specified |
+| [`omit_obvious_property_types`](https://dart.dev/tools/linter-rules/omit_obvious_property_types) | Incompatible with [type_annotate_public_apis](https://github.com/dart-lang/sdk/issues/60642) |
 | [`package_prefixed_library_names`](https://dart.dev/tools/linter-rules/package_prefixed_library_names) | [Broken; superseded by `unnecessary_library_name`](https://github.com/dart-lang/lints/issues/172) |
 | [`prefer_double_quotes`](https://dart.dev/tools/linter-rules/prefer_double_quotes) | Incompatible with [prefer_single_quotes](https://dart.dev/tools/linter-rules/prefer_single_quotes) |
 | [`prefer_expression_function_bodies`](https://dart.dev/tools/linter-rules/prefer_expression_function_bodies) | Not specified |
