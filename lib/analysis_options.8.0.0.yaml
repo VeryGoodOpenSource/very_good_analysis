@@ -16,6 +16,9 @@ analyzer:
     - test/.test_coverage.dart
     - lib/generated_plugin_registrant.dart
 
+formatter:
+  trailing_commas: preserve
+
 linter:
   rules:
     - always_declare_return_types
