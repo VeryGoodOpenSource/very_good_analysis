@@ -43,23 +43,22 @@ Future<void> main(
   final response = await get(_allLinterRulesUri);
   final json = jsonDecode(response.body) as List<dynamic>;
 
-  final dartRules =
-      json
-          .map((rule) => LinterRule.fromJson(rule as Map<String, dynamic>))
-          .toList();
+  final dartRules = json
+      .map((rule) => LinterRule.fromJson(rule as Map<String, dynamic>))
+      .toList();
   log('Fetched ${dartRules.length} Dart linter rules');
 
   final vgaRules = await allVeryGoodAnalysisRules(version: version);
   log('Fetched ${vgaRules.length} Very Good Analysis rules');
   log('');
 
-  final deprecatedDartRules =
-      dartRules
-          .where((rule) => rule.state == LinterRuleState.deprecated)
-          .map((rule) => rule.name)
-          .toSet();
-  final deprecatedVgaRules =
-      vgaRules.where(deprecatedDartRules.contains).toList();
+  final deprecatedDartRules = dartRules
+      .where((rule) => rule.state == LinterRuleState.deprecated)
+      .map((rule) => rule.name)
+      .toSet();
+  final deprecatedVgaRules = vgaRules
+      .where(deprecatedDartRules.contains)
+      .toList();
   final deprecationMessage = StringBuffer(
     '''Found ${deprecatedVgaRules.length} deprecated Dart rules (out of ${deprecatedDartRules.length} deprecated Dart rules) in Very Good Analysis ($version)${deprecatedVgaRules.isEmpty ? '.' : ':'}''',
   );
