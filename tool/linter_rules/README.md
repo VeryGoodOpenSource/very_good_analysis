@@ -54,4 +54,4 @@ To run the `inspect` script, run the following command (from `tool/linter_rules`
 dart bin/inspect.dart $version
 ```
 
-Where version is the existing Very Good Analysis version you would like to inspect, for example `7.0.0`.
+Where version is the existing Very Good Analysis version you would like to inspect, for example `9.0.0`.
