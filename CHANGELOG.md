@@ -1,3 +1,7 @@
+# 9.0.0-rc.1
+
+- feat: support Dart 3.8.0 [152](https://github.com/VeryGoodOpenSource/very_good_analysis/pull/152)
+
 # 8.0.0
 
 - chore: release 8.0.0-rc.1
