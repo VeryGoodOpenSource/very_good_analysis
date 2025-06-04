@@ -1,3 +1,12 @@
+# 9.0.0-rc.1
+
+- feat: support Dart 3.8.0 [152](https://github.com/VeryGoodOpenSource/very_good_analysis/pull/152)
+
+# 8.0.0
+
+- chore: release 8.0.0-rc.1
+- fix: remove `omit_obvious_property_types` as it conflicts with `type_annotate_public_apis` [148](https://github.com/VeryGoodOpenSource/very_good_analysis/pull/148)
+
 # 8.0.0-rc.1
 
 - feat: add `omit_obvious_property_types` [143](https://github.com/VeryGoodOpenSource/very_good_analysis/pull/143)

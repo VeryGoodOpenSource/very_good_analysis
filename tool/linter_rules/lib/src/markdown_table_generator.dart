@@ -21,10 +21,9 @@
 /// | Row 2, Cell 1 | Row 2, Cell 2 |
 /// ```
 String generateMarkdownTable(List<List<String>> rows) {
-  final buffer =
-      StringBuffer()
-        ..writeln('| ${rows.first.join(' | ')} |')
-        ..writeln('| ${rows.first.map((_) => '---').join(' | ')} |');
+  final buffer = StringBuffer()
+    ..writeln('| ${rows.first.join(' | ')} |')
+    ..writeln('| ${rows.first.map((_) => '---').join(' | ')} |');
   for (var i = 1; i < rows.length; i++) {
     buffer.writeln('| ${rows[i].join(' | ')} |');
   }
