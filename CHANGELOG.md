@@ -1,3 +1,12 @@
+# 9.0.0
+
+- chore(deps): bump peter-evans/create-pull-request from 7.0.6 to 7.0.8 [139](https://github.com/VeryGoodOpenSource/very_good_analysis/pull/139)
+- chore: release 9.0.0-rc.1 [154](https://github.com/VeryGoodOpenSource/very_good_analysis/pull/154)
+
+# 9.0.0-rc.1
+
+- feat: support Dart 3.8.0 [152](https://github.com/VeryGoodOpenSource/very_good_analysis/pull/152)
+
 # 8.0.0
 
 - chore: release 8.0.0-rc.1
