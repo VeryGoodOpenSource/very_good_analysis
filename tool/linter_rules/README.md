@@ -36,9 +36,9 @@ Rules that are missing a reason in the `exclusion_reasons.json` file will be giv
 | set-exit-if-changed | Set the exit code to 2 if there are changes to the exclusion reasons. | false                                   |
 
 
-## Inspection 🔍
+## Analyze 🔍
 
-If you're looking to update Very Good Analysis you might want to inspect the health of the latest rule set. You can use the script at `bin/inspect.dart` to do exactly that.
+If you're looking to update Very Good Analysis you might want to analyze the health of the latest rule set. You can use the script at `bin/analyze.dart` to do exactly that.
 
 It will log information about:
 
@@ -48,10 +48,17 @@ It will log information about:
 
 ### Usage
 
-To run the `inspect` script, run the following command (from `tool/linter_rules`, and don't forget to `dart pub get`):
+To run the `analyze` script, run the following command (from `tool/linter_rules`, and don't forget to `dart pub get`):
 
 ```sh
-dart bin/inspect.dart $version
+# This will analyze the latest version of Very Good Analysis
+dart bin/analyze.dart
 ```
 
-Where version is the existing Very Good Analysis version you would like to inspect, for example `9.0.0`.
+The script also accepts a specific version as an argument to analyze:
+
+```sh
+dart bin/analyze.dart $version
+```
+
+Where version is the existing Very Good Analysis version you would like to analyze, for example `9.0.0`.

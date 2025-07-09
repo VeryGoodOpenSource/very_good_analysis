@@ -10,22 +10,21 @@ final Uri _allLinterRulesUri = Uri.parse(
 
 /// Compares Very Good Analysis with the all available Dart linter rules.
 ///
-/// Should be run from the root of the `linter_rules` package (tool/linter_rules),
-/// with the version of the Very Good Analysis to inspect.
+/// Should be run from the root of the `linter_rules` package (tool/linter_rules).
 ///
-/// The version argument should be in the format of `x.y.z`. For example,
-/// `5.1.0`.
 ///
 /// To use the tool run (from tool/linter_rules):
 /// ```sh
-/// dart bin/inspect.dart $version
+/// dart bin/analyze.dart
 /// ```
 ///
-/// Where `$version` is the version of the Very Good Analysis to log the table
-/// for. For example:
+/// A specific version can be analyzed by providing it as an argument,
+/// otherwise the latest version will be used.
+///
+/// For example, to analyze version `5.1.0`:
 ///
 /// ```sh
-/// dart bin/inspect.dart 5.1.0
+/// dart bin/analyze.dart 5.1.0
 /// ```
 ///
 /// It will log information about:
@@ -38,7 +37,7 @@ Future<void> main(
   List<String> args, {
   void Function(String) log = print,
 }) async {
-  final version = args[0];
+  final version = args.isNotEmpty ? args[0] : latestVgaVersion();
 
   final response = await get(_allLinterRulesUri);
   final json = jsonDecode(response.body) as List<dynamic>;
