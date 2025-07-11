@@ -1,0 +1,8 @@
+name: bump_version
+description: Bumps the version of the analysis options file and the Very Good Analysis package.
+version: 0.1.0+1
+publish_to: none
+
+environment:
+  sdk: ^3.8.0
+

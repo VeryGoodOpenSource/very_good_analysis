@@ -1,12 +1,4 @@
-import 'dart:convert';
-
-import 'package:http/http.dart';
 import 'package:linter_rules/linter_rules.dart';
-
-/// The [Uri] to fetch all linter rules from.
-final Uri _allLinterRulesUri = Uri.parse(
-  'https://raw.githubusercontent.com/dart-lang/site-www/refs/heads/main/src/_data/linter_rules.json',
-);
 
 /// Compares Very Good Analysis with the all available Dart linter rules.
 ///
@@ -39,22 +31,14 @@ Future<void> main(
 }) async {
   final version = args.isNotEmpty ? args[0] : latestVgaVersion();
 
-  final response = await get(_allLinterRulesUri);
-  final json = jsonDecode(response.body) as List<dynamic>;
-
-  final dartRules = json
-      .map((rule) => LinterRule.fromJson(rule as Map<String, dynamic>))
-      .toList();
+  final dartRules = await allLinterRules(state: LinterRuleState.deprecated);
   log('Fetched ${dartRules.length} Dart linter rules');
 
   final vgaRules = await allVeryGoodAnalysisRules(version: version);
   log('Fetched ${vgaRules.length} Very Good Analysis rules');
   log('');
 
-  final deprecatedDartRules = dartRules
-      .where((rule) => rule.state == LinterRuleState.deprecated)
-      .map((rule) => rule.name)
-      .toSet();
+  final deprecatedDartRules = dartRules.map((rule) => rule.name).toSet();
   final deprecatedVgaRules = vgaRules
       .where(deprecatedDartRules.contains)
       .toList();
