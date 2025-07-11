@@ -1,5 +1,6 @@
 import 'dart:io';
 
+import 'package:linter_rules/linter_rules.dart';
 import 'package:path/path.dart' as path;
 
 /// A tag indicates the start and end of a section in the README.
@@ -40,5 +41,23 @@ class Readme {
     );
 
     await _readmeFile.writeAsString(newReadmeContent);
+  }
+
+  /// Generates a markdown table of the excluded rules.
+  String generateExcludedRulesTable(
+    Iterable<String> excludedRules,
+    Map<String, String> exclusionReasons,
+  ) {
+    // Sort the excluded rules to ensure a consistent order.
+    final sortedExcludedRules = excludedRules.toList()..sort();
+    final markdownTable = generateMarkdownTable([
+      ['Rule', 'Reason'],
+      ...sortedExcludedRules.map((rule) {
+        final ruleMarkdownLink = '[`$rule`](${linterRuleLink(rule)})';
+        return [ruleMarkdownLink, exclusionReasons[rule]!];
+      }),
+    ]);
+
+    return markdownTable;
   }
 }

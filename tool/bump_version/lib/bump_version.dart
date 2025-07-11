@@ -3,6 +3,7 @@
 /// This script will:
 /// - Copy the most recent yaml to a new one with the new desired version.
 /// - Include that file on the main yaml file `lib/analysis_options.yaml.
+/// - Bump the version of the Very Good Analysis package in the pubspec.yaml.
 ///
 /// ## Usage
 ///
@@ -31,19 +32,25 @@ final _latestAnalysisVersionRegExp = RegExp(
   r'analysis_options\.(\d+\.\d+\.\d+)\.yaml',
 );
 
-void main(List<String> args) {
-  final analysisOptionsFile = File('lib/analysis_options.yaml');
+void main(List<String> args) => bumpVersion(args[0]);
+
+/// Bumps the version of the analysis options file and the pubspec.yaml file.
+void bumpVersion(String newVersion, {String basePath = ''}) {
+  final analysisOptionsFile = File(
+    '${basePath}lib/analysis_options.yaml',
+  );
   final content = analysisOptionsFile.readAsStringSync();
   final latestVersion = _latestAnalysisVersionRegExp
       .firstMatch(content)
       ?.group(1);
 
   final latestAnalysisOptionsFile = File(
-    'lib/analysis_options.$latestVersion.yaml',
+    '${basePath}lib/analysis_options.$latestVersion.yaml',
   );
 
-  final newVersion = args[0];
-  final newAnalysisOptionsFile = File('lib/analysis_options.$newVersion.yaml');
+  final newAnalysisOptionsFile = File(
+    '${basePath}lib/analysis_options.$newVersion.yaml',
+  );
   latestAnalysisOptionsFile.copySync(newAnalysisOptionsFile.path);
 
   final newContent = content.replaceFirst(
@@ -51,4 +58,15 @@ void main(List<String> args) {
     'analysis_options.$newVersion.yaml',
   );
   analysisOptionsFile.writeAsStringSync(newContent);
+
+  final pubspecFile = File(
+    '${basePath}pubspec.yaml',
+  );
+  final pubspecContent = pubspecFile.readAsStringSync();
+  final newPubspecContent = pubspecContent.replaceFirst(
+    'version: $latestVersion',
+    'version: $newVersion',
+  );
+
+  pubspecFile.writeAsStringSync(newPubspecContent);
 }
