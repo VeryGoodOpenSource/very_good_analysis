@@ -4,8 +4,8 @@ import 'package:bump_version/bump_version.dart';
 import 'package:linter_rules/linter_rules.dart';
 import 'package:yaml_edit/yaml_edit.dart';
 
-/// Removes deprecated rules from the analysis options file based on the offical
-/// Dart linter rules.
+/// Removes deprecated rules from the analysis options file based on the
+/// official Dart linter rules.
 ///
 /// It will create a new version of the analysis options file, bump the version
 /// in the pubspec.yaml, and update the exclusion reasons file and the
