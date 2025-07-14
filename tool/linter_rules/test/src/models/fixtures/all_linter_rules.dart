@@ -1,8 +1,8 @@
 /// The fixture for the `all_linter_rules.json` file.
 ///
-/// The content is a copy from the [all_linter_rules.json file](https://raw.githubusercontent.com/dart-lang/site-www/17ccab9e54d0166753c088651a98a5b6e78c1078/src/_data/linter_rules.json).
+/// The content is a copy from the [all_linter_rules.json file](https://raw.githubusercontent.com/dart-lang/sdk/main/pkg/linter/tool/machine/rules.json).
 ///
-/// Yo may find the latest file within the [Dart Language Repository](https://github.com/dart-lang/site-www/blob/17ccab9e54d0166753c088651a98a5b6e78c1078/src/_data/linter_rules.json#L1764).
+/// You may find the latest file within the [Dart Language Repository](https://raw.githubusercontent.com/dart-lang/sdk/main/pkg/linter/tool/machine/rules.json).
 const allLinterRulesFixute = r"""
 [
   {

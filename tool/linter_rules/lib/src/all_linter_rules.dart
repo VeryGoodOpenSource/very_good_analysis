@@ -1,36 +1,34 @@
 import 'dart:convert';
 
 import 'package:http/http.dart';
+import 'package:linter_rules/linter_rules.dart';
+import 'package:meta/meta.dart' show visibleForTesting;
 
-/// The [Uri] to fetch all linter rules from.
-final Uri _allLinterRulesUri = Uri.parse(
-  'https://raw.githubusercontent.com/dart-lang/sdk/main/pkg/linter/tool/machine/rules.json',
-);
-
-/// Fetches all linter rules names currently available in the Dart Language.
+/// Fetches all linter rules currently available in the Dart Language.
 ///
-/// It reads and parses from a JSON file at [_allLinterRulesUri].
+/// It reads and parses from a JSON file at [allLinterRulesUri].
 ///
 /// Those linter rules that have been removed are not included in the list.
 /// In addition, those linter rules that are related to a Dart SDK that is
 /// working in progress are also not included.
-Future<Iterable<String>> allLinterRules() async {
-  final response = await get(_allLinterRulesUri);
+Future<Iterable<LinterRule>> allLinterRules({
+  LinterRuleState? state,
+  void Function(String) log = print,
+  @visibleForTesting
+  Future<Response> Function(Uri url, {Map<String, String>? headers}) get = get,
+}) async {
+  final response = await get(allLinterRulesUri);
+  final json = jsonDecode(response.body) as List<dynamic>;
 
-  final data = (jsonDecode(response.body) as List<dynamic>)
-    ..removeWhere((data) {
-      final rule = data as Map<String, dynamic>;
-      final state = rule['state'] as String;
-      return state == 'removed';
-    })
-    ..removeWhere((data) {
-      final rule = data as Map<String, dynamic>;
-      final sdk = rule['sinceDartSdk'] as String;
-      return sdk.contains('wip');
-    });
+  final dartRules = json
+      .map((rule) => LinterRule.fromJson(rule as Map<String, dynamic>))
+      .where((rule) => rule.state != LinterRuleState.removed)
+      .where((rule) => !rule.sinceDartSdk.contains('wip'));
 
-  return data.map((data) {
-    final rule = data as Map<String, dynamic>;
-    return rule['name'] as String;
-  });
+  log('Fetched ${dartRules.length} Dart linter rules');
+  log('');
+
+  return dartRules
+      .where((rule) => state == null || rule.state == state)
+      .toList();
 }
