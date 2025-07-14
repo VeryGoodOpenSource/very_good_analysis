@@ -92,8 +92,12 @@ Below is a list of rules that are not enabled by default together with the reaso
 <!-- start:excluded_rules_table -->
 | Rule | Reason |
 | --- | --- |
+| [`always_declare_return_types`](https://dart.dev/tools/linter-rules/always_declare_return_types) | Deprecated |
 | [`always_put_control_body_on_new_line`](https://dart.dev/tools/linter-rules/always_put_control_body_on_new_line) | [Can conflict with the Dart formatter](https://dart.dev/tools/linter-rules/always_put_control_body_on_new_line) |
+| [`always_put_required_named_parameters_first`](https://dart.dev/tools/linter-rules/always_put_required_named_parameters_first) | Deprecated |
 | [`always_specify_types`](https://dart.dev/tools/linter-rules/always_specify_types) | Incompatible with [omit_local_variable_types](https://dart.dev/tools/linter-rules/omit_local_variable_types) |
+| [`always_use_package_imports`](https://dart.dev/tools/linter-rules/always_use_package_imports) | Deprecated |
+| [`annotate_overrides`](https://dart.dev/tools/linter-rules/annotate_overrides) | Deprecated |
 | [`annotate_redeclares`](https://dart.dev/tools/linter-rules/annotate_redeclares) | Experimental |
 | [`avoid_annotating_with_dynamic`](https://dart.dev/tools/linter-rules/avoid_annotating_with_dynamic) | Not specified |
 | [`avoid_classes_with_only_static_members`](https://dart.dev/tools/linter-rules/avoid_classes_with_only_static_members) | Not specified |
@@ -111,6 +115,7 @@ Below is a list of rules that are not enabled by default together with the reaso
 | [`no_literal_bool_comparisons`](https://dart.dev/tools/linter-rules/no_literal_bool_comparisons) | Not specified |
 | [`omit_obvious_local_variable_types`](https://dart.dev/tools/linter-rules/omit_obvious_local_variable_types) | Not specified |
 | [`omit_obvious_property_types`](https://dart.dev/tools/linter-rules/omit_obvious_property_types) | Incompatible with [type_annotate_public_apis](https://github.com/dart-lang/sdk/issues/60642) |
+| [`package_names`](https://dart.dev/tools/linter-rules/package_names) | Deprecated |
 | [`package_prefixed_library_names`](https://dart.dev/tools/linter-rules/package_prefixed_library_names) | [Broken; superseded by `unnecessary_library_name`](https://github.com/dart-lang/lints/issues/172) |
 | [`prefer_double_quotes`](https://dart.dev/tools/linter-rules/prefer_double_quotes) | Incompatible with [prefer_single_quotes](https://dart.dev/tools/linter-rules/prefer_single_quotes) |
 | [`prefer_expression_function_bodies`](https://dart.dev/tools/linter-rules/prefer_expression_function_bodies) | Not specified |
@@ -121,17 +126,18 @@ Below is a list of rules that are not enabled by default together with the reaso
 | [`prefer_void_to_null`](https://dart.dev/tools/linter-rules/prefer_void_to_null) | [Has unresolved false positives](https://github.com/dart-lang/linter/issues/4758) |
 | [`require_trailing_commas`](https://dart.dev/tools/linter-rules/require_trailing_commas) | Not specified |
 | [`specify_nonobvious_local_variable_types`](https://dart.dev/tools/linter-rules/specify_nonobvious_local_variable_types) | Not specified |
-| [`switch_on_type`](https://dart.dev/tools/linter-rules/switch_on_type) | Not specified |
+| [`switch_on_type`](https://dart.dev/tools/linter-rules/switch_on_type) | Available on Dart SDK 3.8.1, current minimum is Dart SDK 3.8.0. |
 | [`unnecessary_async`](https://dart.dev/tools/linter-rules/unnecessary_async) | Not specified |
 | [`unnecessary_final`](https://dart.dev/tools/linter-rules/unnecessary_final) | Incompatible with [prefer_final_locals](https://dart.dev/tools/linter-rules/prefer_final_locals) |
 | [`unnecessary_ignore`](https://dart.dev/tools/linter-rules/unnecessary_ignore) | Not specified |
 | [`unnecessary_null_aware_operator_on_extension_on_nullable`](https://dart.dev/tools/linter-rules/unnecessary_null_aware_operator_on_extension_on_nullable) | Not specified |
-| [`unnecessary_unawaited`](https://dart.dev/tools/linter-rules/unnecessary_unawaited) | Not specified |
+| [`unnecessary_unawaited`](https://dart.dev/tools/linter-rules/unnecessary_unawaited) | Available on Dart SDK 3.8.1, current minimum is Dart SDK 3.8.0. |
 | [`unreachable_from_main`](https://dart.dev/tools/linter-rules/unreachable_from_main) | Not specified |
 | [`unsafe_variance`](https://dart.dev/tools/linter-rules/unsafe_variance) | Not specified |
 | [`use_decorated_box`](https://dart.dev/tools/linter-rules/use_decorated_box) | [Has unresolved malfunctions](https://github.com/dart-lang/linter/issues/3286) |
 | [`use_null_aware_elements`](https://dart.dev/tools/linter-rules/use_null_aware_elements) | Not specified |
 | [`use_truncating_division`](https://dart.dev/tools/linter-rules/use_truncating_division) | Not specified |
+| [`void_checks`](https://dart.dev/tools/linter-rules/void_checks) | Deprecated |
 <!-- end:excluded_rules_table -->
 
 [analysis_options_yaml]: https://github.com/VeryGoodOpenSource/very_good_analysis/blob/main/lib/analysis_options.9.0.0.yaml

@@ -1,6 +1,10 @@
 {
+  "always_declare_return_types": "Deprecated",
   "always_put_control_body_on_new_line": "[Can conflict with the Dart formatter](https://dart.dev/tools/linter-rules/always_put_control_body_on_new_line)",
+  "always_put_required_named_parameters_first": "Deprecated",
   "always_specify_types": "Incompatible with [omit_local_variable_types](https://dart.dev/tools/linter-rules/omit_local_variable_types)",
+  "always_use_package_imports": "Deprecated",
+  "annotate_overrides": "Deprecated",
   "annotate_redeclares": "Experimental",
   "avoid_annotating_with_dynamic": "Not specified",
   "avoid_classes_with_only_static_members": "Not specified",
@@ -18,6 +22,7 @@
   "no_literal_bool_comparisons": "Not specified",
   "omit_obvious_local_variable_types": "Not specified",
   "omit_obvious_property_types": "Incompatible with [type_annotate_public_apis](https://github.com/dart-lang/sdk/issues/60642)",
+  "package_names": "Deprecated",
   "package_prefixed_library_names": "[Broken; superseded by `unnecessary_library_name`](https://github.com/dart-lang/lints/issues/172)",
   "prefer_double_quotes": "Incompatible with [prefer_single_quotes](https://dart.dev/tools/linter-rules/prefer_single_quotes)",
   "prefer_expression_function_bodies": "Not specified",
@@ -38,5 +43,6 @@
   "unsafe_variance": "Not specified",
   "use_decorated_box": "[Has unresolved malfunctions](https://github.com/dart-lang/linter/issues/3286)",
   "use_null_aware_elements": "Not specified",
-  "use_truncating_division": "Not specified"
+  "use_truncating_division": "Not specified",
+  "void_checks": "Deprecated"
 }
