@@ -2,6 +2,7 @@ import 'dart:convert';
 
 import 'package:http/http.dart';
 import 'package:linter_rules/linter_rules.dart';
+import 'package:meta/meta.dart' show visibleForTesting;
 
 /// Fetches all linter rules currently available in the Dart Language.
 ///
@@ -13,6 +14,8 @@ import 'package:linter_rules/linter_rules.dart';
 Future<Iterable<LinterRule>> allLinterRules({
   LinterRuleState? state,
   void Function(String) log = print,
+  @visibleForTesting
+  Future<Response> Function(Uri url, {Map<String, String>? headers}) get = get,
 }) async {
   final response = await get(allLinterRulesUri);
   final json = jsonDecode(response.body) as List<dynamic>;
