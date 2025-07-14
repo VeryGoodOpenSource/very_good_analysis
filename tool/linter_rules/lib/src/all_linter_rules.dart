@@ -1,4 +1,5 @@
 import 'dart:convert';
+import 'dart:io';
 
 import 'package:http/http.dart';
 import 'package:linter_rules/linter_rules.dart';
@@ -17,8 +18,12 @@ Future<Iterable<LinterRule>> allLinterRules({
   @visibleForTesting
   Future<Response> Function(Uri url, {Map<String, String>? headers}) get = get,
 }) async {
-  final response = await get(allLinterRulesUri);
-  final json = jsonDecode(response.body) as List<dynamic>;
+  final file = File(
+    '${Directory.current.path}/rules.json',
+  );
+  final content = await file.readAsString();
+
+  final json = jsonDecode(content) as List<dynamic>;
 
   final dartRules = json
       .map((rule) => LinterRule.fromJson(rule as Map<String, dynamic>))
