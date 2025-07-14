@@ -61,7 +61,7 @@ jobs:
       
       - name: ✍️ Remove deprecated rules
         if: ${{ env.deprecated_rules_changed == 'true' }}
-        run: dart lib/remove_deprecated_rules.dart
+        run: dart bin/remove_deprecated_rules.dart
         
       - name: 📝 Create Pull Request for deprecated rules
         if: ${{ env.deprecated_rules_changed == 'true' }}
@@ -72,7 +72,7 @@ jobs:
           commit-message: "fix: remove deprecated rules"
           title: "fix: remove deprecated rules"
           body: |
-            There are rules deprecated that require an update to the Very Good Analysis.
+            There are now rules deprecated that require an update to the Very Good Analysis.
           labels: bot
           author: VGV Bot <vgvbot@users.noreply.github.com>
           assignees: vgvbot
