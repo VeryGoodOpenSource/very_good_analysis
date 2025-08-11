@@ -62,3 +62,35 @@ dart bin/analyze.dart $version
 ```
 
 Where version is the existing Very Good Analysis version you would like to analyze, for example `9.0.0`.
+
+
+## Check and remove deprecated rules 🔍
+
+The script `tool/linter_rules/bin/remove_deprecated_rules.dart` helps maintain Very Good Analysis by automatically handling deprecated linter rules.
+
+This script will:
+
+- Fetch the latest rules from the official Dart SDK
+- Identify any deprecated rules currently used in Very Good Analysis
+- Remove deprecated rules from the analysis options file by creating a new minor version of Very Good Analysis without the deprecated rules
+- Assign the new file as the latest version in lib/analysis_options.yaml
+- Add removed rules to the exclusion table with reason 'Deprecated'
+
+### Usage
+
+To check and remove deprecated rules, run the following command (from `tool/linter_rules`):
+
+```sh
+dart bin/remove_deprecated_rules.dart
+```
+
+
+## Automations
+
+There is a [GitHub workflow](../../.github/workflows/bot_updater.yaml) that automates the maintenance of the linter rules. This workflow runs on a schedule (every weekday) and can also be triggered manually.
+
+It performs two main tasks:
+
+1.  **Update Exclusion Table**: It checks if there are any changes to the exclusion reasons for linter rules. If there are, it regenerates the exclusion table in this README and creates a pull request with the title `docs: update exclusion table`.
+
+2.  **Remove Deprecated Rules**: It checks for deprecated linter rules currently used in Very Good Analysis. If any are found, it automatically removes them from the analysis options, creates a new version of the analysis options file, and opens a pull request with the changes, titled `feat: remove deprecated rules`. 

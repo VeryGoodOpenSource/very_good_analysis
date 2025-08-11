@@ -3,7 +3,6 @@
 /// This script will:
 /// - Copy the most recent yaml to a new one with the new desired version.
 /// - Include that file on the main yaml file `lib/analysis_options.yaml.
-/// - Bump the version of the Very Good Analysis package in the pubspec.yaml.
 ///
 /// ## Usage
 ///
@@ -36,9 +35,7 @@ void main(List<String> args) => bumpVersion(args[0]);
 
 /// Bumps the version of the analysis options file and the pubspec.yaml file.
 void bumpVersion(String newVersion, {String basePath = ''}) {
-  final analysisOptionsFile = File(
-    '${basePath}lib/analysis_options.yaml',
-  );
+  final analysisOptionsFile = File('${basePath}lib/analysis_options.yaml');
   final content = analysisOptionsFile.readAsStringSync();
   final latestVersion = _latestAnalysisVersionRegExp
       .firstMatch(content)
@@ -58,15 +55,4 @@ void bumpVersion(String newVersion, {String basePath = ''}) {
     'analysis_options.$newVersion.yaml',
   );
   analysisOptionsFile.writeAsStringSync(newContent);
-
-  final pubspecFile = File(
-    '${basePath}pubspec.yaml',
-  );
-  final pubspecContent = pubspecFile.readAsStringSync();
-  final newPubspecContent = pubspecContent.replaceFirst(
-    'version: $latestVersion',
-    'version: $newVersion',
-  );
-
-  pubspecFile.writeAsStringSync(newPubspecContent);
 }

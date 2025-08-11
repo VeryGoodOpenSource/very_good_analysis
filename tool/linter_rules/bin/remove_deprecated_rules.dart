@@ -7,9 +7,9 @@ import 'package:yaml_edit/yaml_edit.dart';
 /// Removes deprecated rules from the analysis options file based on the
 /// official Dart linter rules.
 ///
-/// It will create a new version of the analysis options file, bump the version
-/// in the pubspec.yaml, and update the exclusion reasons file and the
-/// table of excluded rules in the README.md file.
+/// It will create a new version of the analysis options file and update the
+/// exclusion reasons file and the table of excluded rules in the README.md
+/// file.
 Future<void> main({
   void Function(String) log = print,
 }) async {

@@ -45,7 +45,7 @@ jobs:
         uses: peter-evans/create-pull-request@v7.0.8
         with:
           base: main
-          branch: chore/update-spdx-license
+          branch: chore/update-exclusion-table
           commit-message: "docs: update exclusion table"
           title: "docs: update exclusion table"
           body: |
@@ -68,9 +68,9 @@ jobs:
         uses: peter-evans/create-pull-request@v7.0.8
         with:
           base: main
-          branch: chore/remove-deprecated-rules
-          commit-message: "fix: remove deprecated rules"
-          title: "fix: remove deprecated rules"
+          branch: feat/remove-deprecated-rules
+          commit-message: "feat: remove deprecated rules"
+          title: "feat: remove deprecated rules"
           body: |
             There are now rules deprecated that require an update to the Very Good Analysis.
           labels: bot
