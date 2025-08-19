@@ -1,0 +1,32 @@
+import 'package:linter_rules/linter_rules.dart';
+import 'package:test/test.dart';
+
+void main() {
+  group('allVeryGoodAnalysisRules', () {
+    test('returns all very good analysis rules', () async {
+      final rules = await allVeryGoodAnalysisRules(
+        filePath: 'test/test_data',
+        version: '9.0.0',
+      );
+
+      expect(rules, [
+        'always_declare_return_types',
+        'always_put_required_named_parameters_first',
+        'always_use_package_imports',
+        'annotate_overrides',
+        'avoid_bool_literals_in_conditional_expressions',
+        'avoid_catches_without_on_clauses',
+        'avoid_catching_errors',
+        'avoid_double_and_int_checks',
+        'avoid_dynamic_calls',
+      ]);
+    });
+
+    test('throws $ArgumentError if the version is not found', () async {
+      expect(
+        () => allVeryGoodAnalysisRules(version: 'invalid'),
+        throwsA(isA<ArgumentError>()),
+      );
+    });
+  });
+}

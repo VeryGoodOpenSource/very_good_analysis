@@ -24,6 +24,44 @@ void main() {
           );
         }
       });
+
+      test('throws an exception if the fixStatus is invalid', () {
+        const invalidRule = {
+          'name': 'avoid_null_checks_in_equality_operators',
+          'description': "Don't check for `null` in custom `==` operators.",
+          'categories': ['style'],
+          'state': 'stable',
+          'fixStatus': 'invalid',
+          'incompatible': <String>[],
+          'sets': <String>[],
+          'details': 'Invalid rule due to wrong state',
+          'sinceDartSdk': '2.0',
+        };
+
+        expect(
+          () => LinterRule.fromJson(invalidRule as Map<String, dynamic>),
+          throwsA(isA<ArgumentError>()),
+        );
+      });
+
+      test('throws an exception if the state is invalid', () {
+        const invalidRule = {
+          'name': 'avoid_null_checks_in_equality_operators',
+          'description': "Don't check for `null` in custom `==` operators.",
+          'categories': ['style'],
+          'state': 'invalid',
+          'fixStatus': 'noFix',
+          'incompatible': <String>[],
+          'sets': <String>[],
+          'details': 'Invalid rule due to wrong state',
+          'sinceDartSdk': '2.0',
+        };
+
+        expect(
+          () => LinterRule.fromJson(invalidRule as Map<String, dynamic>),
+          throwsA(isA<ArgumentError>()),
+        );
+      });
     });
   });
 }
