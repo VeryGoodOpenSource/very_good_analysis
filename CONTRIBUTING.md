@@ -25,7 +25,7 @@ If you intend to provide changes related to a new Dart version you can follow th
 1. Run `dart tool/bump_version/main.dart <NEW_VERSION>` to generate a new version.
 1. Add or remove the lint rules you want to change in the version file you generated in step 2. 
    > To find new rules more easily you can run the same command as in step 4 which will add new rules directly to the exclusion table.
-1.  Open a terminal in `tool/linter_rules` and run `dart lib/exclusion_reason_table.dart` to generate an up-to-date exclusion table.
+1. Open a terminal in `tool/linter_rules` and run `dart lib/exclusion_reason_table.dart` to generate an up-to-date exclusion table.
 1. Document the rules that were removed with a reason as to why, if there is any.
    > Link to an issue as to why a lint rule should not be used if there is any.
 
