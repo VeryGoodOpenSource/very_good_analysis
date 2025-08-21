@@ -22,6 +22,8 @@ jobs:
 
       - name: 🎯 Setup Dart
         uses: dart-lang/setup-dart@v1
+        with:
+          sdk: "3.9.0"
 
       - name: 📦 Install Dependencies
         run: dart pub get
@@ -45,7 +47,7 @@ jobs:
         uses: peter-evans/create-pull-request@v7.0.8
         with:
           base: main
-          branch: chore/update-spdx-license
+          branch: chore/update-exclusions
           commit-message: "docs: update exclusion table"
           title: "docs: update exclusion table"
           body: |
