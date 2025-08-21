@@ -78,7 +78,6 @@ linter:
     - diagnostic_describe_all_properties
     - directives_ordering
     - discarded_futures
-    - do_not_use_environment
     - document_ignores
     - empty_catches
     - empty_constructor_bodies
@@ -96,7 +95,6 @@ linter:
     - join_return_with_assignment
     - leading_newlines_in_multiline_strings
     - library_annotations
-    - library_names
     - library_prefixes
     - library_private_types_in_public_api
     - lines_longer_than_80_chars
@@ -119,7 +117,6 @@ linter:
     - null_check_on_nullable_type_parameter
     - null_closures
     - omit_local_variable_types
-    - omit_obvious_local_variable_types
     - one_member_abstracts
     - only_throw_errors
     - overridden_fields
@@ -136,14 +133,11 @@ linter:
     - prefer_const_literals_to_create_immutables
     - prefer_constructors_over_static_methods
     - prefer_contains
-    - prefer_double_quotes
-    - prefer_expression_function_bodies
     - prefer_final_fields
     - prefer_final_in_for_each
     - prefer_final_locals
-    - prefer_final_parameters
-    - prefer_for_elements_to_map_fromIterable
     - prefer_foreach
+    - prefer_for_elements_to_map_fromIterable
     - prefer_function_declarations_over_variables
     - prefer_generic_function_type_aliases
     - prefer_if_elements_to_conditional_expressions
@@ -156,18 +150,14 @@ linter:
     - prefer_is_not_empty
     - prefer_is_not_operator
     - prefer_iterable_whereType
-    - prefer_mixin
     - prefer_null_aware_method_calls
     - prefer_null_aware_operators
-    - prefer_relative_imports
     - prefer_single_quotes
     - prefer_spread_collections
     - prefer_typing_uninitialized_variables
-    - prefer_void_to_null
     - provide_deprecation_message
     - public_member_api_docs
     - recursive_getters
-    - require_trailing_commas
     - secure_pubspec_urls
     - sized_box_for_whitespace
     - sized_box_shrink_expand
@@ -176,7 +166,6 @@ linter:
     - sort_constructors_first
     - sort_pub_dependencies
     - sort_unnamed_constructors_first
-    - specify_nonobvious_local_variable_types
     - specify_nonobvious_property_types
     - strict_top_level_inference
     - switch_on_type
@@ -188,13 +177,11 @@ linter:
     - type_literal_in_constant_pattern
     - unawaited_futures
     - unintended_html_in_doc_comment
-    - unnecessary_async
     - unnecessary_await_in_return
     - unnecessary_breaks
     - unnecessary_brace_in_string_interps
     - unnecessary_const
     - unnecessary_constructor_name
-    - unnecessary_final
     - unnecessary_getters_setters
     - unnecessary_ignore
     - unnecessary_lambdas
@@ -219,10 +206,8 @@ linter:
     - unnecessary_underscores
     - unreachable_from_main
     - unrelated_type_equality_checks
-    - unsafe_variance
     - use_build_context_synchronously
     - use_colored_box
-    - use_decorated_box
     - use_enums
     - use_full_hex_values_for_flutter_colors
     - use_function_type_syntax_for_parameters
@@ -240,6 +225,5 @@ linter:
     - use_super_parameters
     - use_test_throws_matchers
     - use_to_and_as_if_applicable
-    - use_truncating_division
     - valid_regexps
     - void_checks
