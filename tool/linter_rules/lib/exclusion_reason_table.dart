@@ -8,18 +8,6 @@ import 'package:linter_rules/linter_rules.dart';
 /// file.
 const _noReasonFallback = 'Not specified';
 
-/// The tag delimiting the start and end of the excluded rules table in the
-/// README.md file.
-const _excludedRulesTableTag = (
-  '<!-- start:excluded_rules_table -->',
-  '<!-- end:excluded_rules_table -->',
-);
-
-/// The link to the documentation for the given linter [rule].
-String _linterRuleLink(String rule) {
-  return 'https://dart.dev/tools/linter-rules/$rule';
-}
-
 /// Updates the README table with all those rules that are not enabled by
 /// Very Good Analysis in the given version, together with the reason for
 /// disabling them.
@@ -75,7 +63,7 @@ Future<void> main(
   final version = parsedArgs['version'] as String? ?? latestVgaVersion();
   final setExitIfChanged = parsedArgs['set-exit-if-changed'] as bool;
 
-  final linterRules = (await allLinterRules()).toSet();
+  final linterRules = (await allLinterRules()).map((rule) => rule.name).toSet();
   log('Found ${linterRules.length} available linter rules');
 
   final veryGoodAnalysisRules = (await allVeryGoodAnalysisRules(
@@ -103,16 +91,13 @@ Future<void> main(
   }
 
   await writeExclusionReasons(exclusionReasons);
+  final readme = Readme();
+  final markdownTable = readme.generateExcludedRulesTable(
+    excludedRules,
+    exclusionReasons,
+  );
 
-  final markdownTable = generateMarkdownTable([
-    ['Rule', 'Reason'],
-    ...excludedRules.map((rule) {
-      final ruleMarkdownLink = '[`$rule`](${_linterRuleLink(rule)})';
-      return [ruleMarkdownLink, exclusionReasons[rule]!];
-    }),
-  ]);
-
-  await Readme().updateTagContent(_excludedRulesTableTag, '\n$markdownTable');
+  await readme.updateTagContent(excludedRulesTableTag, '\n$markdownTable');
 
   log('''Updated the README.md file with the excluded rules table.''');
 

@@ -1,5 +1,6 @@
 import 'dart:io';
 
+import 'package:meta/meta.dart';
 import 'package:path/path.dart' as path;
 
 /// The file path containing the latest Very Good Analysis options version.
@@ -15,8 +16,10 @@ final String _latestVeryGoodAnalaysisFilePath = path.joinAll([
 
 /// Returns the latest Very Good Analysis version from the analysis options
 /// file.
-String latestVgaVersion() {
-  final analysisOptionsFile = File(_latestVeryGoodAnalaysisFilePath);
+String latestVgaVersion({@visibleForTesting String? filePath}) {
+  final analysisOptionsFile = File(
+    filePath ?? _latestVeryGoodAnalaysisFilePath,
+  );
 
   if (!analysisOptionsFile.existsSync()) {
     throw ArgumentError(

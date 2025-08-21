@@ -1,5 +1,6 @@
 import 'dart:io';
 
+import 'package:meta/meta.dart';
 import 'package:path/path.dart' as path;
 import 'package:yaml/yaml.dart';
 
@@ -29,10 +30,11 @@ String _analysisOptionsFileName({required String version}) =>
 /// Throws an [ArgumentError] if the [version] is not found.
 Future<Iterable<String>> allVeryGoodAnalysisRules({
   required String version,
+  @visibleForTesting String? filePath,
 }) async {
   final analysisOptionsFile = File(
     path.join(
-      _allVeryGoodAnalysisOptionsDirectoryPath,
+      filePath ?? _allVeryGoodAnalysisOptionsDirectoryPath,
       _analysisOptionsFileName(version: version),
     ),
   );

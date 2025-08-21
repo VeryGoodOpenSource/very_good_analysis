@@ -31,19 +31,23 @@ final _latestAnalysisVersionRegExp = RegExp(
   r'analysis_options\.(\d+\.\d+\.\d+)\.yaml',
 );
 
-void main(List<String> args) {
-  final analysisOptionsFile = File('lib/analysis_options.yaml');
+void main(List<String> args) => bumpVersion(args[0]);
+
+/// Bumps the version of the analysis options file and the pubspec.yaml file.
+void bumpVersion(String newVersion, {String basePath = ''}) {
+  final analysisOptionsFile = File('${basePath}lib/analysis_options.yaml');
   final content = analysisOptionsFile.readAsStringSync();
   final latestVersion = _latestAnalysisVersionRegExp
       .firstMatch(content)
       ?.group(1);
 
   final latestAnalysisOptionsFile = File(
-    'lib/analysis_options.$latestVersion.yaml',
+    '${basePath}lib/analysis_options.$latestVersion.yaml',
   );
 
-  final newVersion = args[0];
-  final newAnalysisOptionsFile = File('lib/analysis_options.$newVersion.yaml');
+  final newAnalysisOptionsFile = File(
+    '${basePath}lib/analysis_options.$newVersion.yaml',
+  );
   latestAnalysisOptionsFile.copySync(newAnalysisOptionsFile.path);
 
   final newContent = content.replaceFirst(

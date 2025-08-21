@@ -8,3 +8,4 @@ export 'src/linter_rules_reasons.dart';
 export 'src/markdown_table_generator.dart';
 export 'src/models/models.dart';
 export 'src/readme.dart';
+export 'src/shared.dart';

@@ -26,7 +26,11 @@ Future<LinterRulesReasons> readExclusionReasons() async {
 
 /// Writes all the reasons for disabling a rule.
 Future<void> writeExclusionReasons(LinterRulesReasons reasons) async {
+  // Sort the reasons by rule name to make the output more readable.
+  final sortedReasons = Map<String, String>.fromEntries(
+    reasons.entries.toList()..sort((a, b) => a.key.compareTo(b.key)),
+  );
   final file = File(_reasonsFilePath);
-  final json = const JsonEncoder.withIndent('  ').convert(reasons);
+  final json = const JsonEncoder.withIndent('  ').convert(sortedReasons);
   await file.writeAsString(json);
 }
