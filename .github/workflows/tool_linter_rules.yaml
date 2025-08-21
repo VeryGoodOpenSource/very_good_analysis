@@ -1,29 +1,19 @@
 name: linter_rules (tool)
 
-on: pull_request
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+on:
+  pull_request:
+    paths:
+      - "tool/linter_rules/**"
+      - ".github/workflows/tool_linter_rules.yaml"
+      - "pubspec.yaml"
 
 jobs:
   build:
-    defaults:
-      run:
-        working-directory: tool/linter_rules
-
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: 📚 Git Checkout
-        uses: actions/checkout@v5
-
-      - name: 🎯 Setup Dart
-        uses: dart-lang/setup-dart@v1
-        with:
-          sdk: "3.9.0"
-
-      - name: 📦 Install Dependencies
-        run: dart pub get
-
-      - name: ✨ Check Formatting
-        run: dart format --set-exit-if-changed .
-
-      - name: 🕵️ Analyze
-        run: dart analyze --fatal-infos --fatal-warnings
+    uses: VeryGoodOpenSource/very_good_workflows/.github/workflows/dart_package.yml@v1
+    with:
+      dart_sdk: 3.9.0
+      working_directory: tool/linter_rules

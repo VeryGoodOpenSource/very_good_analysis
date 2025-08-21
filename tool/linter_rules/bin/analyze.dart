@@ -1,12 +1,7 @@
-import 'dart:convert';
+import 'dart:io';
 
-import 'package:http/http.dart';
+import 'package:args/args.dart';
 import 'package:linter_rules/linter_rules.dart';
-
-/// The [Uri] to fetch all linter rules from.
-final Uri _allLinterRulesUri = Uri.parse(
-  'https://raw.githubusercontent.com/dart-lang/site-www/refs/heads/main/src/_data/linter_rules.json',
-);
 
 /// Compares Very Good Analysis with the all available Dart linter rules.
 ///
@@ -27,6 +22,9 @@ final Uri _allLinterRulesUri = Uri.parse(
 /// dart bin/analyze.dart 5.1.0
 /// ```
 ///
+/// Set `--set-exit-if-changed` to exit with code 2 if there are deprecated
+/// rules in the given Very Good Analysis version.
+///
 /// It will log information about:
 /// - The number of Dart linter rules fetched.
 /// - The number of rules being declared in the given Very Good Analysis
@@ -37,24 +35,32 @@ Future<void> main(
   List<String> args, {
   void Function(String) log = print,
 }) async {
-  final version = args.isNotEmpty ? args[0] : latestVgaVersion();
+  final argsParser = ArgParser()
+    ..addOption(
+      'version',
+      help:
+          'The version of the VGA to check for deprecated rules. '
+          'If not provided, the latest version will be used.',
+    )
+    ..addFlag(
+      'set-exit-if-changed',
+      help:
+          '''Set the exit code to 2 if there are changes to the deprecated rules.''',
+    );
 
-  final response = await get(_allLinterRulesUri);
-  final json = jsonDecode(response.body) as List<dynamic>;
+  final parsedArgs = argsParser.parse(args);
 
-  final dartRules = json
-      .map((rule) => LinterRule.fromJson(rule as Map<String, dynamic>))
-      .toList();
-  log('Fetched ${dartRules.length} Dart linter rules');
+  final version = parsedArgs['version'] as String? ?? latestVgaVersion();
+  final setExitIfChanged = parsedArgs['set-exit-if-changed'] as bool;
+
+  final dartRules = await allLinterRules(state: LinterRuleState.deprecated);
+  log('Fetched ${dartRules.length} deprecated Dart linter rules');
 
   final vgaRules = await allVeryGoodAnalysisRules(version: version);
   log('Fetched ${vgaRules.length} Very Good Analysis rules');
   log('');
 
-  final deprecatedDartRules = dartRules
-      .where((rule) => rule.state == LinterRuleState.deprecated)
-      .map((rule) => rule.name)
-      .toSet();
+  final deprecatedDartRules = dartRules.map((rule) => rule.name).toSet();
   final deprecatedVgaRules = vgaRules
       .where(deprecatedDartRules.contains)
       .toList();
@@ -65,4 +71,8 @@ Future<void> main(
     deprecationMessage.write('\n  - $rule');
   }
   log(deprecationMessage.toString());
+
+  if (deprecatedVgaRules.isNotEmpty && setExitIfChanged) {
+    exit(2);
+  }
 }
