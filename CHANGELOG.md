@@ -1,18 +1,19 @@
-# 9.0.0
+
+## 9.0.0
 
 - chore(deps): bump peter-evans/create-pull-request from 7.0.6 to 7.0.8 [139](https://github.com/VeryGoodOpenSource/very_good_analysis/pull/139)
 - chore: release 9.0.0-rc.1 [154](https://github.com/VeryGoodOpenSource/very_good_analysis/pull/154)
 
-# 9.0.0-rc.1
+## 9.0.0-rc.1
 
 - feat: support Dart 3.8.0 [152](https://github.com/VeryGoodOpenSource/very_good_analysis/pull/152)
 
-# 8.0.0
+## 8.0.0
 
 - chore: release 8.0.0-rc.1
 - fix: remove `omit_obvious_property_types` as it conflicts with `type_annotate_public_apis` [148](https://github.com/VeryGoodOpenSource/very_good_analysis/pull/148)
 
-# 8.0.0-rc.1
+## 8.0.0-rc.1
 
 - feat: add `omit_obvious_property_types` [143](https://github.com/VeryGoodOpenSource/very_good_analysis/pull/143)
 - feat: add `specify_nonobvious_property_types` [143](https://github.com/VeryGoodOpenSource/very_good_analysis/pull/143)
@@ -20,11 +21,11 @@
 - feat: add `unnecessary_underscores` [143](https://github.com/VeryGoodOpenSource/very_good_analysis/pull/143)
 - feat: remove `require_trailing_commas` [143](https://github.com/VeryGoodOpenSource/very_good_analysis/pull/143)
 
-# 7.0.0
+## 7.0.0
 
 - chore: release 7.0.0-dev.1
 
-# 7.0.0-dev.1
+## 7.0.0-dev.1
 
 - feat: add `document_ignores` [125](https://github.com/VeryGoodOpenSource/very_good_analysis/pull/125)
 - feat: remove `avoid_null_checks_in_equality_operators` [124](https://github.com/VeryGoodOpenSource/very_good_analysis/pull/124)
@@ -36,11 +37,11 @@
 - docs: update exclusion reasons [109](https://github.com/VeryGoodOpenSource/very_good_analysis/pull/109)
 - docs: update commands in contributing [110](https://github.com/VeryGoodOpenSource/very_good_analysis/pull/110)
 
-# 6.0.0
+## 6.0.0
 
 - chore: release 6.0.0-dev.1
 
-# 6.0.0-dev.1
+## 6.0.0-dev.1
 
 - feat!: upgrade to support Dart `^3.4.0`
 - feat: additional lint rules:
@@ -49,18 +50,18 @@
   - [no_wildcard_variable_uses](https://dart.dev/tools/linter-rules/no_wildcard_variable_uses)
 - docs: include exclusion reason table ([100](https://github.com/VeryGoodOpenSource/very_good_analysis/pull/100), [102](https://github.com/VeryGoodOpenSource/very_good_analysis/pull/102))
 
-# 5.1.0
+## 5.1.0
 
 - fix: remove deprecated `iterable_contains_unrelated_type` lint
 - fix: remove deprecated `list_remove_unrelated_type` lint
 - fix(docs): full list of rules
 - feat: type equality checks should be warnings/errors
 
-# 5.0.0+1
+## 5.0.0+1
 
 - docs: minor updates to documentation in `README.md`
 
-# 5.0.0
+## 5.0.0
 
 - feat!: upgrade to support Dart `^3.0.0`
 - feat: added analysis warning as error:
@@ -75,11 +76,11 @@
 - refactor: remove malfunctioning rules:
   - [`use_decorated_box`](https://github.com/VeryGoodOpenSource/very_good_analysis/issues/65)
 
-# 4.0.0+1
+## 4.0.0+1
 
 - docs: minor updates to documentation in `README.md`
 
-# 4.0.0
+## 4.0.0
 
 - feat!: upgrade to support Dart `^2.19.0`
 - feat: additional lint rules:
@@ -99,7 +100,7 @@
   - [avoid_returning_null](https://dart-lang.github.io/linter/lints/avoid_returning_null.html)
   - [avoid_returning_null_for_future](https://dart-lang.github.io/linter/lints/avoid_returning_null_for_future.html)
 
-# 3.1.0
+## 3.1.0
 
 - **BREAKING** refactor: remove deprecated `unawaited` (use `unawaited` from `dart:async` instead).
 - feat: additional lint rules:
@@ -112,12 +113,12 @@
   - [use_if_null_to_convert_nulls_to_bools](https://dart-lang.github.io/linter/lints/use_if_null_to_convert_nulls_to_bools.html)
   - [use_test_throws_matchers](https://dart-lang.github.io/linter/lints/use_test_throws_matchers.html)
 
-# 3.0.2
+## 3.0.2
 
 - fix: remove deprecated `invariant_booleans` lint
 - fix: deprecate `unawaited` (use `unawaited` from `dart:async` instead).
 
-# 3.0.1
+## 3.0.1
 
 - feat: use analyzer language modes instead of deprecated `strong-mode`
   ```yaml
@@ -127,7 +128,7 @@
     strict-raw-types: true
   ```
 
-# 3.0.0
+## 3.0.0
 
 - feat!: upgrade to support Dart `^2.17.0`
 - feat: additional lint rules:
@@ -141,7 +142,7 @@
   - [use_enums](https://dart-lang.github.io/linter/lints/use_enums.html)
   - [use_super_parameters](https://dart-lang.github.io/linter/lints/use_super_parameters.html)
 
-# 2.4.0
+## 2.4.0
 
 - feat: additional lint rules:
   - [`avoid_js_rounded_ints`](https://dart-lang.github.io/linter/lints/avoid_js_rounded_ints.html)
@@ -160,7 +161,7 @@
   - [`require_trailing_commas`](https://dart-lang.github.io/linter/lints/require_trailing_commas.html)
   - [`use_is_even_rather_than_modulo`](https://dart-lang.github.io/linter/lints/use_is_even_rather_than_modulo.html)
 
-# 2.3.0
+## 2.3.0
 
 - feat: additional analysis errors:
   - `missing_required_param`
@@ -206,7 +207,7 @@
   - [`unnecessary_parenthesis`](https://dart-lang.github.io/linter/lints/unnecessary_parenthesis.html)
   - [`unnecessary_raw_strings`](https://dart-lang.github.io/linter/lints/unnecessary_raw_strings.html)
 
-# 2.2.0
+## 2.2.0
 
 - feat: additional lint rules:
   - `always_use_package_imports`
@@ -214,19 +215,19 @@
   - `avoid_slow_async_io`
   - `avoid_type_to_string`
 
-# 2.1.2
+## 2.1.2
 
 - refactor: remove deprecated `pedantic` dependency
 - ci: improvements to ensure max pub score
 - docs: minor documentation and package description updates
 
-# 2.1.1
+## 2.1.1
 
 - docs: update `README` to include latest version
 - docs: reword package description
 - docs: consolidate `README` links
 
-# 2.1.0
+## 2.1.0
 
 - feat: update sdk constraint to v2.12.0 stable
 - feat: additional lint rules:
@@ -255,34 +256,34 @@
   - `use_full_hex_values_for_flutter_colors`
   - `void_checks`
 
-# 2.0.3
+## 2.0.3
 
 - feat: additional linter rule:
   - `sort_child_properties_last`
 
-# 2.0.2
+## 2.0.2
 
 - feat: additional linter rule:
   - `use_key_in_widget_constructors`
 
-# 2.0.1
+## 2.0.1
 
 - feat: additional linter rule:
   - `avoid_dynamic_calls`
 
-# 2.0.0
+## 2.0.0
 
 - feat: stable null safe release
 
-# 2.0.0-nullsafety.0
+## 2.0.0-nullsafety.0
 
 - chore: migrate to null safety
 
-# 1.0.4
+## 1.0.4
 
 - docs: README and metadata updates
 
-# 1.0.3
+## 1.0.3
 
 - feat: additional linter rules
   - `avoid_print`
@@ -292,15 +293,15 @@
   - `prefer_const_declarations`
   - `sized_box_for_whitespace`
 
-# 1.0.2
+## 1.0.2
 
 - feat: add test/.test_coverage.dart to the list of ignored files
 
-# 1.0.1
+## 1.0.1
 
 - docs: README improvements
 - docs: inline documentation improvements
 
-# 1.0.0
+## 1.0.0
 
 - Add `analysis_options` used at [Very Good Ventures](https://verygood.ventures)
