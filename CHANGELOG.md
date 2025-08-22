@@ -1,3 +1,14 @@
+## [9.1.0](https://github.com/VeryGoodOpenSource/very_good_analysis/compare/v9.0.0...v9.1.0) (2025-08-22)
+
+
+### Features
+
+* support Dart 3.9.0 ([#162](https://github.com/VeryGoodOpenSource/very_good_analysis/issues/162)) ([44fab49](https://github.com/VeryGoodOpenSource/very_good_analysis/commit/44fab4952609b6b6807136cd9156ed5fa680e37e))
+
+
+### Docs
+
+* update `CONTRIBUTING.md` to explain how to add new lint rules ([#156](https://github.com/VeryGoodOpenSource/very_good_analysis/issues/156)) ([447051a](https://github.com/VeryGoodOpenSource/very_good_analysis/commit/447051a324ac232d5f2c0298449631ac87b09ad7))
 
 ## 9.0.0
 
