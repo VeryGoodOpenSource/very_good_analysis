@@ -1,4 +1,4 @@
-## [9.1.0](https://github.com/VeryGoodOpenSource/very_good_analysis/compare/v9.0.0...v9.1.0) (2025-08-22)
+## [10.0.0-rc.1](https://github.com/VeryGoodOpenSource/very_good_analysis/compare/v9.0.0...v9.1.0) (2025-08-22)
 
 
 ### Features
