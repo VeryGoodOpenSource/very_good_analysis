@@ -22,6 +22,8 @@ jobs:
 
       - name: 🎯 Setup Dart
         uses: dart-lang/setup-dart@v1
+        with:
+          sdk: "3.9.0"
 
       - name: 📦 Install Dependencies
         run: dart pub get
@@ -58,11 +60,11 @@ jobs:
       - name: 🔍 Check for deprecated rules changes
         id: deprecated
         run: (dart bin/analyze.dart --set-exit-if-changed && echo "deprecated_rules_changed=false" >> $GITHUB_ENV) || echo "deprecated_rules_changed=true" >> $GITHUB_ENV
-      
+
       - name: ✍️ Remove deprecated rules
         if: ${{ env.deprecated_rules_changed == 'true' }}
         run: dart bin/remove_deprecated_rules.dart
-        
+
       - name: 📝 Create Pull Request for deprecated rules
         if: ${{ env.deprecated_rules_changed == 'true' }}
         uses: peter-evans/create-pull-request@v7.0.8
@@ -77,4 +79,3 @@ jobs:
           author: VGV Bot <vgvbot@users.noreply.github.com>
           assignees: vgvbot
           committer: VGV Bot <vgvbot@users.noreply.github.com>
-      
