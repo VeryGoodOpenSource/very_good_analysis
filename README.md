@@ -113,13 +113,11 @@ Below is a list of rules that are not enabled by default together with the reaso
 | [`prefer_mixin`](https://dart.dev/tools/linter-rules/prefer_mixin) | Not specified |
 | [`prefer_relative_imports`](https://dart.dev/tools/linter-rules/prefer_relative_imports) | Incompatible with [always_use_package_imports](https://dart.dev/tools/linter-rules/always_use_package_imports) |
 | [`prefer_void_to_null`](https://dart.dev/tools/linter-rules/prefer_void_to_null) | [Has unresolved false positives](https://github.com/dart-lang/linter/issues/4758) |
-| [`require_trailing_commas`](https://dart.dev/tools/linter-rules/require_trailing_commas) | Not specified |
 | [`specify_nonobvious_local_variable_types`](https://dart.dev/tools/linter-rules/specify_nonobvious_local_variable_types) | Not specified |
 | [`unnecessary_async`](https://dart.dev/tools/linter-rules/unnecessary_async) | Not specified |
 | [`unnecessary_final`](https://dart.dev/tools/linter-rules/unnecessary_final) | Incompatible with [prefer_final_locals](https://dart.dev/tools/linter-rules/prefer_final_locals) |
 | [`unsafe_variance`](https://dart.dev/tools/linter-rules/unsafe_variance) | Not specified |
 | [`use_decorated_box`](https://dart.dev/tools/linter-rules/use_decorated_box) | [Has unresolved malfunctions](https://github.com/dart-lang/linter/issues/3286) |
-| [`use_truncating_division`](https://dart.dev/tools/linter-rules/use_truncating_division) | Not specified |
 <!-- end:excluded_rules_table -->
 
 [analysis_options_yaml]: https://github.com/VeryGoodOpenSource/very_good_analysis/blob/main/lib/analysis_options.9.0.0.yaml
