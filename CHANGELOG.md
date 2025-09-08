@@ -10,6 +10,13 @@
 
 * update `CONTRIBUTING.md` to explain how to add new lint rules ([#156](https://github.com/VeryGoodOpenSource/very_good_analysis/issues/156)) ([447051a](https://github.com/VeryGoodOpenSource/very_good_analysis/commit/447051a324ac232d5f2c0298449631ac87b09ad7))
 
+## [10.0.1-rc.2](https://github.com/VeryGoodOpenSource/very_good_analysis/compare/v10.0.0-rc.2...v10.0.1-rc.2) (2025-09-08)
+
+
+### Docs
+
+* update exclusion table ([#165](https://github.com/VeryGoodOpenSource/very_good_analysis/issues/165)) ([b9bc6f5](https://github.com/VeryGoodOpenSource/very_good_analysis/commit/b9bc6f521e773e6e715e835f0d8640f18be0fcc2))
+
 ## [10.0.0-rc.2](https://github.com/VeryGoodOpenSource/very_good_analysis/compare/v10.0.0-rc.1...v10.0.0-rc.2) (2025-09-08)
 
 
