@@ -10,6 +10,13 @@
 
 * update `CONTRIBUTING.md` to explain how to add new lint rules ([#156](https://github.com/VeryGoodOpenSource/very_good_analysis/issues/156)) ([447051a](https://github.com/VeryGoodOpenSource/very_good_analysis/commit/447051a324ac232d5f2c0298449631ac87b09ad7))
 
+## [10.0.0-rc.2](https://github.com/VeryGoodOpenSource/very_good_analysis/compare/v10.0.0-rc.1...v10.0.0-rc.2) (2025-09-08)
+
+
+### Miscellaneous Chores
+
+* remove diagnostic_describe_all_properties ([#166](https://github.com/VeryGoodOpenSource/very_good_analysis/issues/166)) ([7542279](https://github.com/VeryGoodOpenSource/very_good_analysis/commit/75422792114244117c13c3a5a427b20a20245fec))
+
 ## 9.0.0
 
 - chore(deps): bump peter-evans/create-pull-request from 7.0.6 to 7.0.8 [139](https://github.com/VeryGoodOpenSource/very_good_analysis/pull/139)
