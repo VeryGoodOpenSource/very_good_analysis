@@ -102,6 +102,7 @@ Below is a list of rules that are not enabled by default together with the reaso
 | [`avoid_null_checks_in_equality_operators`](https://dart.dev/tools/linter-rules/avoid_null_checks_in_equality_operators) | Has been deprecated and [will be removed](https://github.com/dart-lang/sdk/issues/59514) |
 | [`avoid_types_on_closure_parameters`](https://dart.dev/tools/linter-rules/avoid_types_on_closure_parameters) | Not specified |
 | [`close_sinks`](https://dart.dev/tools/linter-rules/close_sinks) | [Has unresolved false positives](https://github.com/dart-lang/linter/issues/1381) |
+| [`diagnostic_describe_all_properties`](https://dart.dev/tools/linter-rules/diagnostic_describe_all_properties) | Not specified |
 | [`do_not_use_environment`](https://dart.dev/tools/linter-rules/do_not_use_environment) | Not specified |
 | [`library_names`](https://dart.dev/tools/linter-rules/library_names) | [Superseded by `unnecessary_library_name`](https://github.com/dart-lang/lints/issues/172) |
 | [`omit_obvious_local_variable_types`](https://dart.dev/tools/linter-rules/omit_obvious_local_variable_types) | Not specified |
