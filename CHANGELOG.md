@@ -1,4 +1,4 @@
-## [10.0.0-rc.1](https://github.com/VeryGoodOpenSource/very_good_analysis/compare/v9.0.0...v9.1.0) (2025-08-22)
+## [10.0.0](https://github.com/VeryGoodOpenSource/very_good_analysis/compare/v9.0.0...v10.0.0) (2025-08-22)
 
 
 ### Features
@@ -10,7 +10,20 @@
 
 * update `CONTRIBUTING.md` to explain how to add new lint rules ([#156](https://github.com/VeryGoodOpenSource/very_good_analysis/issues/156)) ([447051a](https://github.com/VeryGoodOpenSource/very_good_analysis/commit/447051a324ac232d5f2c0298449631ac87b09ad7))
 
-## [10.0.0-rc.2](https://github.com/VeryGoodOpenSource/very_good_analysis/compare/v10.0.0-rc.1...v10.0.0-rc.2) (2025-09-08)
+## [10.0.0-rc.2](https://github.com/VeryGoodOpenSource/very_good_analysis/compare/v10.0.0-rc.2...v10.0.0) (2025-09-19)
+
+
+### Miscellaneous Chores
+
+* v10.0.0 ([#170](https://github.com/VeryGoodOpenSource/very_good_analysis/issues/170)) ([7a889f9](https://github.com/VeryGoodOpenSource/very_good_analysis/commit/7a889f9bf8e355494bd6cc808c8e4d5ad0295545))
+
+
+### Docs
+
+* update exclusion table ([#165](https://github.com/VeryGoodOpenSource/very_good_analysis/issues/165)) ([b9bc6f5](https://github.com/VeryGoodOpenSource/very_good_analysis/commit/b9bc6f521e773e6e715e835f0d8640f18be0fcc2))
+* update exclusion table ([#169](https://github.com/VeryGoodOpenSource/very_good_analysis/issues/169)) ([163d6ae](https://github.com/VeryGoodOpenSource/very_good_analysis/commit/163d6ae95a07b3a87ec94ae6f5fc837b1e78a060))
+
+## [10.0.0-rc.1](https://github.com/VeryGoodOpenSource/very_good_analysis/compare/v10.0.0-rc.1...v10.0.0-rc.2) (2025-09-08)
 
 
 ### Miscellaneous Chores
