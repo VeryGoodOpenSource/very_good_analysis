@@ -35,7 +35,7 @@ include: package:very_good_analysis/analysis_options.yaml
 This will ensure you always use the latest version of the lints. If you wish to restrict the lint version, specify a version of `analysis_options.yaml` instead:
 
 ```yaml
-include: package:very_good_analysis/analysis_options.9.0.0.yaml
+include: package:very_good_analysis/analysis_options.10.0.0.yaml
 ```
 
 ## Suppressing Lints
@@ -102,6 +102,7 @@ Below is a list of rules that are not enabled by default together with the reaso
 | [`avoid_null_checks_in_equality_operators`](https://dart.dev/tools/linter-rules/avoid_null_checks_in_equality_operators) | Has been deprecated and [will be removed](https://github.com/dart-lang/sdk/issues/59514) |
 | [`avoid_types_on_closure_parameters`](https://dart.dev/tools/linter-rules/avoid_types_on_closure_parameters) | Not specified |
 | [`close_sinks`](https://dart.dev/tools/linter-rules/close_sinks) | [Has unresolved false positives](https://github.com/dart-lang/linter/issues/1381) |
+| [`diagnostic_describe_all_properties`](https://dart.dev/tools/linter-rules/diagnostic_describe_all_properties) | Not specified |
 | [`do_not_use_environment`](https://dart.dev/tools/linter-rules/do_not_use_environment) | Not specified |
 | [`library_names`](https://dart.dev/tools/linter-rules/library_names) | [Superseded by `unnecessary_library_name`](https://github.com/dart-lang/lints/issues/172) |
 | [`omit_obvious_local_variable_types`](https://dart.dev/tools/linter-rules/omit_obvious_local_variable_types) | Not specified |
@@ -113,16 +114,14 @@ Below is a list of rules that are not enabled by default together with the reaso
 | [`prefer_mixin`](https://dart.dev/tools/linter-rules/prefer_mixin) | Not specified |
 | [`prefer_relative_imports`](https://dart.dev/tools/linter-rules/prefer_relative_imports) | Incompatible with [always_use_package_imports](https://dart.dev/tools/linter-rules/always_use_package_imports) |
 | [`prefer_void_to_null`](https://dart.dev/tools/linter-rules/prefer_void_to_null) | [Has unresolved false positives](https://github.com/dart-lang/linter/issues/4758) |
-| [`require_trailing_commas`](https://dart.dev/tools/linter-rules/require_trailing_commas) | Not specified |
 | [`specify_nonobvious_local_variable_types`](https://dart.dev/tools/linter-rules/specify_nonobvious_local_variable_types) | Not specified |
 | [`unnecessary_async`](https://dart.dev/tools/linter-rules/unnecessary_async) | Not specified |
 | [`unnecessary_final`](https://dart.dev/tools/linter-rules/unnecessary_final) | Incompatible with [prefer_final_locals](https://dart.dev/tools/linter-rules/prefer_final_locals) |
 | [`unsafe_variance`](https://dart.dev/tools/linter-rules/unsafe_variance) | Not specified |
 | [`use_decorated_box`](https://dart.dev/tools/linter-rules/use_decorated_box) | [Has unresolved malfunctions](https://github.com/dart-lang/linter/issues/3286) |
-| [`use_truncating_division`](https://dart.dev/tools/linter-rules/use_truncating_division) | Not specified |
 <!-- end:excluded_rules_table -->
 
-[analysis_options_yaml]: https://github.com/VeryGoodOpenSource/very_good_analysis/blob/main/lib/analysis_options.9.0.0.yaml
+[analysis_options_yaml]: https://github.com/VeryGoodOpenSource/very_good_analysis/blob/main/lib/analysis_options.10.0.0.yaml
 [ci_badge]: https://github.com/VeryGoodOpenSource/very_good_analysis/workflows/ci/badge.svg
 [ci_badge_link]: https://github.com/VeryGoodOpenSource/very_good_analysis/actions
 [badge]: https://img.shields.io/badge/style-very_good_analysis-B22C89.svg
