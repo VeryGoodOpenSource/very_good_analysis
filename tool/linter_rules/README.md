@@ -61,7 +61,7 @@ The script also accepts a specific version as an argument to analyze:
 dart bin/analyze.dart $version
 ```
 
-Where version is the existing Very Good Analysis version you would like to analyze, for example `9.0.0`.
+Where version is the existing Very Good Analysis version you would like to analyze, for example `10.0.0`.
 
 
 ## Check and remove deprecated rules 🔍
