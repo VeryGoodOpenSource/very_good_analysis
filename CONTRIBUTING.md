@@ -67,9 +67,7 @@ accepted.
 
 ## Release Process 🚀
 
-### ‼️ Important
-
-- Every snapshot of a version is saved on its own yaml file under the name pattern: `lib/analysis_options.<version>.yaml`.
+> Every snapshot of a version is saved on its own yaml file under the name pattern: `lib/analysis_options.<version>.yaml`.
 
 We use [`release-please-action`][release-please-action-link] to automate versioning and changelog generation, along with a GitHub workflow that automatically publish the Very Good Analysis to pub.dev.
 
@@ -82,12 +80,10 @@ We use [`release-please-action`][release-please-action-link] to automate version
     - An updated `CHANGELOG.md`
     - A version bump in `pubspec.yaml`
 
-  #### ‼️ Important
-
-  - A version verification workflow (`.github/workflows/verify_version.yaml`) runs to ensure:
-    - The version in `pubspec.yaml` matches the version in `lib/analysis_options.yaml`
-    - The file `lib/analysis_options_<NEW_VERSION>.yaml` exists
-    - If any mismatches are found, the files need to be manually updated to match
+  > A version verification workflow (`.github/workflows/verify_version.yaml`) runs to ensure:
+  >- The version in `pubspec.yaml` matches the version in `lib/analysis_options.yaml`
+  >- The file `lib/analysis_options_<NEW_VERSION>.yaml` exists
+  >- If any mismatches are found, the files need to be manually updated to match
 
   ##### 💡 Notes
 
