@@ -9,7 +9,7 @@
 /// Run this script (from project root):
 ///
 /// ```sh
-/// dart tool/bump_version/main.dart <new_version>
+/// dart tool/bump_version/lib/bump_version.dart <new_version>
 /// ```
 ///
 /// Where `<new_version>` is the new version to bump to in the format `x.y.z`.
