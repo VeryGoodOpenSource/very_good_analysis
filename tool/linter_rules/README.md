@@ -35,7 +35,6 @@ Rules that are missing a reason in the `exclusion_reasons.json` file will be giv
 | version             | The Very Good Analysis version to use.                                | latest (from lib/analysis_options.yaml) |
 | set-exit-if-changed | Set the exit code to 2 if there are changes to the exclusion reasons. | false                                   |
 
-
 ## Analyze 🔍
 
 If you're looking to update Very Good Analysis you might want to analyze the health of the latest rule set. You can use the script at `bin/analyze.dart` to do exactly that.
@@ -63,7 +62,6 @@ dart bin/analyze.dart $version
 
 Where version is the existing Very Good Analysis version you would like to analyze, for example `10.0.0`.
 
-
 ## Check and remove deprecated rules 🔍
 
 The script `tool/linter_rules/bin/remove_deprecated_rules.dart` helps maintain Very Good Analysis by automatically handling deprecated linter rules.
@@ -84,13 +82,12 @@ To check and remove deprecated rules, run the following command (from `tool/lint
 dart bin/remove_deprecated_rules.dart
 ```
 
-
 ## Automations
 
 There is a [GitHub workflow](../../.github/workflows/bot_updater.yaml) that automates the maintenance of the linter rules. This workflow runs on a schedule (every weekday) and can also be triggered manually.
 
 It performs two main tasks:
 
-1.  **Update Exclusion Table**: It checks if there are any changes to the exclusion reasons for linter rules. If there are, it regenerates the exclusion table in this README and creates a pull request with the title `docs: update exclusion table`.
+1. **Update Exclusion Table**: It checks if there are any changes to the exclusion reasons for linter rules. If there are, it regenerates the exclusion table in this README and creates a pull request with the title `docs: update exclusion table`.
 
-2.  **Remove Deprecated Rules**: It checks for deprecated linter rules currently used in Very Good Analysis. If any are found, it automatically removes them from the analysis options, creates a new version of the analysis options file, and opens a pull request with the changes, titled `feat: remove deprecated rules`. 
+2. **Remove Deprecated Rules**: It checks for deprecated linter rules currently used in Very Good Analysis. If any are found, it automatically removes them from the analysis options, creates a new version of the analysis options file, and opens a pull request with the changes, titled `feat: remove deprecated rules`.
