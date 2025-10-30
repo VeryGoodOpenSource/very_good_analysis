@@ -56,7 +56,7 @@ Before creating a pull request please:
 1. Format your code (`dart format .`).
 1. Analyze your code (`dart analyze . --fatal-infos`).
 1. Follow the [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0) specification for your commit messages.
-   - This enables automatic version bumping and changelog generation as detailed in the [Release Process](#release-process-🚀) section.
+   - This enables automatic version bumping and changelog generation as detailed in the [Release Process](#release-process-) section.
 1. Create the Pull Request.
 1. Verify that all status checks are passing.
 
@@ -85,7 +85,7 @@ We use [`release-please-action`][release-please-action-link] to automate version
   >- The file `lib/analysis_options_<NEW_VERSION>.yaml` exists
   >- If any mismatches are found, the files need to be manually updated to match
 
-  ##### 💡 Notes
+  #### 💡 Notes
 
   - The GitHub Action workflow that automates the release process is configured in `.github/workflows/release_please.yaml`
   - release-please settings are defined in `.release-please-config.json` and `.release-please-manifest.json`
@@ -97,10 +97,7 @@ We use [`release-please-action`][release-please-action-link] to automate version
   - A GitHub Release is published with the changelog.
   - A new version of Very Good Analysis is automatically published in pub.dev.
 
-  #### 💡 Notes
-
-  - The publishing process is automatically triggered when a version tag is created.
-  - The automated publishing workflow to pub.dev is defined in `.github/workflows/pub_publish.yaml`
+  **Note:** The publishing process is automatically triggered when a version tag is created. The automated publishing workflow to pub.dev is defined in `.github/workflows/pub_publish.yaml`
 
 This document provides a good summary of how it works and how we use it, but we recommend that you also read the official documentation of [Conventional Commits][conventional_commits_link], [Semantic Versioning][sem_ver_link], [Publishing Dart packages][dart_publishing_link] and [`release-please-action`][release-please-action-link].
 
