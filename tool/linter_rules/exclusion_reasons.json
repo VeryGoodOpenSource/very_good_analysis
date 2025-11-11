@@ -21,6 +21,7 @@
   "prefer_mixin": "Not specified",
   "prefer_relative_imports": "Incompatible with [always_use_package_imports](https://dart.dev/tools/linter-rules/always_use_package_imports)",
   "prefer_void_to_null": "[Has unresolved false positives](https://github.com/dart-lang/linter/issues/4758)",
+  "remove_deprecations_in_breaking_versions": "Not specified",
   "specify_nonobvious_local_variable_types": "Not specified",
   "unnecessary_async": "Not specified",
   "unnecessary_final": "Incompatible with [prefer_final_locals](https://dart.dev/tools/linter-rules/prefer_final_locals)",

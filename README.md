@@ -114,6 +114,7 @@ Below is a list of rules that are not enabled by default together with the reaso
 | [`prefer_mixin`](https://dart.dev/tools/linter-rules/prefer_mixin) | Not specified |
 | [`prefer_relative_imports`](https://dart.dev/tools/linter-rules/prefer_relative_imports) | Incompatible with [always_use_package_imports](https://dart.dev/tools/linter-rules/always_use_package_imports) |
 | [`prefer_void_to_null`](https://dart.dev/tools/linter-rules/prefer_void_to_null) | [Has unresolved false positives](https://github.com/dart-lang/linter/issues/4758) |
+| [`remove_deprecations_in_breaking_versions`](https://dart.dev/tools/linter-rules/remove_deprecations_in_breaking_versions) | Not specified |
 | [`specify_nonobvious_local_variable_types`](https://dart.dev/tools/linter-rules/specify_nonobvious_local_variable_types) | Not specified |
 | [`unnecessary_async`](https://dart.dev/tools/linter-rules/unnecessary_async) | Not specified |
 | [`unnecessary_final`](https://dart.dev/tools/linter-rules/unnecessary_final) | Incompatible with [prefer_final_locals](https://dart.dev/tools/linter-rules/prefer_final_locals) |
