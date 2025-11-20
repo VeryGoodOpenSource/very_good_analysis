@@ -100,7 +100,6 @@ Below is a list of rules that are not enabled by default together with the reaso
 | [`avoid_futureor_void`](https://dart.dev/tools/linter-rules/avoid_futureor_void) | Not specified |
 | [`avoid_implementing_value_types`](https://dart.dev/tools/linter-rules/avoid_implementing_value_types) | Not specified |
 | [`avoid_null_checks_in_equality_operators`](https://dart.dev/tools/linter-rules/avoid_null_checks_in_equality_operators) | Has been deprecated and [will be removed](https://github.com/dart-lang/sdk/issues/59514) |
-| [`avoid_types_on_closure_parameters`](https://dart.dev/tools/linter-rules/avoid_types_on_closure_parameters) | Not specified |
 | [`close_sinks`](https://dart.dev/tools/linter-rules/close_sinks) | [Has unresolved false positives](https://github.com/dart-lang/linter/issues/1381) |
 | [`diagnostic_describe_all_properties`](https://dart.dev/tools/linter-rules/diagnostic_describe_all_properties) | Not specified |
 | [`do_not_use_environment`](https://dart.dev/tools/linter-rules/do_not_use_environment) | Not specified |
@@ -109,12 +108,9 @@ Below is a list of rules that are not enabled by default together with the reaso
 | [`omit_obvious_property_types`](https://dart.dev/tools/linter-rules/omit_obvious_property_types) | Incompatible with [type_annotate_public_apis](https://github.com/dart-lang/sdk/issues/60642) |
 | [`package_prefixed_library_names`](https://dart.dev/tools/linter-rules/package_prefixed_library_names) | [Broken; superseded by `unnecessary_library_name`](https://github.com/dart-lang/lints/issues/172) |
 | [`prefer_double_quotes`](https://dart.dev/tools/linter-rules/prefer_double_quotes) | Incompatible with [prefer_single_quotes](https://dart.dev/tools/linter-rules/prefer_single_quotes) |
-| [`prefer_expression_function_bodies`](https://dart.dev/tools/linter-rules/prefer_expression_function_bodies) | Not specified |
 | [`prefer_final_parameters`](https://dart.dev/tools/linter-rules/prefer_final_parameters) | Incompatible with [avoid_final_parameters](https://dart.dev/tools/linter-rules/avoid_final_parameters) |
-| [`prefer_mixin`](https://dart.dev/tools/linter-rules/prefer_mixin) | Not specified |
 | [`prefer_relative_imports`](https://dart.dev/tools/linter-rules/prefer_relative_imports) | Incompatible with [always_use_package_imports](https://dart.dev/tools/linter-rules/always_use_package_imports) |
 | [`prefer_void_to_null`](https://dart.dev/tools/linter-rules/prefer_void_to_null) | [Has unresolved false positives](https://github.com/dart-lang/linter/issues/4758) |
-| [`remove_deprecations_in_breaking_versions`](https://dart.dev/tools/linter-rules/remove_deprecations_in_breaking_versions) | Not specified |
 | [`specify_nonobvious_local_variable_types`](https://dart.dev/tools/linter-rules/specify_nonobvious_local_variable_types) | Experimental |
 | [`unnecessary_async`](https://dart.dev/tools/linter-rules/unnecessary_async) | Experimental |
 | [`unnecessary_final`](https://dart.dev/tools/linter-rules/unnecessary_final) | Incompatible with [prefer_final_locals](https://dart.dev/tools/linter-rules/prefer_final_locals) |

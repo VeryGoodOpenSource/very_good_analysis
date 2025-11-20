@@ -15,7 +15,8 @@ enum LinterRuleState {
   experimental,
 
   /// The rule is deprecated and should not be used.
-  deprecated;
+  deprecated
+  ;
 
   /// Converts a [String] value to a [LinterRuleState].
   static LinterRuleState _fromJson(String value) {
@@ -49,7 +50,8 @@ enum FixStatus {
   needsFix,
 
   /// The automated fix for the rule needs evaluation.
-  needsEvaluation;
+  needsEvaluation
+  ;
 
   /// Converts a [String] value to a [FixStatus].
   static FixStatus _fromJson(String value) {
@@ -92,19 +94,17 @@ class LinterRule {
   });
 
   /// Converts JSON to a [LinterRule].
-  factory LinterRule.fromJson(Map<String, dynamic> json) {
-    return LinterRule(
-      name: json['name'] as String,
-      description: json['description'] as String,
-      details: json['details'] as String,
-      categories: (json['categories'] as List).cast<String>(),
-      state: LinterRuleState._fromJson(json['state'] as String),
-      incompatible: (json['incompatible'] as List).cast<String>(),
-      sets: (json['sets'] as List).cast<String>(),
-      fixStatus: FixStatus._fromJson(json['fixStatus'] as String),
-      sinceDartSdk: json['sinceDartSdk'] as String,
-    );
-  }
+  factory LinterRule.fromJson(Map<String, dynamic> json) => LinterRule(
+    name: json['name'] as String,
+    description: json['description'] as String,
+    details: json['details'] as String,
+    categories: (json['categories'] as List).cast<String>(),
+    state: LinterRuleState._fromJson(json['state'] as String),
+    incompatible: (json['incompatible'] as List).cast<String>(),
+    sets: (json['sets'] as List).cast<String>(),
+    fixStatus: FixStatus._fromJson(json['fixStatus'] as String),
+    sinceDartSdk: json['sinceDartSdk'] as String,
+  );
 
   /// The unique name of the linter rule.
   final String name;
