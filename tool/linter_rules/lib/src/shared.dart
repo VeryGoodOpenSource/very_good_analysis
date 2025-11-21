@@ -4,9 +4,8 @@ final Uri allLinterRulesUri = Uri.parse(
 );
 
 /// Returns the link to the documentation for the given linter [rule].
-String linterRuleLink(String rule) {
-  return 'https://dart.dev/tools/linter-rules/$rule';
-}
+String linterRuleLink(String rule) =>
+    'https://dart.dev/tools/linter-rules/$rule';
 
 /// The tag delimiting the start and end of the excluded rules table in the
 /// README.md file.
