@@ -1,5 +1,17 @@
 # Changelog
 
+## [10.1.0](https://github.com/VeryGoodOpenSource/very_good_analysis/compare/v10.0.0...v10.1.0) (2025-11-25)
+
+
+### Features
+
+* support Dart 3.10 ([#178](https://github.com/VeryGoodOpenSource/very_good_analysis/issues/178)) ([0f2784f](https://github.com/VeryGoodOpenSource/very_good_analysis/commit/0f2784f0fca7899fb1b9bb9144cdc4ba710b141b))
+
+
+### Bug Fixes
+
+* **docs:** update documentation based on markdownlint ([#172](https://github.com/VeryGoodOpenSource/very_good_analysis/issues/172)) ([b644968](https://github.com/VeryGoodOpenSource/very_good_analysis/commit/b6449681c9a96b792a4d28894e4dd034dfbf651a))
+
 ## [10.0.0](https://github.com/VeryGoodOpenSource/very_good_analysis/compare/v9.0.0...v10.0.0) (2025-08-22)
 
 ### Features
