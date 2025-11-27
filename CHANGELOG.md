@@ -1,6 +1,6 @@
 # Changelog
 
-## [10.1.0](https://github.com/VeryGoodOpenSource/very_good_analysis/compare/v10.0.0...v10.1.0) (2025-11-25)
+## [10.1.0-rc.1](https://github.com/VeryGoodOpenSource/very_good_analysis/compare/v10.0.0...v10.1.0-rc.1) (2025-11-25)
 
 
 ### Features
