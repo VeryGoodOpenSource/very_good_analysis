@@ -7,7 +7,6 @@
 
 * update CHANGELOG versioning ([#183](https://github.com/VeryGoodOpenSource/very_good_analysis/issues/183)) ([a006134](https://github.com/VeryGoodOpenSource/very_good_analysis/commit/a006134af6c60528871619e2f914fc7580e7438b))
 
-## [10.1.0-rc.1](https://github.com/VeryGoodOpenSource/very_good_analysis/compare/v10.0.0...v10.1.0-rc.1) (2025-11-25)
 
 
 ### Features
