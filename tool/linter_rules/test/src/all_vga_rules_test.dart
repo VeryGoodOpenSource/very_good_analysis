@@ -6,7 +6,7 @@ void main() {
     test('returns all very good analysis rules', () async {
       final rules = await allVeryGoodAnalysisRules(
         filePath: 'test/test_data',
-        version: '10.0.0',
+        version: '10.1.0',
       );
 
       expect(rules, [

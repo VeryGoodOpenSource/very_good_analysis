@@ -13,7 +13,7 @@
 /// ```
 ///
 /// Where `<new_version>` is the new version to bump to in the format `x.y.z`.
-/// For example: `10.0.0`.
+/// For example: `10.1.0`.
 library;
 
 import 'dart:io';
@@ -23,10 +23,10 @@ import 'dart:io';
 /// Given the following:
 ///
 /// ```sh
-/// include: package:very_good_analysis/analysis_options.10.0.0.yaml
+/// include: package:very_good_analysis/analysis_options.10.1.0.yaml
 /// ```
 ///
-/// It is expected that the first matched group will be `10.0.0`.
+/// It is expected that the first matched group will be `10.1.0`.
 final _latestAnalysisVersionRegExp = RegExp(
   r'analysis_options\.(\d+\.\d+\.\d+)\.yaml',
 );
