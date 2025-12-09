@@ -1,5 +1,5 @@
 name: very_good_analysis
-version: 10.1.1-rc.1+-rc.1
+version: 10.1.0-rc.2
 description: Lint rules for Dart and Flutter used internally at Very Good Ventures.
 repository: https://github.com/VeryGoodOpenSource/very_good_analysis
 issue_tracker: https://github.com/VeryGoodOpenSource/very_good_analysis/issues

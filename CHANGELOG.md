@@ -1,6 +1,6 @@
 # Changelog
 
-## [10.1.1-rc.1](https://github.com/VeryGoodOpenSource/very_good_analysis/compare/v10.1.0-rc.1...v10.1.1-rc.1) (2025-12-09)
+## [10.1.0-rc.2](https://github.com/VeryGoodOpenSource/very_good_analysis/compare/v10.1.0-rc.1...v10.1.0-rc.2) (2025-12-09)
 
 
 ### Miscellaneous Chores
