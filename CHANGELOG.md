@@ -1,5 +1,12 @@
 # Changelog
 
+## [10.1.0-rc.2](https://github.com/VeryGoodOpenSource/very_good_analysis/compare/v10.1.0-rc.1...v10.1.0-rc.2) (2025-12-09)
+
+
+### Miscellaneous Chores
+
+* remove prefer_expression_function_bodies ([#187](https://github.com/VeryGoodOpenSource/very_good_analysis/issues/187)) ([0afe5a0](https://github.com/VeryGoodOpenSource/very_good_analysis/commit/0afe5a0aadbbcab649b07914886f5d362a2c338c))
+
 ## [10.1.0-rc.1](https://github.com/VeryGoodOpenSource/very_good_analysis/compare/v10.0.0...v10.1.0-rc.1) (2025-11-27)
 
 
