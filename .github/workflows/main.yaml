@@ -12,7 +12,7 @@ jobs:
       - uses: actions/checkout@v6
       - uses: dart-lang/setup-dart@v1
         with:
-          sdk: "3.11.x"
+          sdk: "3.11.0"
 
       - name: Install Dependencies
         run: dart pub get
