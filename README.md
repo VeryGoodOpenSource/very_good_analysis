@@ -97,8 +97,8 @@ Below is a list of rules that are not enabled by default together with the reaso
 | [`annotate_redeclares`](https://dart.dev/tools/linter-rules/annotate_redeclares) | Experimental |
 | [`avoid_annotating_with_dynamic`](https://dart.dev/tools/linter-rules/avoid_annotating_with_dynamic) | Not specified |
 | [`avoid_classes_with_only_static_members`](https://dart.dev/tools/linter-rules/avoid_classes_with_only_static_members) | Not specified |
-| [`avoid_futureor_void`](https://dart.dev/tools/linter-rules/avoid_futureor_void) | Not specified |
-| [`avoid_implementing_value_types`](https://dart.dev/tools/linter-rules/avoid_implementing_value_types) | Not specified |
+| [`avoid_futureor_void`](https://dart.dev/tools/linter-rules/avoid_futureor_void) | Experimental |
+| [`avoid_implementing_value_types`](https://dart.dev/tools/linter-rules/avoid_implementing_value_types) | We need to implement value types for mocks/fakes in tests |
 | [`avoid_null_checks_in_equality_operators`](https://dart.dev/tools/linter-rules/avoid_null_checks_in_equality_operators) | Has been deprecated and [will be removed](https://github.com/dart-lang/sdk/issues/59514) |
 | [`close_sinks`](https://dart.dev/tools/linter-rules/close_sinks) | [Has unresolved false positives](https://github.com/dart-lang/linter/issues/1381) |
 | [`diagnostic_describe_all_properties`](https://dart.dev/tools/linter-rules/diagnostic_describe_all_properties) | Not specified |
@@ -108,7 +108,9 @@ Below is a list of rules that are not enabled by default together with the reaso
 | [`omit_obvious_property_types`](https://dart.dev/tools/linter-rules/omit_obvious_property_types) | Incompatible with [type_annotate_public_apis](https://github.com/dart-lang/sdk/issues/60642) |
 | [`package_prefixed_library_names`](https://dart.dev/tools/linter-rules/package_prefixed_library_names) | [Broken; superseded by `unnecessary_library_name`](https://github.com/dart-lang/lints/issues/172) |
 | [`prefer_double_quotes`](https://dart.dev/tools/linter-rules/prefer_double_quotes) | Incompatible with [prefer_single_quotes](https://dart.dev/tools/linter-rules/prefer_single_quotes) |
+| [`prefer_expression_function_bodies`](https://dart.dev/tools/linter-rules/prefer_expression_function_bodies) | Not specified |
 | [`prefer_final_parameters`](https://dart.dev/tools/linter-rules/prefer_final_parameters) | Incompatible with [avoid_final_parameters](https://dart.dev/tools/linter-rules/avoid_final_parameters) |
+| [`prefer_for_elements_to_map_fromiterable`](https://dart.dev/tools/linter-rules/prefer_for_elements_to_map_fromiterable) | Not specified |
 | [`prefer_relative_imports`](https://dart.dev/tools/linter-rules/prefer_relative_imports) | Incompatible with [always_use_package_imports](https://dart.dev/tools/linter-rules/always_use_package_imports) |
 | [`prefer_void_to_null`](https://dart.dev/tools/linter-rules/prefer_void_to_null) | [Has unresolved false positives](https://github.com/dart-lang/linter/issues/4758) |
 | [`specify_nonobvious_local_variable_types`](https://dart.dev/tools/linter-rules/specify_nonobvious_local_variable_types) | Experimental |
