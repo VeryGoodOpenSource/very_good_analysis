@@ -14,7 +14,7 @@ jobs:
 
       - uses: dart-lang/setup-dart@v1
         with:
-          sdk: "3.10.0"
+          sdk: "3.11.0"
 
       - name: Verify version consistency
         run: dart run tool/verify_version/main.dart
