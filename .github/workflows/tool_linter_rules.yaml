@@ -15,5 +15,5 @@ jobs:
   build:
     uses: VeryGoodOpenSource/very_good_workflows/.github/workflows/dart_package.yml@v1
     with:
-      dart_sdk: 3.10.0
+      dart_sdk: "3.11.x"
       working_directory: tool/linter_rules
