@@ -1,5 +1,12 @@
 # Changelog
 
+## [10.2.0](https://github.com/VeryGoodOpenSource/very_good_analysis/compare/v10.1.0...v10.2.0) (2026-02-13)
+
+
+### Features
+
+* upgrade to Dart 3.11 ([#195](https://github.com/VeryGoodOpenSource/very_good_analysis/issues/195)) ([ec5642b](https://github.com/VeryGoodOpenSource/very_good_analysis/commit/ec5642b6ca7eca7b8a5642f3564793cb3452a242))
+
 ## [10.1.0](https://github.com/VeryGoodOpenSource/very_good_analysis/compare/v10.1.0-rc.2...v10.1.0) (2026-02-02)
 
 
