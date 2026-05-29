@@ -15,8 +15,7 @@ enum LinterRuleState {
   experimental,
 
   /// The rule is deprecated and should not be used.
-  deprecated
-  ;
+  deprecated;
 
   /// Converts a [String] value to a [LinterRuleState].
   static LinterRuleState _fromJson(String value) {
@@ -50,8 +49,7 @@ enum FixStatus {
   needsFix,
 
   /// The automated fix for the rule needs evaluation.
-  needsEvaluation
-  ;
+  needsEvaluation;
 
   /// Converts a [String] value to a [FixStatus].
   static FixStatus _fromJson(String value) {
