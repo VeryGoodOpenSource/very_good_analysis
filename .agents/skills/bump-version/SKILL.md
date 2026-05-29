@@ -13,11 +13,11 @@ description: >
 
 This skill guides the full version bump workflow for the `very_good_analysis`
 package. It uses the project's own `tool/bump_version` Dart script and enforces
-the constraints learned from the project's release process.
+the constraints from the project's release process.
 
 ## Key Constraints
 
-> These rules are critical. Violating them will cause CI to fail.
+> These rules are critical. Violating some of them will cause CI to fail.
 
 1. **`pubspec.yaml` version is NOT bumped here.** The version in `pubspec.yaml`
    is managed exclusively by `release-please`. Do not change it.
