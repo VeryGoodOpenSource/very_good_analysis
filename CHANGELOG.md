@@ -1,5 +1,19 @@
 # Changelog
 
+## [10.3.0](https://github.com/VeryGoodOpenSource/very_good_analysis/compare/v10.2.0...v10.3.0) (2026-06-02)
+
+
+### Features
+
+* add bump version skill ([#206](https://github.com/VeryGoodOpenSource/very_good_analysis/issues/206)) ([0881137](https://github.com/VeryGoodOpenSource/very_good_analysis/commit/088113776b226c14b8cf19baa0bbcb883f371526))
+* disable unreachable_from_main lint by default ([#207](https://github.com/VeryGoodOpenSource/very_good_analysis/issues/207)) ([de60543](https://github.com/VeryGoodOpenSource/very_good_analysis/commit/de60543b173fff40016d1334c9755629417daae7)), closes [#197](https://github.com/VeryGoodOpenSource/very_good_analysis/issues/197)
+* upgrade to Dart 3.12 ([#203](https://github.com/VeryGoodOpenSource/very_good_analysis/issues/203)) ([f13bef8](https://github.com/VeryGoodOpenSource/very_good_analysis/commit/f13bef853f4d257b394db5e7cc6335d0c748dcbf))
+
+
+### Miscellaneous Chores
+
+* add AGENTS.md ([#204](https://github.com/VeryGoodOpenSource/very_good_analysis/issues/204)) ([72593ca](https://github.com/VeryGoodOpenSource/very_good_analysis/commit/72593ca2fd357cfdff36c67aa6a755b60613e6fa))
+
 ## [10.2.0](https://github.com/VeryGoodOpenSource/very_good_analysis/compare/v10.1.0...v10.2.0) (2026-02-13)
 
 
