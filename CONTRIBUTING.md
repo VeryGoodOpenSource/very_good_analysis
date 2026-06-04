@@ -42,6 +42,33 @@ If you intend to provide changes related to a **new Dart version** you can follo
    - Link to an issue as to why a lint rule should not be used if there is any.
 1. Create a pull request following the guidelines in the [Creating a Pull Request](#creating-a-pull-request) section below.
 
+## Package update policy
+
+Dependency and lint rule updates should be reviewed when Dart SDK, Flutter SDK,
+`analyzer`, `lints`, or related dependency versions change. Automated tooling
+may help identify available updates, but update-related changes should be
+manually reviewed and approved by maintainers before release.
+
+When evaluating new Dart or Flutter lint rules, contributors and maintainers
+should consider:
+
+1. Correctness and stability of the rule.
+1. Developer experience, including signal-to-noise ratio and ease of adoption.
+1. Compatibility with Dart and Flutter tooling, including formatting behavior.
+1. Conflicts with existing rules or with the goals of `very_good_analysis`.
+
+Changes that add, remove, or substantially change lint behavior should be
+treated carefully. If a change is expected to be breaking for consumers, it
+should include clear documentation, any relevant migration notes, and the
+appropriate versioning updates for the affected analysis options files.
+
+Breaking changes should be communicated through the changelog, release notes,
+and versioned analysis options files when applicable. Contributors proposing a
+dependency or lint rule update should open an issue or pull request that
+explains the reason for the change, the expected impact, and any migration
+considerations. Update-related pull requests should be reviewed and approved by
+the maintainers responsible for the repository before merging.
+
 ## Creating a Pull Request
 
 Before creating a pull request please:
