@@ -1,6 +1,6 @@
 # Changelog
 
-## [10.3.1-rc.1](https://github.com/VeryGoodOpenSource/very_good_analysis/compare/v10.3.0-rc.1...v10.3.1-rc.1) (2026-06-18)
+## [10.3.0](https://github.com/VeryGoodOpenSource/very_good_analysis/compare/v10.3.0-rc.1...10.3.0) (2026-06-18)
 
 
 ### Miscellaneous Chores
