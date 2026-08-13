@@ -25,6 +25,9 @@
     "nonobvious",
     "nullsafety",
     "pubignore",
-    "tearoffs"
+    "runtimetype",
+    "tearoffs",
+    "tostring",
+    "wheretype"
   ]
 }
