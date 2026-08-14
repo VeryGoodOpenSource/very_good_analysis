@@ -131,7 +131,6 @@ Below is a list of rules that are not enabled by default together with the reaso
 | [`unnecessary_type_name_in_constructor`](https://dart.dev/tools/linter-rules/unnecessary_type_name_in_constructor) | Not specified |
 | [`unreachable_from_main`](https://dart.dev/tools/linter-rules/unreachable_from_main) | Not specified |
 | [`unsafe_variance`](https://dart.dev/tools/linter-rules/unsafe_variance) | Experimental |
-| [`use_declaring_parameters`](https://dart.dev/tools/linter-rules/use_declaring_parameters) | Not specified |
 | [`use_decorated_box`](https://dart.dev/tools/linter-rules/use_decorated_box) | [Has unresolved malfunctions](https://github.com/dart-lang/linter/issues/3286) |
 | [`use_if_null_to_convert_nulls_to_bools`](https://dart.dev/tools/linter-rules/use_if_null_to_convert_nulls_to_bools) | Not specified |
 | [`use_primary_constructors`](https://dart.dev/tools/linter-rules/use_primary_constructors) | Not specified |
