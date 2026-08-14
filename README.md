@@ -124,6 +124,7 @@ Below is a list of rules that are not enabled by default together with the reaso
 | [`prefer_void_to_null`](https://dart.dev/tools/linter-rules/prefer_void_to_null) | [Has unresolved false positives](https://github.com/dart-lang/linter/issues/4758) |
 | [`specify_nonobvious_local_variable_types`](https://dart.dev/tools/linter-rules/specify_nonobvious_local_variable_types) | Experimental |
 | [`unnecessary_async`](https://dart.dev/tools/linter-rules/unnecessary_async) | Experimental |
+| [`unnecessary_await_in_return`](https://dart.dev/tools/linter-rules/unnecessary_await_in_return) | Deprecated |
 | [`unnecessary_const_in_enum_constructor`](https://dart.dev/tools/linter-rules/unnecessary_const_in_enum_constructor) | Not specified |
 | [`unnecessary_final`](https://dart.dev/tools/linter-rules/unnecessary_final) | Incompatible with [prefer_final_locals](https://dart.dev/tools/linter-rules/prefer_final_locals) |
 | [`unnecessary_primary_constructor_body`](https://dart.dev/tools/linter-rules/unnecessary_primary_constructor_body) | Not specified |

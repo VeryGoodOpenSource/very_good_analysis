@@ -31,6 +31,7 @@
   "prefer_void_to_null": "[Has unresolved false positives](https://github.com/dart-lang/linter/issues/4758)",
   "specify_nonobvious_local_variable_types": "Experimental",
   "unnecessary_async": "Experimental",
+  "unnecessary_await_in_return": "Deprecated",
   "unnecessary_const_in_enum_constructor": "Not specified",
   "unnecessary_final": "Incompatible with [prefer_final_locals](https://dart.dev/tools/linter-rules/prefer_final_locals)",
   "unnecessary_primary_constructor_body": "Not specified",
