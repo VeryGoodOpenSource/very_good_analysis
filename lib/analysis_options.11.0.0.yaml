@@ -209,6 +209,7 @@ linter:
     - unnecessary_string_interpolations
     - unnecessary_this
     - unnecessary_to_list_in_spreads
+    - unnecessary_type_name_in_constructor
     - unnecessary_unawaited
     - unnecessary_underscores
     - unrelated_type_equality_checks
