@@ -143,7 +143,6 @@ Below is a list of rules that are not enabled by default together with the reaso
 | [`unnecessary_await_in_return`](https://dart.dev/tools/linter-rules/unnecessary_await_in_return) | Deprecated |
 | [`unnecessary_const_in_enum_constructor`](https://dart.dev/tools/linter-rules/unnecessary_const_in_enum_constructor) | Not specified |
 | [`unnecessary_final`](https://dart.dev/tools/linter-rules/unnecessary_final) | Incompatible with [prefer_final_locals](https://dart.dev/tools/linter-rules/prefer_final_locals) |
-| [`unnecessary_primary_constructor_body`](https://dart.dev/tools/linter-rules/unnecessary_primary_constructor_body) | Not specified |
 | [`unnecessary_type_name_in_constructor`](https://dart.dev/tools/linter-rules/unnecessary_type_name_in_constructor) | Not specified |
 | [`unreachable_from_main`](https://dart.dev/tools/linter-rules/unreachable_from_main) | Not specified |
 | [`unsafe_variance`](https://dart.dev/tools/linter-rules/unsafe_variance) | Experimental |

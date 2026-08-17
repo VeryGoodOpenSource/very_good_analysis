@@ -63,11 +63,8 @@ void main() {
   group('allLinterRules', () {
     test('returns all linter rules non-removed or wip', () async {
       final linterRules = await allLinterRules(
-        get: (url, {headers}) async => Response(
-          minimalFixture,
-          200,
-          headers: headers ?? {},
-        ),
+        get: (url, {headers}) async =>
+            Response(minimalFixture, 200, headers: headers ?? {}),
       );
 
       expect(linterRules.length, 2);
@@ -76,11 +73,8 @@ void main() {
     test('filters rules correctly', () async {
       final linterRules = await allLinterRules(
         state: LinterRuleState.deprecated,
-        get: (url, {headers}) async => Response(
-          minimalFixture,
-          200,
-          headers: headers ?? {},
-        ),
+        get: (url, {headers}) async =>
+            Response(minimalFixture, 200, headers: headers ?? {}),
       );
 
       expect(linterRules.length, 1);
