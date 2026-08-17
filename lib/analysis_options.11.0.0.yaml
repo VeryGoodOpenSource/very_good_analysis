@@ -25,6 +25,7 @@ linter:
     - always_put_required_named_parameters_first
     - always_use_package_imports
     - annotate_overrides
+    - async_return_with_no_await
     - avoid_bool_literals_in_conditional_expressions
     - avoid_catches_without_on_clauses
     - avoid_catching_errors

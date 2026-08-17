@@ -112,7 +112,6 @@ Below is a list of rules that are not enabled by default together with the reaso
 | [`always_put_control_body_on_new_line`](https://dart.dev/tools/linter-rules/always_put_control_body_on_new_line) | [Can conflict with the Dart formatter](https://dart.dev/tools/linter-rules/always_put_control_body_on_new_line) |
 | [`always_specify_types`](https://dart.dev/tools/linter-rules/always_specify_types) | Incompatible with [omit_local_variable_types](https://dart.dev/tools/linter-rules/omit_local_variable_types) |
 | [`annotate_redeclares`](https://dart.dev/tools/linter-rules/annotate_redeclares) | Experimental |
-| [`async_return_with_no_await`](https://dart.dev/tools/linter-rules/async_return_with_no_await) | Not specified |
 | [`avoid_annotating_with_dynamic`](https://dart.dev/tools/linter-rules/avoid_annotating_with_dynamic) | Not specified |
 | [`avoid_classes_with_only_static_members`](https://dart.dev/tools/linter-rules/avoid_classes_with_only_static_members) | Not specified |
 | [`avoid_futureor_void`](https://dart.dev/tools/linter-rules/avoid_futureor_void) | Experimental |
