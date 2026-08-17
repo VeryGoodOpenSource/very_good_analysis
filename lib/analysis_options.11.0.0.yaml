@@ -17,7 +17,7 @@ analyzer:
     - lib/generated_plugin_registrant.dart
 
 formatter:
-  trailing_commas: preserve
+  trailing_commas: automate
 
 linter:
   rules:
@@ -81,6 +81,7 @@ linter:
     - document_ignores
     - empty_catches
     - empty_constructor_bodies
+    - empty_container_bodies
     - empty_statements
     - eol_at_end_of_file
     - exhaustive_cases
