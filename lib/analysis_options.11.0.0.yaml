@@ -184,6 +184,7 @@ linter:
     - unnecessary_brace_in_string_interps
     - unnecessary_breaks
     - unnecessary_const
+    - unnecessary_const_in_enum_constructor
     - unnecessary_constructor_name
     - unnecessary_getters_setters
     - unnecessary_ignore
