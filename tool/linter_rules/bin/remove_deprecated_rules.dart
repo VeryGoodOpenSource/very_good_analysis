@@ -10,9 +10,7 @@ import 'package:yaml_edit/yaml_edit.dart';
 /// It will create a new version of the analysis options file and update the
 /// exclusion reasons file and the table of excluded rules in the README.md
 /// file.
-Future<void> main({
-  void Function(String) log = print,
-}) async {
+Future<void> main({void Function(String) log = print}) async {
   const basePath = '../../';
   final deprecatedRules = await allLinterRules(
     state: LinterRuleState.deprecated,
@@ -30,21 +28,15 @@ Future<void> main({
   log('Latest Very Good Analysis version: $latestVersion');
   log('');
 
-  final latestVgaRules = await allVeryGoodAnalysisRules(
-    version: latestVersion,
-  );
+  final latestVgaRules = await allVeryGoodAnalysisRules(version: latestVersion);
   log('Fetched ${latestVgaRules.length} Very Good Analysis linter rules');
   log('');
 
   final deprecatedVgaRules = latestVgaRules
-      .where(
-        (rule) => deprecatedRules.any((dartRule) => dartRule.name == rule),
-      )
+      .where((rule) => deprecatedRules.any((dartRule) => dartRule.name == rule))
       .toList();
   final deprecatedVgaRulesCount = deprecatedVgaRules.length;
-  log(
-    'Found $deprecatedVgaRulesCount deprecated Very Good Analysis rules:',
-  );
+  log('Found $deprecatedVgaRulesCount deprecated Very Good Analysis rules:');
 
   if (deprecatedVgaRulesCount == 0) {
     log('No deprecated Very Good Analysis rules found.');
@@ -59,9 +51,7 @@ Future<void> main({
   //// Update the exclusion reasons file.
   final currentExclusionReasons = await readExclusionReasons();
   final newExclusionReasons = currentExclusionReasons
-    ..addAll({
-      for (final rule in deprecatedVgaRules) rule: 'Deprecated',
-    });
+    ..addAll({for (final rule in deprecatedVgaRules) rule: 'Deprecated'});
   await writeExclusionReasons(newExclusionReasons);
   log('''Updated the exclusion reasons file.''');
   log('');
@@ -70,10 +60,7 @@ Future<void> main({
   final parts = latestVersion.split('.');
   // Increment the minor version.
   final newVersion = '${parts[0]}.${int.parse(parts[1]) + 1}.0';
-  bumpVersion(
-    newVersion,
-    basePath: basePath,
-  );
+  bumpVersion(newVersion, basePath: basePath);
   log('Bumped Very Good Analysis version to $newVersion');
   log('');
 
@@ -81,10 +68,7 @@ Future<void> main({
   final analysisOptionsFile = File(
     '$basePath/lib/analysis_options.$newVersion.yaml',
   );
-  _removeLinterRules(
-    analysisOptionsFile.path,
-    deprecatedVgaRules,
-  );
+  _removeLinterRules(analysisOptionsFile.path, deprecatedVgaRules);
 
   //// Update the table of excluded rules in the README.md file.
   final readme = Readme();
