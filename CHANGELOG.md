@@ -1,5 +1,20 @@
 # Changelog
 
+## [11.0.0-rc.1](https://github.com/VeryGoodOpenSource/very_good_analysis/compare/v10.3.0...v11.0.0-rc.1) (2026-08-17)
+
+
+### Features
+
+* add `async_return_with_no_await` rule ([#231](https://github.com/VeryGoodOpenSource/very_good_analysis/issues/231)) ([8c90ca8](https://github.com/VeryGoodOpenSource/very_good_analysis/commit/8c90ca8714e9846916a17962e49571a6849ec84a)), closes [#222](https://github.com/VeryGoodOpenSource/very_good_analysis/issues/222)
+* add `empty_container_bodies` rule ([#236](https://github.com/VeryGoodOpenSource/very_good_analysis/issues/236)) ([40af042](https://github.com/VeryGoodOpenSource/very_good_analysis/commit/40af042b259e780286507975454a6a9da0005d1f)), closes [#215](https://github.com/VeryGoodOpenSource/very_good_analysis/issues/215)
+* add `initialize_in_field_declaration` rule ([#230](https://github.com/VeryGoodOpenSource/very_good_analysis/issues/230)) ([da69fb6](https://github.com/VeryGoodOpenSource/very_good_analysis/commit/da69fb6a70f9a19784294b2d5be895ec2fd82576)), closes [#221](https://github.com/VeryGoodOpenSource/very_good_analysis/issues/221)
+* add `unnecessary_const_in_enum_constructor` rule ([#235](https://github.com/VeryGoodOpenSource/very_good_analysis/issues/235)) ([2cf53e8](https://github.com/VeryGoodOpenSource/very_good_analysis/commit/2cf53e82836049c499aab75c34113c6afbff6dbe)), closes [#216](https://github.com/VeryGoodOpenSource/very_good_analysis/issues/216)
+* add `unnecessary_primary_constructor_body` rule ([#234](https://github.com/VeryGoodOpenSource/very_good_analysis/issues/234)) ([53e3f8b](https://github.com/VeryGoodOpenSource/very_good_analysis/commit/53e3f8bb694c01a02b6dbe9cbe8a784c9e428c35))
+* add `unnecessary_type_name_in_constructor` rule ([#232](https://github.com/VeryGoodOpenSource/very_good_analysis/issues/232)) ([60d33b5](https://github.com/VeryGoodOpenSource/very_good_analysis/commit/60d33b5d884c3f083d74af456dfc119354aa9179)), closes [#220](https://github.com/VeryGoodOpenSource/very_good_analysis/issues/220)
+* add `use_declaring_parameters` rule ([#233](https://github.com/VeryGoodOpenSource/very_good_analysis/issues/233)) ([a301996](https://github.com/VeryGoodOpenSource/very_good_analysis/commit/a301996a180c1873b010880ba79949525bda82cb)), closes [#218](https://github.com/VeryGoodOpenSource/very_good_analysis/issues/218)
+* configure automatic trailing commas ([#237](https://github.com/VeryGoodOpenSource/very_good_analysis/issues/237)) ([48509b5](https://github.com/VeryGoodOpenSource/very_good_analysis/commit/48509b5e26d50385434f267d99292d3362815c67)), closes [#176](https://github.com/VeryGoodOpenSource/very_good_analysis/issues/176)
+* upgrade to Dart 3.13 ([#228](https://github.com/VeryGoodOpenSource/very_good_analysis/issues/228)) ([7bc5b88](https://github.com/VeryGoodOpenSource/very_good_analysis/commit/7bc5b88a3c40cc8a710f3b4916d79de48cbde16b))
+
 ## [10.3.0](https://github.com/VeryGoodOpenSource/very_good_analysis/compare/v10.3.0-rc.1...10.3.0) (2026-06-18)
 
 
