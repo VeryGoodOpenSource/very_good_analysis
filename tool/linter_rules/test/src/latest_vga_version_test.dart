@@ -16,17 +16,14 @@ void main() {
       );
     });
 
-    test(
-      'throws $ArgumentError if the version is not found in '
-      'the given file path',
-      () {
-        expect(
-          () => latestVgaVersion(
-            filePath: 'test/test_data/corrupted_analysis_options.yaml',
-          ),
-          throwsA(isA<ArgumentError>()),
-        );
-      },
-    );
+    test('throws $ArgumentError if the version is not found in '
+        'the given file path', () {
+      expect(
+        () => latestVgaVersion(
+          filePath: 'test/test_data/corrupted_analysis_options.yaml',
+        ),
+        throwsA(isA<ArgumentError>()),
+      );
+    });
   });
 }

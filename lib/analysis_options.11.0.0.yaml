@@ -17,7 +17,7 @@ analyzer:
     - lib/generated_plugin_registrant.dart
 
 formatter:
-  trailing_commas: preserve
+  trailing_commas: automate
 
 linter:
   rules:
@@ -25,6 +25,7 @@ linter:
     - always_put_required_named_parameters_first
     - always_use_package_imports
     - annotate_overrides
+    - async_return_with_no_await
     - avoid_bool_literals_in_conditional_expressions
     - avoid_catches_without_on_clauses
     - avoid_catching_errors
@@ -80,6 +81,7 @@ linter:
     - document_ignores
     - empty_catches
     - empty_constructor_bodies
+    - empty_container_bodies
     - empty_statements
     - eol_at_end_of_file
     - exhaustive_cases
@@ -89,6 +91,7 @@ linter:
     - implementation_imports
     - implicit_call_tearoffs
     - implicit_reopen
+    - initialize_in_field_declaration
     - invalid_case_patterns
     - invalid_runtime_check_with_js_interop_types
     - join_return_with_assignment
@@ -183,6 +186,7 @@ linter:
     - unnecessary_brace_in_string_interps
     - unnecessary_breaks
     - unnecessary_const
+    - unnecessary_const_in_enum_constructor
     - unnecessary_constructor_name
     - unnecessary_getters_setters
     - unnecessary_ignore
@@ -198,6 +202,7 @@ linter:
     - unnecessary_nullable_for_final_variable_declarations
     - unnecessary_overrides
     - unnecessary_parenthesis
+    - unnecessary_primary_constructor_body
     - unnecessary_raw_strings
     - unnecessary_statements
     - unnecessary_string_escapes
@@ -210,6 +215,7 @@ linter:
     - unrelated_type_equality_checks
     - use_build_context_synchronously
     - use_colored_box
+    - use_declaring_parameters
     - use_enums
     - use_full_hex_values_for_flutter_colors
     - use_function_type_syntax_for_parameters

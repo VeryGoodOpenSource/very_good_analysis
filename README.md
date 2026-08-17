@@ -38,6 +38,23 @@ This will ensure you always use the latest version of the lints. If you wish to 
 include: package:very_good_analysis/analysis_options.10.0.0.yaml
 ```
 
+## Formatter
+
+In addition to lint rules, this package configures the Dart [formatter][dart_format_link]. Trailing commas are set to `automate`, which lets the formatter decide when to add or remove trailing commas to keep code readable:
+
+```yaml
+formatter:
+  trailing_commas: automate
+```
+
+If you prefer to manage trailing commas yourself, override this setting in your `analysis_options.yaml`:
+
+```yaml
+include: package:very_good_analysis/analysis_options.yaml
+formatter:
+  trailing_commas: preserve
+```
+
 ## Suppressing Lints
 
 There may be cases where specific lint rules are undesirable. Lint rules can be suppressed at the line, file, or project level.
@@ -95,7 +112,6 @@ Below is a list of rules that are not enabled by default together with the reaso
 | [`always_put_control_body_on_new_line`](https://dart.dev/tools/linter-rules/always_put_control_body_on_new_line) | [Can conflict with the Dart formatter](https://dart.dev/tools/linter-rules/always_put_control_body_on_new_line) |
 | [`always_specify_types`](https://dart.dev/tools/linter-rules/always_specify_types) | Incompatible with [omit_local_variable_types](https://dart.dev/tools/linter-rules/omit_local_variable_types) |
 | [`annotate_redeclares`](https://dart.dev/tools/linter-rules/annotate_redeclares) | Experimental |
-| [`async_return_with_no_await`](https://dart.dev/tools/linter-rules/async_return_with_no_await) | Not specified |
 | [`avoid_annotating_with_dynamic`](https://dart.dev/tools/linter-rules/avoid_annotating_with_dynamic) | Not specified |
 | [`avoid_classes_with_only_static_members`](https://dart.dev/tools/linter-rules/avoid_classes_with_only_static_members) | Not specified |
 | [`avoid_futureor_void`](https://dart.dev/tools/linter-rules/avoid_futureor_void) | Experimental |
@@ -105,7 +121,6 @@ Below is a list of rules that are not enabled by default together with the reaso
 | [`close_sinks`](https://dart.dev/tools/linter-rules/close_sinks) | [Has unresolved false positives](https://github.com/dart-lang/linter/issues/1381) |
 | [`diagnostic_describe_all_properties`](https://dart.dev/tools/linter-rules/diagnostic_describe_all_properties) | Not specified |
 | [`do_not_use_environment`](https://dart.dev/tools/linter-rules/do_not_use_environment) | Not specified |
-| [`empty_container_bodies`](https://dart.dev/tools/linter-rules/empty_container_bodies) | Not specified |
 | [`initialize_in_field_declaration`](https://dart.dev/tools/linter-rules/initialize_in_field_declaration) | Not specified |
 | [`library_names`](https://dart.dev/tools/linter-rules/library_names) | [Superseded by `unnecessary_library_name`](https://github.com/dart-lang/lints/issues/172) |
 | [`no_dynamic_casts`](https://dart.dev/tools/linter-rules/no_dynamic_casts) | Not specified |
@@ -127,10 +142,8 @@ Below is a list of rules that are not enabled by default together with the reaso
 | [`unnecessary_await_in_return`](https://dart.dev/tools/linter-rules/unnecessary_await_in_return) | Deprecated |
 | [`unnecessary_const_in_enum_constructor`](https://dart.dev/tools/linter-rules/unnecessary_const_in_enum_constructor) | Not specified |
 | [`unnecessary_final`](https://dart.dev/tools/linter-rules/unnecessary_final) | Incompatible with [prefer_final_locals](https://dart.dev/tools/linter-rules/prefer_final_locals) |
-| [`unnecessary_primary_constructor_body`](https://dart.dev/tools/linter-rules/unnecessary_primary_constructor_body) | Not specified |
 | [`unreachable_from_main`](https://dart.dev/tools/linter-rules/unreachable_from_main) | Not specified |
 | [`unsafe_variance`](https://dart.dev/tools/linter-rules/unsafe_variance) | Experimental |
-| [`use_declaring_parameters`](https://dart.dev/tools/linter-rules/use_declaring_parameters) | Not specified |
 | [`use_decorated_box`](https://dart.dev/tools/linter-rules/use_decorated_box) | [Has unresolved malfunctions](https://github.com/dart-lang/linter/issues/3286) |
 | [`use_if_null_to_convert_nulls_to_bools`](https://dart.dev/tools/linter-rules/use_if_null_to_convert_nulls_to_bools) | Not specified |
 | [`use_primary_constructors`](https://dart.dev/tools/linter-rules/use_primary_constructors) | Not specified |
@@ -139,6 +152,7 @@ Below is a list of rules that are not enabled by default together with the reaso
 
 [analysis_options_yaml]: https://github.com/VeryGoodOpenSource/very_good_analysis/blob/main/lib/analysis_options.10.0.0.yaml
 [ci_badge]: https://github.com/VeryGoodOpenSource/very_good_analysis/workflows/ci/badge.svg
+[dart_format_link]: https://dart.dev/tools/dart-format
 [ci_badge_link]: https://github.com/VeryGoodOpenSource/very_good_analysis/actions
 [badge]: https://img.shields.io/badge/style-very_good_analysis-B22C89.svg
 [badge_link]: https://pub.dev/packages/very_good_analysis
