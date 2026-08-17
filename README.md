@@ -38,6 +38,23 @@ This will ensure you always use the latest version of the lints. If you wish to 
 include: package:very_good_analysis/analysis_options.10.0.0.yaml
 ```
 
+## Formatter
+
+In addition to lint rules, this package configures the Dart [formatter][dart_format_link]. Trailing commas are set to `automate`, which lets the formatter decide when to add or remove trailing commas to keep code readable:
+
+```yaml
+formatter:
+  trailing_commas: automate
+```
+
+If you prefer to manage trailing commas yourself, override this setting in your `analysis_options.yaml`:
+
+```yaml
+include: package:very_good_analysis/analysis_options.yaml
+formatter:
+  trailing_commas: preserve
+```
+
 ## Suppressing Lints
 
 There may be cases where specific lint rules are undesirable. Lint rules can be suppressed at the line, file, or project level.
@@ -140,6 +157,7 @@ Below is a list of rules that are not enabled by default together with the reaso
 
 [analysis_options_yaml]: https://github.com/VeryGoodOpenSource/very_good_analysis/blob/main/lib/analysis_options.10.0.0.yaml
 [ci_badge]: https://github.com/VeryGoodOpenSource/very_good_analysis/workflows/ci/badge.svg
+[dart_format_link]: https://dart.dev/tools/dart-format
 [ci_badge_link]: https://github.com/VeryGoodOpenSource/very_good_analysis/actions
 [badge]: https://img.shields.io/badge/style-very_good_analysis-B22C89.svg
 [badge_link]: https://pub.dev/packages/very_good_analysis
