@@ -37,7 +37,6 @@
   "unnecessary_type_name_in_constructor": "Not specified",
   "unreachable_from_main": "Not specified",
   "unsafe_variance": "Experimental",
-  "use_declaring_parameters": "Not specified",
   "use_decorated_box": "[Has unresolved malfunctions](https://github.com/dart-lang/linter/issues/3286)",
   "use_if_null_to_convert_nulls_to_bools": "Not specified",
   "use_primary_constructors": "Not specified",
