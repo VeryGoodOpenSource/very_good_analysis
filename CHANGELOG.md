@@ -1,5 +1,12 @@
 # Changelog
 
+## [11.0.0](https://github.com/VeryGoodOpenSource/very_good_analysis/compare/v11.0.0-rc.1...11.0.0) (2026-09-03)
+
+
+### Miscellaneous Chores
+
+* bump version to 11.0.0 ([#239](https://github.com/VeryGoodOpenSource/very_good_analysis/issues/239)) ([a37cef7](https://github.com/VeryGoodOpenSource/very_good_analysis/commit/a37cef7ca1a8ee15ce91ac4555c5c1e72cfacedf))
+
 ## [11.0.0-rc.1](https://github.com/VeryGoodOpenSource/very_good_analysis/compare/v10.3.0...v11.0.0-rc.1) (2026-08-17)
 
 
