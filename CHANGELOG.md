@@ -1,6 +1,6 @@
 # Changelog
 
-## [11.0.1](https://github.com/VeryGoodOpenSource/very_good_analysis/compare/v11.0.0-rc.1...11.0.1) (2026-09-03)
+## [11.0.0](https://github.com/VeryGoodOpenSource/very_good_analysis/compare/v11.0.0-rc.1...11.0.0) (2026-09-03)
 
 
 ### Miscellaneous Chores
