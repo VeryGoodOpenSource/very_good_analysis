@@ -6,7 +6,7 @@ void main() {
     test('returns the latest very good analysis version', () {
       final version = latestVgaVersion();
 
-      expect(version, equals('11.0.0'));
+      expect(version, equals('11.0.1'));
     });
 
     test('throws $ArgumentError if the file is not found', () {

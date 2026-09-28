@@ -1,5 +1,12 @@
 # Changelog
 
+## [11.0.1](https://github.com/VeryGoodOpenSource/very_good_analysis/compare/v11.0.0...v11.0.1) (2026-09-28)
+
+
+### Bug Fixes
+
+* typo in no_runtimetype_tostring linter rule ([#241](https://github.com/VeryGoodOpenSource/very_good_analysis/issues/241)) ([0261a0a](https://github.com/VeryGoodOpenSource/very_good_analysis/commit/0261a0a008067eafb130d6ab45f4c583eade3032))
+
 ## [11.0.0](https://github.com/VeryGoodOpenSource/very_good_analysis/compare/v11.0.0-rc.1...11.0.0) (2026-09-03)
 
 
