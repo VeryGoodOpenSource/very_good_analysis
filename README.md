@@ -146,7 +146,6 @@ Below is a list of rules that are not enabled by default together with the reaso
 | [`unsafe_variance`](https://dart.dev/tools/linter-rules/unsafe_variance) | Experimental |
 | [`use_decorated_box`](https://dart.dev/tools/linter-rules/use_decorated_box) | [Has unresolved malfunctions](https://github.com/dart-lang/linter/issues/3286) |
 | [`use_if_null_to_convert_nulls_to_bools`](https://dart.dev/tools/linter-rules/use_if_null_to_convert_nulls_to_bools) | Not specified |
-| [`use_primary_constructors`](https://dart.dev/tools/linter-rules/use_primary_constructors) | Not specified |
 | [`var_with_no_type_annotation`](https://dart.dev/tools/linter-rules/var_with_no_type_annotation) | Not specified |
 <!-- end:excluded_rules_table -->
 
