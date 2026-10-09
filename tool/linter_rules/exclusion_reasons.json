@@ -13,6 +13,7 @@
   "do_not_use_environment": "Not specified",
   "future_sync_value": "Requires Dart 3.14",
   "library_names": "[Superseded by `unnecessary_library_name`](https://github.com/dart-lang/lints/issues/172)",
+  "migrate_design_widgets": "Not specified",
   "no_dynamic_casts": "Not specified",
   "no_raw_types": "Not specified",
   "omit_obvious_local_variable_types": "Experimental",

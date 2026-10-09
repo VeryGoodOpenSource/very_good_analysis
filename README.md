@@ -123,6 +123,7 @@ Below is a list of rules that are not enabled by default together with the reaso
 | [`do_not_use_environment`](https://dart.dev/tools/linter-rules/do_not_use_environment) | Not specified |
 | [`future_sync_value`](https://dart.dev/tools/linter-rules/future_sync_value) | Requires Dart 3.14 |
 | [`library_names`](https://dart.dev/tools/linter-rules/library_names) | [Superseded by `unnecessary_library_name`](https://github.com/dart-lang/lints/issues/172) |
+| [`migrate_design_widgets`](https://dart.dev/tools/linter-rules/migrate_design_widgets) | Not specified |
 | [`no_dynamic_casts`](https://dart.dev/tools/linter-rules/no_dynamic_casts) | Not specified |
 | [`no_raw_types`](https://dart.dev/tools/linter-rules/no_raw_types) | Not specified |
 | [`omit_obvious_local_variable_types`](https://dart.dev/tools/linter-rules/omit_obvious_local_variable_types) | Experimental |
