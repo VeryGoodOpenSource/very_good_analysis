@@ -121,7 +121,7 @@ Below is a list of rules that are not enabled by default together with the reaso
 | [`close_sinks`](https://dart.dev/tools/linter-rules/close_sinks) | [Has unresolved false positives](https://github.com/dart-lang/linter/issues/1381) |
 | [`diagnostic_describe_all_properties`](https://dart.dev/tools/linter-rules/diagnostic_describe_all_properties) | Not specified |
 | [`do_not_use_environment`](https://dart.dev/tools/linter-rules/do_not_use_environment) | Not specified |
-| [`future_sync_value`](https://dart.dev/tools/linter-rules/future_sync_value) | Not specified |
+| [`future_sync_value`](https://dart.dev/tools/linter-rules/future_sync_value) | Requires Dart 3.14 |
 | [`library_names`](https://dart.dev/tools/linter-rules/library_names) | [Superseded by `unnecessary_library_name`](https://github.com/dart-lang/lints/issues/172) |
 | [`migrate_design_widgets`](https://dart.dev/tools/linter-rules/migrate_design_widgets) | Not specified |
 | [`no_dynamic_casts`](https://dart.dev/tools/linter-rules/no_dynamic_casts) | Not specified |
@@ -141,7 +141,7 @@ Below is a list of rules that are not enabled by default together with the reaso
 | [`unnecessary_async`](https://dart.dev/tools/linter-rules/unnecessary_async) | Experimental |
 | [`unnecessary_await_in_return`](https://dart.dev/tools/linter-rules/unnecessary_await_in_return) | Deprecated |
 | [`unnecessary_final`](https://dart.dev/tools/linter-rules/unnecessary_final) | Incompatible with [prefer_final_locals](https://dart.dev/tools/linter-rules/prefer_final_locals) |
-| [`unnecessary_this_alias`](https://dart.dev/tools/linter-rules/unnecessary_this_alias) | Not specified |
+| [`unnecessary_this_alias`](https://dart.dev/tools/linter-rules/unnecessary_this_alias) | Experimental |
 | [`unreachable_from_main`](https://dart.dev/tools/linter-rules/unreachable_from_main) | Not specified |
 | [`unsafe_variance`](https://dart.dev/tools/linter-rules/unsafe_variance) | Experimental |
 | [`use_decorated_box`](https://dart.dev/tools/linter-rules/use_decorated_box) | [Has unresolved malfunctions](https://github.com/dart-lang/linter/issues/3286) |
