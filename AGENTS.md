@@ -80,4 +80,4 @@ dart test                                        # run unit tests for this tool
 
 - `tool/**` is excluded from the published package via `.pubignore`.
 - The root `analysis_options.yaml` simply includes `lib/analysis_options.yaml` (self-application).
-- Dart SDK is pinned to `3.12.0` in all CI workflows.
+- Dart SDK is pinned to `3.14.0` in all CI workflows.
