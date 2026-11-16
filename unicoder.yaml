@@ -1,0 +1,53 @@
+# Unicoder configuration for very_good_analysis.
+#
+# very_good_analysis is a Dart-only package (it ships lint configuration, not
+# Flutter code), so this config only targets Dart sources and common text
+# files and excludes the usual Dart/pub build artefacts. No Flutter-specific
+# paths are included.
+#
+# See the Very Good CLI reference:
+# https://github.com/VeryGoodOpenSource/very_good_cli/blob/main/unicoder.yaml
+
+# The list of Unicode checks to enforce.
+unicode:
+  # Non-breaking spaces (U+00A0) are visually identical to a regular space but
+  # can break tooling and diffs. Replace them with a regular space.
+  - id: no-non-breaking-spaces
+    description: Disallow non-breaking spaces (U+00A0).
+    severity: error
+    replacement: " "
+
+  # Zero-width and invisible characters (e.g. U+200B, U+200C, U+200D, U+FEFF)
+  # are easy to introduce accidentally and impossible to see in review.
+  - id: no-zero-width-characters
+    description: Disallow zero-width and other invisible characters.
+    severity: error
+    replacement: ""
+
+  # Smart/curly quotes (“ ” ‘ ’) should be straight quotes in source and config.
+  - id: no-smart-quotes
+    description: Disallow smart/curly quotes in favor of straight quotes.
+    severity: error
+
+  # Prefer three ASCII periods over the single ellipsis character (U+2026).
+  - id: no-ellipsis-character
+    description: Disallow the ellipsis character (U+2026).
+    severity: warning
+    replacement: "..."
+
+# Files to scan: Dart sources plus common text/config formats.
+include:
+  - "**/*.dart"
+  - "**/*.md"
+  - "**/*.yaml"
+  - "**/*.yml"
+
+# Generated files and Dart/pub artefacts to skip.
+exclude:
+  - ".dart_tool/**"
+  - "build/**"
+  - ".pub-cache/**"
+  - ".git/**"
+  - "pubspec.lock"
+  - "**/*.g.dart"
+  - "**/*.freezed.dart"
