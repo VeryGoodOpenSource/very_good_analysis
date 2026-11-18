@@ -55,8 +55,7 @@ Future<void> main(
     )
     ..addFlag(
       'set-exit-if-changed',
-      help:
-          '''Set the exit code to 2 if there are changes to the exclusion reasons.''',
+      help: '''Set the exit code to 2 if there are changes to the exclusion reasons.''',
     );
   final parsedArgs = argsParser.parse(args);
 
