@@ -17,8 +17,7 @@ void main() {
       });
 
       final reasons = {
-        'always_put_control_body_on_new_line':
-            '[Can conflict with the Dart formatter](https://dart.dev/tools/linter-rules/always_put_control_body_on_new_line)',
+        'always_put_control_body_on_new_line': '[Can conflict with the Dart formatter](https://dart.dev/tools/linter-rules/always_put_control_body_on_new_line)',
       };
 
       await writeExclusionReasons(reasons);
