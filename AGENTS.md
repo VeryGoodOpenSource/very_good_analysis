@@ -54,7 +54,8 @@ dart test                                        # run unit tests for this tool
 
 | Workflow                 | Trigger                            | What it does                                                                                                             |
 | ------------------------ | ---------------------------------- | ------------------------------------------------------------------------------------------------------------------------ |
-| `main.yaml`              | PR                                 | `dart pub get` → `dart format --set-exit-if-changed lib example` → `dart analyze lib example` + semantic PR check + pana |
+| `ci.yaml`                | PR against `main`                  | Semantic PR title check + spell check; re-runs when the PR title is edited                                               |
+| `main.yaml`              | PR                                 | `dart pub get` → `dart format --set-exit-if-changed lib example` → `dart analyze lib example` + pana                     |
 | `verify_version.yaml`    | PR from release-please branch      | Runs `dart run tool/verify_version/main.dart`                                                                            |
 | `tool_linter_rules.yaml` | PR touching `tool/linter_rules/**` | Runs tests + analysis for the linter_rules tool                                                                          |
 | `release_please.yaml`    | Push to `main`                     | Creates/updates a release PR with version bump + changelog                                                               |
