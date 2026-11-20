@@ -149,7 +149,7 @@ Below is a list of rules that are not enabled by default together with the reaso
 <!-- end:excluded_rules_table -->
 
 [analysis_options_yaml]: https://github.com/VeryGoodOpenSource/very_good_analysis/blob/main/lib/analysis_options.10.0.0.yaml
-[ci_badge]: https://github.com/VeryGoodOpenSource/very_good_analysis/workflows/ci/badge.svg
+[ci_badge]: https://github.com/VeryGoodOpenSource/very_good_analysis/actions/workflows/main.yaml/badge.svg
 [dart_format_link]: https://dart.dev/tools/dart-format
 [ci_badge_link]: https://github.com/VeryGoodOpenSource/very_good_analysis/actions
 [badge]: https://img.shields.io/badge/style-very_good_analysis-B22C89.svg
