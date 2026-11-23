@@ -38,8 +38,7 @@ void main() {
     test('generates a markdown table of the excluded rules', () async {
       final excludedRules = ['always_put_control_body_on_new_line'];
       final exclusionReasons = {
-        'always_put_control_body_on_new_line':
-            '[Can conflict with the Dart formatter](https://dart.dev/tools/linter-rules/always_put_control_body_on_new_line)',
+        'always_put_control_body_on_new_line': '[Can conflict with the Dart formatter](https://dart.dev/tools/linter-rules/always_put_control_body_on_new_line)',
       };
 
       final markdownTable = Readme().generateExcludedRulesTable(
