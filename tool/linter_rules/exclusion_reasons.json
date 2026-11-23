@@ -34,5 +34,6 @@
   "unsafe_variance": "Experimental",
   "use_decorated_box": "[Has unresolved malfunctions](https://github.com/dart-lang/linter/issues/3286)",
   "use_if_null_to_convert_nulls_to_bools": "Not specified",
+  "use_late_for_private_fields_and_variables": "Not specified",
   "var_with_no_type_annotation": "Not specified"
 }
