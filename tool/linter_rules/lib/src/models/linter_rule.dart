@@ -79,7 +79,7 @@ enum FixStatus {
 @immutable
 class LinterRule {
   /// {@macro LinterRule}
-  const LinterRule({
+  const new({
     required this.name,
     required this.description,
     required this.details,
@@ -92,7 +92,7 @@ class LinterRule {
   });
 
   /// Converts JSON to a [LinterRule].
-  factory LinterRule.fromJson(Map<String, dynamic> json) => LinterRule(
+  factory fromJson(Map<String, dynamic> json) => LinterRule(
     name: json['name'] as String,
     description: json['description'] as String,
     details: json['details'] as String,

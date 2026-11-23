@@ -44,8 +44,7 @@ Future<void> main(
     )
     ..addFlag(
       'set-exit-if-changed',
-      help:
-          '''Set the exit code to 2 if there are changes to the deprecated rules.''',
+      help: '''Set the exit code to 2 if there are changes to the deprecated rules.''',
     );
 
   final parsedArgs = argsParser.parse(args);
