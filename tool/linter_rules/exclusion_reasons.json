@@ -11,7 +11,6 @@
   "close_sinks": "[Has unresolved false positives](https://github.com/dart-lang/linter/issues/1381)",
   "diagnostic_describe_all_properties": "Not specified",
   "do_not_use_environment": "Not specified",
-  "future_sync_value": "Requires Dart 3.14",
   "library_names": "[Superseded by `unnecessary_library_name`](https://github.com/dart-lang/lints/issues/172)",
   "no_dynamic_casts": "Not specified",
   "no_raw_types": "Not specified",
