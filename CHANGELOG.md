@@ -1,6 +1,6 @@
 # Changelog
 
-## [11.1.0](https://github.com/VeryGoodOpenSource/very_good_analysis/compare/v11.0.0...v11.1.0) (2026-11-24)
+## [11.1.0-rc.1](https://github.com/VeryGoodOpenSource/very_good_analysis/compare/v11.0.0...v11.1.0-rc.1) (2026-11-24)
 
 
 ### Features
