@@ -1,5 +1,33 @@
 # Changelog
 
+## [11.1.0-rc.1](https://github.com/VeryGoodOpenSource/very_good_analysis/compare/v11.0.0...v11.1.0-rc.1) (2026-11-24)
+
+
+### Features
+
+* add `future_sync_value` lint rule ([#258](https://github.com/VeryGoodOpenSource/very_good_analysis/issues/258)) ([eb2e632](https://github.com/VeryGoodOpenSource/very_good_analysis/commit/eb2e632ac793d6c1cf900a99c11f11b51f14f06d))
+* add analysis_options.11.1.0.yaml ([#243](https://github.com/VeryGoodOpenSource/very_good_analysis/issues/243)) ([277d91b](https://github.com/VeryGoodOpenSource/very_good_analysis/commit/277d91b32ed55192ecef5c1bbdd1bfde3ab658b4))
+* add unnecessary_this_alias rule ([#270](https://github.com/VeryGoodOpenSource/very_good_analysis/issues/270)) ([46f18ee](https://github.com/VeryGoodOpenSource/very_good_analysis/commit/46f18eeb0fedd2e5ce7a2c4b0e631f23770e6042))
+* upgrade to Dart 3.14.0 ([#266](https://github.com/VeryGoodOpenSource/very_good_analysis/issues/266)) ([7a133b2](https://github.com/VeryGoodOpenSource/very_good_analysis/commit/7a133b27580e2ec46f762baebe6c55e9fecb0065))
+
+
+### Bug Fixes
+
+* typo in no_runtimetype_tostring linter rule ([#241](https://github.com/VeryGoodOpenSource/very_good_analysis/issues/241)) ([0261a0a](https://github.com/VeryGoodOpenSource/very_good_analysis/commit/0261a0a008067eafb130d6ab45f4c583eade3032))
+
+
+### Miscellaneous Chores
+
+* remove `use_late_for_private_fields_and_variables` lint rule ([#262](https://github.com/VeryGoodOpenSource/very_good_analysis/issues/262)) ([2b2b43e](https://github.com/VeryGoodOpenSource/very_good_analysis/commit/2b2b43ee9bfabebe754a691aa1bd7d2105fcfc39)), closes [#260](https://github.com/VeryGoodOpenSource/very_good_analysis/issues/260)
+* remove use_primary_constructors ([#249](https://github.com/VeryGoodOpenSource/very_good_analysis/issues/249)) ([eeda4c8](https://github.com/VeryGoodOpenSource/very_good_analysis/commit/eeda4c84fb1bcef432de753fb39b71a584ec3f90))
+
+
+### Docs
+
+* update exclusion table ([#247](https://github.com/VeryGoodOpenSource/very_good_analysis/issues/247)) ([e744f82](https://github.com/VeryGoodOpenSource/very_good_analysis/commit/e744f820365e7e3f660632676ee720b45349828f))
+* update exclusion table ([#248](https://github.com/VeryGoodOpenSource/very_good_analysis/issues/248)) ([7026e8a](https://github.com/VeryGoodOpenSource/very_good_analysis/commit/7026e8abae632bf09af466e8a8e64506f3f5206a))
+* update exclusion table ([#271](https://github.com/VeryGoodOpenSource/very_good_analysis/issues/271)) ([0662efc](https://github.com/VeryGoodOpenSource/very_good_analysis/commit/0662efcafff4a8401ae5a0e16b06c73851d96542))
+
 ## [11.0.0](https://github.com/VeryGoodOpenSource/very_good_analysis/compare/v11.0.0-rc.1...11.0.0) (2026-09-03)
 
 
