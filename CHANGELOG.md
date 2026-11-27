@@ -1,5 +1,29 @@
 # Changelog
 
+## [11.1.0](https://github.com/VeryGoodOpenSource/very_good_analysis/compare/v11.1.0-rc.1...v11.1.0) (2026-11-27)
+
+
+### Migration Guide
+
+Rule changes from `11.0.0` to `11.1.0`:
+
+- **Added `future_sync_value`**: flags `Future.value(x)` on sync values and suggests `Future.syncValue(x)`. `dart fix --apply` fixes it.
+- **Added `unnecessary_this_alias`**
+- **Added `migrate_design_widgets`**: flags imports of `package:flutter/material.dart` and `package:flutter/cupertino.dart`. Use [`material_ui`](https://pub.dev/packages/material_ui) and [`cupertino_ui`](https://pub.dev/packages/cupertino_ui) instead (Flutter >=3.47). There's no autofix, and most Flutter files will be flagged. To opt out:
+  ```yaml
+  linter:
+    rules:
+      migrate_design_widgets: false
+  ```
+- **Removed `use_late_for_private_fields_and_variables`**
+- **Renamed `no_runtimeType_toString` to `no_runtimetype_tostring`**: casing only. Rule names are case-insensitive, so existing `// ignore:` comments and overrides keep working.
+- **Minimum Dart SDK is now `^3.14.0`**
+
+
+### Miscellaneous Chores
+
+* delete CLAUDE.md ([#272](https://github.com/VeryGoodOpenSource/very_good_analysis/issues/272)) ([ae10a26](https://github.com/VeryGoodOpenSource/very_good_analysis/commit/ae10a26ee37e94e9243f187207486f4721a0b73d))
+
 ## [11.1.0-rc.1](https://github.com/VeryGoodOpenSource/very_good_analysis/compare/v11.0.0...v11.1.0-rc.1) (2026-11-24)
 
 
