@@ -1,5 +1,12 @@
 # Changelog
 
+## [11.1.1-rc.1](https://github.com/VeryGoodOpenSource/very_good_analysis/compare/v11.1.0-rc.1...v11.1.1-rc.1) (2026-11-27)
+
+
+### Miscellaneous Chores
+
+* delete CLAUDE.md ([#272](https://github.com/VeryGoodOpenSource/very_good_analysis/issues/272)) ([ae10a26](https://github.com/VeryGoodOpenSource/very_good_analysis/commit/ae10a26ee37e94e9243f187207486f4721a0b73d))
+
 ## [11.1.0-rc.1](https://github.com/VeryGoodOpenSource/very_good_analysis/compare/v11.0.0...v11.1.0-rc.1) (2026-11-24)
 
 
